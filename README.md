@@ -95,7 +95,7 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `analisis-gasto-recurrente` | Suscripciones, gasto hormiga | Método N1: umbral operativo |
 | `fondo-emergencia-y-metas` | Colchón y metas por tramos | Seguro de cesantía **N3** (Ley 19.728, Res. Ex. 383); "3 a 6 meses" N1 |
 | `apv-chile` | APV régimen A y B | **N3**: DL 3.500, DL 824 y circulares SII; faltan costos de retiro por institución |
-| `indicadores-oficiales-chile` | UF, UTM, IPC y dólar desde las APIs de la CMF y el Banco Central | Fuente oficial; código con tests sobre respuestas simuladas, falta una consulta real |
+| `indicadores-oficiales-chile` | UF, UTM, UTA, IPC y dólar; el usuario elige fuente (CMF, Banco Central, SII sin clave, terceros) | Fuente oficial; código con tests sobre respuestas simuladas, falta una consulta real |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
 
 Casos de ejemplo con cifras ficticias: [docs/casos/casos.md](docs/casos/casos.md).

@@ -42,7 +42,7 @@
 - Método híbrido: solo blogs comerciales; sin fuente académica.
 
 ## Para verificar en fuente oficial
-- [ ] Indicadores: probar `indicadores.py` con una clave real de la CMF y del Banco Central; confirmar el formato JSON de respuesta y las rutas `utm`, `ipc`, `dolar` y `euro` de la CMF.
+- [ ] Indicadores: contrastar el lector del SII con el HTML real (tabla anual de UF y tabla UTM/UTA/IPC) y el de mindicador.cl con respuestas reales; probar `indicadores.py` con una clave real de la CMF y del Banco Central; confirmar el formato JSON de respuesta y las rutas `utm`, `ipc`, `dolar` y `euro` de la CMF.
 - [ ] CAE de tarjetas: contrastar `cae_tarjetas.py` con un ejemplo oficial del emisor o de la CMF cuando exista, y confirmar la definición de f del CAEP.
 - [ ] APV: costos y condiciones de retiro por institución; norma conjunta de las superintendencias; valores UF/UTM/UTA del año.
 - [ ] Seguro de cesantía: tabla de retiro de la cuenta individual (art. 15 de la Ley 19.728) y confirmar en el PDF la Res. Ex. 383 (el art. 70 trae una vigencia con posible error). Superir: efectos de la renegociación sobre el historial crediticio y norma general de la Superir.

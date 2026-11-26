@@ -1,6 +1,6 @@
 ---
 name: indicadores-oficiales-chile
-description: Obtiene UF, UTM, IPC y dólar desde APIs oficiales (CMF y Banco Central) con un script y clave personal. Úsala cuando necesites un valor vigente de UF/UTM/UTA o tipo de cambio para convertir montos, topes o comisiones.
+description: Obtiene UF, UTM, UTA, IPC y dólar con un script; el usuario elige la fuente (CMF, Banco Central, SII sin clave, o terceros). Úsala cuando necesites un valor vigente de UF/UTM/UTA o tipo de cambio para convertir montos, topes o comisiones.
 ---
 
 # Indicadores oficiales de Chile (UF, UTM, IPC, dólar)
@@ -16,15 +16,27 @@ Varias skills dependen de valores que cambian (UF para topes y comisiones, UTM p
 - **No uses agregadores de terceros** (mindicador.cl y similares): no son la fuente oficial.
 - El SII publica UTM y UTA en `sii.cl/valores_y_fechas`; no ofrece API, solo páginas.
 
+## Opciones sin clave (el usuario elige)
+| Fuente | `--fuente` | Clave | Oficial | Cubre | Riesgo |
+|---|---|---|---|---|---|
+| CMF | `cmf` | sí, gratis | sí | UF, UTM, IPC, dólar, euro | rutas distintas de `uf` por confirmar |
+| Banco Central | `bcch` | token gratis | sí | cualquier serie de la BDE | formato JSON sin ejemplo oficial |
+| SII | `sii` | no | sí | UF, UTM, UTA, IPC (puntos) | lee HTML: si el SII rediseña la página, falla |
+| mindicador.cl | `mindicador` | no | **no, terceros** | UF, UTM, dólar, IPC, otros | depende de un tercero; rutas sin verificar |
+| A mano | n/a | no | sí | lo que copies de sii.cl | error humano |
+
+`--fuente auto` (por defecto) solo usa CMF o Banco Central si hay clave en el entorno. **Nunca elige SII ni terceros por su cuenta**: si no hay clave, el script lista las opciones y la persona decide. Si usas `mindicador`, dilo en la respuesta: no es fuente oficial.
+
 ## Cómo usarla
-1. Pide al usuario que cree su clave y la ponga en el entorno: `CMF_API_KEY` o `BCCH_API_TOKEN`. **Nunca la pegues en el chat, en un archivo del repo ni en un argumento de línea de comandos.**
+1. Si el usuario quiere CMF o Banco Central, pídele que cree su clave y la ponga en el entorno: `CMF_API_KEY` o `BCCH_API_TOKEN`. **Nunca la pegues en el chat, en un archivo del repo ni en un argumento de línea de comandos.**
 2. Ejecuta `scripts/indicadores.py`:
-   - `indicadores.py uf` (hoy) o `uf --fecha 2026-11-26`
+   - `indicadores.py --fuente sii uf` (sin clave)
+   - `indicadores.py uf` (hoy, con clave) o `uf --fecha 2026-11-26`
    - `indicadores.py utm --fecha 2026-11`
    - `indicadores.py serie --codigo F073.UFF.PRE.Z.D --desde 2026-11-01 --hasta 2026-11-26`
 3. Informa el valor **con fecha y fuente**. Si falla (sin clave, sin red, respuesta inesperada), dilo y pide el valor al usuario; no lo inventes.
-4. La **UTA** es 12 veces la UTM del mes de diciembre del año anterior solo si la fuente lo define así: toma el valor de la fuente oficial, no lo derives por tu cuenta.
+4. La **UTA** sale de la tabla del SII (`--fuente sii uta`); no la derives por tu cuenta.
 
 ## Límites
 - Sin conexión desde un entorno restringido, el script falla con un mensaje claro: pasa el valor manualmente.
-- Los tests usan respuestas simuladas, no reales.
+- Los tests usan respuestas y HTML simulados, no reales; el HTML real del SII no se pudo descargar desde el entorno de desarrollo (solo vista de texto).

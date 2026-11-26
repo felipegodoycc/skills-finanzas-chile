@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """UF, UTM, IPC y tipo de cambio desde APIs OFICIALES (CMF y Banco Central).
 
-Fuentes (ambas gratuitas, requieren clave personal):
+Fuentes: el usuario elige con --fuente (por defecto `auto`: solo las oficiales con clave).
+- sii        : OFICIAL, sin clave. Lee las tablas HTML de sii.cl (UF, UTM, UTA, IPC).
+               Frágil: si el SII cambia la página, falla con un mensaje claro.
+- mindicador : TERCEROS (mindicador.cl), sin clave, NO oficial. Solo si se pide a mano.
+- cmf y bcch (gratuitas, requieren clave personal):
 - CMF   : https://api.cmfchile.cl/api-sbifv3/recursos_api/<indicador>
           clave en la variable de entorno CMF_API_KEY.
 - BCCh  : https://si3.bcentral.cl/SieteRestWS/SieteRestWS.ashx
@@ -10,6 +14,10 @@ La clave se lee SOLO del entorno (nunca por argumento, para no dejarla en el
 historial del shell) y no se imprime. No se usan agregadores de terceros.
 
 LIMITES (declarados)
+- SII: la estructura real del HTML no se pudo descargar desde el entorno de desarrollo
+  (solo vista de texto); el lector busca filas <tr> y es tolerante. Los tests usan HTML
+  simulado. UF: tabla anual con 12 meses por día. UTM/UTA/IPC: una fila por mes.
+- mindicador: rutas y JSON sin documentación oficial revisada; lector tolerante.
 - La forma exacta de la respuesta JSON no figura en la documentación revisada
   (CMF solo muestra XML; BCCh no muestra ejemplo). El lector es tolerante, pero
   confirma con una consulta real antes de automatizar.
@@ -26,7 +34,8 @@ Uso:
   indicadores.py ipc --fecha 2026-10
   indicadores.py dolar
   indicadores.py serie --codigo F073.UFF.PRE.Z.D --desde 2026-11-01 --hasta 2026-11-26
-  --fuente cmf|bcch|auto (por defecto auto: la que tenga clave en el entorno)
+  --fuente cmf|bcch|sii|mindicador|auto (auto: la oficial con clave en el entorno)
+  Sin clave ni red a la API: usa --fuente sii, o copia el valor a mano desde sii.cl.
 """
 import argparse
 import json
@@ -46,6 +55,7 @@ BCCH_SERIES = {  # ayuda oficial de la BDE
     "dolar": "F073.TCO.PRE.Z.D",
 }
 CMF_INDICADORES = ("uf", "utm", "ipc", "dolar", "euro")
+CLI_INDICADORES = CMF_INDICADORES + ("uta",)  # uta: solo SII
 
 
 def numero(txt):
@@ -54,6 +64,57 @@ def numero(txt):
     if "," in s:
         s = s.replace(".", "").replace(",", ".")
     return float(s)
+
+
+def numero_cl(txt):
+    """Formato SII: punto = miles, coma = decimal ('72.440' -> 72440.0)."""
+    return float(str(txt).strip().replace(".", "").replace(",", "."))
+
+
+MESES = ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
+         "septiembre", "octubre", "noviembre", "diciembre")
+SII_BASE = "https://www.sii.cl/valores_y_fechas/"
+MINDICADOR = "https://mindicador.cl/api/"
+
+
+def _filas_html(html):
+    filas = []
+    for tr in re.findall(r"<tr\b.*?</tr>", html, re.S | re.I):
+        celdas = re.findall(r"<t[dh]\b.*?>(.*?)</t[dh]>", tr, re.S | re.I)
+        filas.append([re.sub(r"\s+", " ", re.sub(r"<[^>]+>|&nbsp;", " ", c)).strip() for c in celdas])
+    return filas
+
+
+def parse_sii_uf(html, mes, dia):
+    """Tabla anual: fila = día (1-31), 12 columnas de mes tras la columna 'Día'."""
+    for f in _filas_html(html):
+        if len(f) == 13 and f[0] == str(dia):
+            v = f[mes]
+            if not v:
+                raise ValueError("El SII aún no publica la UF de esa fecha")
+            return numero_cl(v)
+    raise ValueError("No encontré la tabla anual de UF en la página del SII; cambió su formato")
+
+
+def parse_sii_mensual(html, mes, campo):
+    """Una fila por mes: Mes | UTM | UTA | IPC puntos | var. mensual | acum. | 12 meses."""
+    col = {"utm": 1, "uta": 2, "ipc": 3}[campo]
+    for f in _filas_html(html):
+        if f and f[0].strip().lower() == MESES[mes - 1] and len(f) > col:
+            if not f[col]:
+                raise ValueError("El SII aún no publica ese valor")
+            return numero_cl(f[col])
+    raise ValueError("No encontré la fila del mes en la página del SII; cambió su formato")
+
+
+def parse_mindicador(texto, indicador):
+    d = json.loads(texto)
+    filas = d.get("serie") or ([d[indicador]] if isinstance(d.get(indicador), dict) else [d])
+    out = [{"fecha": str(x["fecha"])[:10], "valor": float(x["valor"])}
+           for x in filas if isinstance(x, dict) and "fecha" in x and "valor" in x]
+    if not out:
+        raise ValueError("Respuesta de mindicador.cl sin fecha/valor")
+    return out
 
 
 def _fecha(fecha):
@@ -127,7 +188,9 @@ def consultar(indicador, fecha=None, fuente="auto", env=None, fetch=None, codigo
     if fuente == "auto":
         fuente = "cmf" if env.get("CMF_API_KEY") else "bcch" if env.get("BCCH_API_TOKEN") else None
         if not fuente:
-            raise RuntimeError("Define CMF_API_KEY o BCCH_API_TOKEN en el entorno (ver --help)")
+            raise RuntimeError("Sin clave en el entorno. Elige: define CMF_API_KEY o BCCH_API_TOKEN, "
+                               "o usa --fuente sii (oficial, sin clave) o --fuente mindicador "
+                               "(terceros), o copia el valor a mano desde sii.cl")
     if fuente == "cmf":
         if not env.get("CMF_API_KEY"):
             raise RuntimeError("Falta CMF_API_KEY en el entorno")
@@ -156,9 +219,33 @@ def consultar(indicador, fecha=None, fuente="auto", env=None, fetch=None, codigo
         base = BCCH_URL + "?" + urllib.parse.urlencode(q)
         filas = parse_bcch(_get(base + "&token=" + urllib.parse.quote(env["BCCH_API_TOKEN"]), fetch))
         url = BCCH_URL + " (serie " + serie + ")"
+    elif fuente == "sii":
+        import datetime
+        a, m, d = _fecha(fecha)
+        hoy = datetime.date.today()
+        a, m = int(a or hoy.year), int(m or hoy.month)
+        if indicador == "uf":
+            d = int(d or hoy.day)
+            url = f"{SII_BASE}uf/uf{a}.htm"
+            valor = parse_sii_uf(_get(url, fetch), m, d)
+            filas = [{"fecha": f"{a}-{m:02d}-{d:02d}", "valor": valor}]
+        elif indicador in ("utm", "uta", "ipc"):
+            url = f"{SII_BASE}utm/utm{a}.htm"
+            valor = parse_sii_mensual(_get(url, fetch), m, indicador)
+            filas = [{"fecha": f"{a}-{m:02d}", "valor": valor}]
+        else:
+            raise ValueError("El SII cubre uf, utm, uta e ipc (puntos)")
+    elif fuente == "mindicador":
+        if indicador == "serie":
+            raise ValueError("`serie` solo existe para el Banco Central")
+        a, m, d = _fecha(fecha)
+        url = MINDICADOR + indicador + (f"/{d}-{m}-{a}" if d else "")
+        filas = parse_mindicador(_get(url, fetch), indicador)
     else:
-        raise ValueError("fuente debe ser cmf, bcch o auto")
-    return {"indicador": indicador, "fuente": "CMF" if fuente == "cmf" else "Banco Central de Chile (BDE)",
+        raise ValueError("fuente debe ser cmf, bcch, sii, mindicador o auto")
+    nombres = {"cmf": "CMF", "bcch": "Banco Central de Chile (BDE)", "sii": "SII (tablas web, oficial)",
+               "mindicador": "mindicador.cl (TERCEROS, no oficial)"}
+    return {"indicador": indicador, "fuente": nombres[fuente],
             "consulta": url, "datos": filas,
             "nota": "Cita la fuente. Confirma el formato de respuesta con una consulta real."}
 
@@ -166,9 +253,9 @@ def consultar(indicador, fecha=None, fuente="auto", env=None, fetch=None, codigo
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--fuente", default="auto", choices=("auto", "cmf", "bcch"))
+    p.add_argument("--fuente", default="auto", choices=("auto", "cmf", "bcch", "sii", "mindicador"))
     sub = p.add_subparsers(dest="cmd", required=True)
-    for ind in CMF_INDICADORES:
+    for ind in CLI_INDICADORES:
         s = sub.add_parser(ind)
         s.add_argument("--fecha", help="YYYY-MM-DD (UF, dólar) o YYYY-MM (UTM, IPC)")
     s = sub.add_parser("serie")

@@ -13,7 +13,46 @@ BCCH = json.dumps({"Codigo": 0, "Descripcion": "Success",
                                        "statusCode": "ND"}]}})
 
 
+# HTML SIMULADO (no se pudo descargar el real): fila de día con 12 meses y fila de mes.
+SII_UF = "<table>" + "".join(
+    "<tr><td>%d</td>%s</tr>" % (d, "".join("<td>%s</td>" % ("41.412,34" if (d, mm) == (26, 11) else "" if d == 27 else "39.000,00") for mm in range(1, 13)))
+    for d in range(1, 32)) + "<tr><td>1</td><td>x</td><td>1,0</td><td>2</td><td>1,0</td><td>3</td></tr></table>"
+SII_UTM = ("<table><tr><td>Octubre</td><td>72.100</td><td>865.200</td><td>110,00</td></tr>"
+           "<tr><td>Noviembre</td><td>72.440</td><td>869.280</td><td>&nbsp;</td></tr></table>")
+
+
 class T(unittest.TestCase):
+    def test_sii_uf_utm_uta(self):
+        r = m.consultar("uf", "2026-11-26", "sii", env={}, fetch=lambda u: SII_UF)
+        self.assertEqual(r["datos"][0]["valor"], 41412.34)
+        r = m.consultar("utm", "2026-11", "sii", env={}, fetch=lambda u: SII_UTM)
+        self.assertEqual(r["datos"][0]["valor"], 72440.0)
+        r = m.consultar("uta", "2026-11", "sii", env={}, fetch=lambda u: SII_UTM)
+        self.assertEqual(r["datos"][0]["valor"], 869280.0)
+
+    def test_sii_sin_dato_o_formato_cambiado(self):
+        with self.assertRaises(ValueError):   # día sin valor publicado
+            m.consultar("uf", "2026-11-27", "sii", env={}, fetch=lambda u: SII_UF)
+        with self.assertRaises(ValueError):   # IPC aún vacío
+            m.consultar("ipc", "2026-11", "sii", env={}, fetch=lambda u: SII_UTM)
+        with self.assertRaises(ValueError):   # página distinta
+            m.consultar("uf", "2026-11-26", "sii", env={}, fetch=lambda u: "<p>nada</p>")
+
+    def test_mindicador_marcado_como_terceros(self):
+        j = json.dumps({"serie": [{"fecha": "2026-11-26T03:00:00.000Z", "valor": 41412.34}]})
+        r = m.consultar("uf", "2026-11-26", "mindicador", env={}, fetch=lambda u: j)
+        self.assertIn("TERCEROS", r["fuente"])
+        self.assertEqual(r["datos"][0], {"fecha": "2026-11-26", "valor": 41412.34})
+
+    def test_auto_no_elige_fuentes_no_oficiales(self):
+        with self.assertRaises(RuntimeError) as e:
+            m.consultar("uf", env={})
+        self.assertIn("sii", str(e.exception))
+
+    def test_cmf_no_ofrece_uta(self):
+        with self.assertRaises(ValueError):
+            m.consultar("uta", fuente="cmf", env={"CMF_API_KEY": "K"}, fetch=lambda u: CMF)
+
     def test_numero(self):
         self.assertEqual(m.numero("20.939,49"), 20939.49)
         self.assertEqual(m.numero("0,3"), 0.3)
