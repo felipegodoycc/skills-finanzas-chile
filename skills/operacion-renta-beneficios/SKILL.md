@@ -7,12 +7,13 @@ description: Explica los beneficios tributarios de la Operación Renta en Chile 
 
 Orientación informativa, no asesoría tributaria. Consultado 2026-11-26. El agente es un asesor basado en IA: la declaración y sus montos son responsabilidad del contribuyente; verifica en sii.cl y, si tu caso es complejo, con un contador.
 
-**Nivel de verificación: N3 para las reglas, sin cifras en pesos.** Leí el texto consolidado del DL 824 (Ley de la Renta) de la BCN, versión vigente al 01-11-2026 (última modificación: Ley 21.850), arts. 42 bis, 47, 50, 52, 54, 55, 55 bis, 55 ter, 56, 74 N° 2 y 84. No leí los artículos de plazos y obligación de declarar (65 a 69), ni el art. 97 (devolución), ni el art. 43 (escala mensual del Impuesto Único de Segunda Categoría), ni circulares del SII. **No incluyo valores de UTA, UF ni UTM de 2026**: cópialos del SII en el momento (ver `indicadores-oficiales-chile`).
+**Nivel de verificación: N3 para las reglas, sin cifras en pesos.** Leí el texto consolidado del DL 824 (Ley de la Renta) de la BCN, versión vigente al 01-11-2026 (última modificación: Ley 21.850), arts. 42 bis, 43, 47, 50, 52, 54, 55, 55 bis, 55 ter, 56, 65, 68, 69, 74 N° 2, 84 y 97. No leí el reglamento del Ministerio de Educación, la resolución del SII sobre el crédito de educación ni circulares del SII. **No incluyo valores de UTA, UF ni UTM de 2026**: cópialos del SII en el momento (ver `indicadores-oficiales-chile`).
 
 ## Primero: qué tipo de contribuyente eres
-- **Dependiente con un solo empleador:** tu impuesto es el Impuesto Único de Segunda Categoría (art. 43 N° 1), que tu empleador retiene mes a mes. Puedes pedir una reliquidación anual de lo retenido (art. 47) y así usar los beneficios de abajo (arts. 55 bis y 55 ter hablan expresamente de esta reliquidación).
-- **Varios empleadores:** estás obligado a reliquidar (art. 47).
-- **Honorarios u otras rentas:** pagas Global Complementario (art. 52). Rentas hasta **13,5 UTA** exentas; sobre eso rige una escala progresiva por tramos (4%, 8%, 13,5%, 23%, 30,4%, 35% y 40% sobre los tramos de UTA que fija el art. 52). La retención de la boleta o los PPM son abonos y se devuelve el exceso (ver `independientes-honorarios`).
+- **Dependiente con un solo empleador:** tu impuesto es el Impuesto Único de Segunda Categoría (art. 43 N° 1), que tu empleador retiene cada mes con una escala en UTM: exento hasta 13,5 UTM y luego 4%, 8%, 13,5%, 23%, 30,4%, 35% y 40% por tramos (hasta 30, 50, 70, 90, 120 y 310 UTM, y sobre 310). **No estás obligado a declarar** si solo tuviste rentas de ese tipo u otras exentas (art. 65 N° 3, inciso 2), pero puedes presentar la declaración para reliquidar lo retenido (art. 47 inc. 3) y así usar los beneficios de abajo.
+- **Varios empleadores o pagadores durante el año:** debes reliquidar con la escala anual (art. 47) y declarar (art. 65 N° 5).
+- **Honorarios u otras rentas del Global Complementario:** debes declarar si, antes de cualquier rebaja, las rentas del año calendario anterior superan el límite exento del art. 52, que es de **13,5 UTA** (art. 65 N° 3). La escala anual es la misma de arriba, pero en UTA. La retención de la boleta o los PPM son abonos (ver `independientes-honorarios`).
+- **Quien declara con gasto presunto no lleva contabilidad ni libros de ingresos** (art. 68 inc. 3).
 
 ## Beneficios, con la regla del texto
 
@@ -43,9 +44,11 @@ Orientación informativa, no asesoría tributaria. Consultado 2026-11-26. El age
 ### 5. Gasto presunto y cotizaciones de honorarios (art. 50)
 - Gasto presunto: 30% de los ingresos brutos anuales, con tope de 15 UTA; con presunto, las cotizaciones no se rebajan. Ver `independientes-honorarios`.
 
-## Devolución o pago
-- Impuesto retenido o pagado en exceso: se devuelve por la Tesorería, reajustado según el art. 97 (no leí el plazo exacto; el SII publica el calendario en abril).
-- Los montos retenidos y los créditos que se reajustan se actualizan con el IPC hasta noviembre (arts. 54 y 55). Por eso las cifras de tu declaración sugerida no coinciden con las boletas.
+## Plazos, devolución y pago
+- **Cuándo se declara:** en **abril de cada año**, sobre las rentas del año calendario anterior (art. 69). Las fechas exactas por modalidad las publica el SII cada año (por ejemplo, ChileAtiende: del 9 al 23 de abril para la Operación Renta 2026): confírmalas en sii.cl.
+- **Devolución:** el saldo a favor se devuelve por la Tesorería **dentro de los 30 días siguientes al vencimiento del plazo normal** para declarar; si declaras fuera de plazo, dentro del mes siguiente a tu declaración (art. 97). Se reajusta por IPC y se puede depositar en tu cuenta corriente, de ahorro o vista; si no hay cuenta, vale vista o pago por caja.
+- **Si te devuelven de más**, debes restituirlo reajustado más **1,5% mensual** por mes o fracción (art. 97), salvo que el error sea del SII o de Tesorería. Una declaración maliciosamente falsa tiene sanciones del Código Tributario.
+- Las rentas y retenciones se actualizan con el IPC hasta noviembre (arts. 54 y 55): por eso los montos de la declaración sugerida no coinciden con los de tus boletas o liquidaciones.
 
 ## Cómo usar esta skill con el usuario
 1. Pregunta qué tipo de contribuyente es y su renta bruta anual del año calendario, porque el beneficio hipotecario depende de eso.
@@ -54,7 +57,7 @@ Orientación informativa, no asesoría tributaria. Consultado 2026-11-26. El age
 4. No recomiendes productos de ahorro ni instituciones (ver `guardrails-finanzas-chile`).
 
 ## Qué falta verificar
-- Obligación de declarar, plazos y fechas de la Operación Renta (arts. 65 a 69 y 97) y la escala mensual del art. 43 N° 1.
-- Reglamento del Ministerio de Educación y resolución del SII sobre el crédito de educación.
+- Reglamento del Ministerio de Educación y resolución del SII sobre el crédito de educación (formas de acreditar matrícula y asistencia).
 - Circulares del SII 2025-2026 sobre estos beneficios; lo que hay en el repositorio (Circular 51 de 2008 y 08 de 2012) es del APV.
+- Calendario de abril de 2027: el texto solo dice "abril"; las fechas por modalidad las fija el SII.
 - Otros créditos y rebajas de la ley (donaciones, rentas de arriendo, ahorro para la vivienda) no están cubiertos aquí.

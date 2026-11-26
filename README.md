@@ -97,7 +97,7 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `apv-chile` | APV régimen A y B | **N3**: DL 3.500, DL 824 y circulares SII; faltan costos de retiro por institución |
 | `indicadores-oficiales-chile` | UF, UTM, UTA, IPC y dólar; el usuario elige fuente (CMF, Banco Central, SII sin clave, terceros) | Fuente oficial; lector del SII probado con la página real (UF, UTM, UTA); CMF, Banco Central y mindicador sin prueba real |
 | `independientes-honorarios` | Boleta de honorarios: retención, cotización obligatoria, Operación Renta, presupuesto con ingreso variable | **N3**: DL 3.500 (arts. 89 a 92 G) y DL 824 (arts. 50, 52, 74) vigentes leídos, más Ley 21.133; cifras de 2026 contrastadas con SII y Previsión Social |
-| `operacion-renta-beneficios` | Beneficios de la Operación Renta: APV, intereses hipotecarios, crédito por educación, gasto presunto | **N3**: texto consolidado del DL 824 (BCN, vigente al 01-11-2026) leído; sin cifras en pesos; faltan plazos, art. 43 y reglamentos |
+| `operacion-renta-beneficios` | Beneficios de la Operación Renta: APV, intereses hipotecarios, crédito por educación, gasto presunto | **N3**: texto consolidado del DL 824 (BCN, vigente al 01-11-2026) leído; sin cifras en pesos; leídos también arts. 43, 65, 68, 69 y 97; faltan reglamentos y circulares |
 | `fraude-medios-de-pago` | Robo, extravío o fraude con tarjetas y transferencias: aviso, reclamo, plazos de restitución | **N3**: texto consolidado de la Ley 20.009 (BCN, versión 30-05-2024) leído completo; falta la NCG 538 y el decreto de 2026 del umbral |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
 
