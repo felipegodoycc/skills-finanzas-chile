@@ -164,7 +164,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 - Lemus, A. y Pulgar, R. (2021), *Endeudamiento máximo sostenible de los hogares en Chile*, MPRA Paper 106958; publicado en Revista de Análisis Económico (2023). Base de los umbrales de `limites-sanos-endeudamiento`.
 
 ### Leyes y normas citadas pero no leídas completas (extracto o fuente secundaria)
-- **Ley 21.521** (Ley Fintec): consultada a través de las NCG de la CMF.
+- **Ley 21.521** (Ley Fintec): arts. 2, 3 y 5 y la NCG 502 de la CMF leídos (26-11-2026); lo que sigue pendiente es la revisión legal, no la lectura.
 - **Ley 20.555** (Sernac Financiero), **Ley 21.673** (origen de la NCG 537) y **Decretos 42, 43 y 44 de 2012** (reglamentos anteriores de información al consumidor): base legal citada, sin lectura del texto.
 - Reglamento de cobranza extrajudicial (consulta pública desde el 09-09-2025) y propuesta de reglamento de crédito de consumo (octubre de 2025): sin texto oficial publicado o leído.
 - Fichas y comparadores oficiales: CMF Educa, simulador hipotecario de la CMF, comparadores del Sernac, ChileAtiende y Ventanilla Única Social.
