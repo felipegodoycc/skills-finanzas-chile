@@ -5,7 +5,7 @@
 **Skills de finanzas personales para Chile, listas para tu agente de IA.**
 Basadas en fuentes oficiales (CMF, SERNAC, Superir, leychile.cl). Cada cifra trae fuente y fecha. Los cálculos los hace código, no el modelo.
 
-![Skills](https://img.shields.io/badge/skills-18-2ea44f)
+![Skills](https://img.shields.io/badge/skills-24-2ea44f)
 ![Licencia código](https://img.shields.io/badge/código-MIT-blue)
 ![Licencia textos](https://img.shields.io/badge/textos-CC%20BY%204.0-lightgrey)
 ![Python](https://img.shields.io/badge/python-3.9%2B%20stdlib-3776AB)
@@ -164,9 +164,6 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **NCG 460** (CMF, 13-08-2021; mod. NCG 464) | Seguros que se pueden contratar con un crédito, ratificación a 30 días y retracto a distancia | `cotizacion-y-comparacion` |
 | **Código de Comercio, arts. 538 y 538 bis** (Ley 20.667 y Ley 21.314) | Retracto de 10 días del seguro contratado a distancia (N3: texto oficial de la Ley 20.667 leído) y ratificación de seguros asociados a créditos | `cotizacion-y-comparacion` |
 | **Certificados de interés corriente y máximo convencional N° 05/2026 y 07/2026** (CMF, Diario Oficial 15-05-2026 y 15-07-2026) | Verificación de la TMC por fecha | `tasa-maxima-convencional` |
-| **Código Procesal Penal** (Ley 19.696, arts. 173-174), **Circular 108 de la CMF** (cooperativas), **DFL 5 de 2003** (Ley General de Cooperativas, art. 87), **LGB art. 65** | Denuncia por fraude; garantía estatal a cooperativas fiscalizadas; reserva técnica de depósitos a la vista | `fraude-medios-de-pago`, `ahorro-bajo-riesgo` |
-| **Ley 19.628** (BCN, versión 09-05-2023, arts. 17-19) y **Oficio Circular CMF 1.403** (22-01-2026) | Datos comerciales de obligaciones renegociadas, pagadas o de más de cinco años; bajas en el REDEC | `cobranza-y-renegociacion` |
-| **Informe de Costos de Inversión en Fondos Mutuos** (CMF, 2023), **Acuerdo 2448 del Banco Central** (06-01-2022, propuesta), **ISL** y **Compendio SUSESO** (tasa adicional ATEP) | Definición y cálculo de la TAC; propuesta sobre cuentas de ahorro a plazo; cotización adicional de independientes | `ahorro-bajo-riesgo`, `independientes-honorarios` |
 | **NCG 28 de la Superir** (Res. Ex. 22802, 19-11-2025) | Requisitos y documentos de la renegociación | `cobranza-y-renegociacion` |
 | **Res. Ex. 383 de la Superintendencia de Pensiones** (DO 17-03-2026), valores del Fondo de Cesantía Solidario (leída completa; con dos erratas del texto marcadas en la skill) | Montos vigentes hasta 28-02-2027 | `fondo-emergencia-y-metas` |
 | Informe normativo de la CMF sobre la modificación de la NCG 514 (junio de 2026) | Fecha de publicación de la NCG 514 (julio de 2024) | `entrada-segura-de-datos` |
@@ -176,6 +173,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 - Lemus, A. y Pulgar, R. (2021), *Endeudamiento máximo sostenible de los hogares en Chile*, MPRA Paper 106958; publicado en Revista de Análisis Económico (2023). Base de los umbrales de `limites-sanos-endeudamiento`.
 
 ### Leyes y normas citadas pero no leídas completas (extracto o fuente secundaria)
+- **Leídos solo en los artículos o secciones que usa la skill (26-11-2026):** Código Procesal Penal (Ley 19.696) arts. 173-174; Circular 108 de la CMF (cooperativas), numeral 1; DFL 5 de 2003 (Ley General de Cooperativas) art. 87; Ley General de Bancos art. 65; Ley 19.628 (versión 09-05-2023) arts. 17-19; Oficio Circular CMF 1.403 (22-01-2026), códigos de baja del REDEC; Informe de Costos de Inversión en Fondos Mutuos de la CMF (2023), anexo metodológico de la TAC; Acuerdo 2448 del Banco Central (06-01-2022), solo una propuesta; ISL y Compendio SUSESO sobre la cotización adicional de independientes (D.S. 110 de 1968).
 - **Ley 21.521** (Ley Fintec): arts. 2, 3 y 5 y la NCG 502 de la CMF leídos (26-11-2026); lo que sigue pendiente es la revisión legal, no la lectura.
 - **Ley 20.555** (Sernac Financiero), **Ley 21.673** (origen de la NCG 537) y **Decretos 42, 43 y 44 de 2012** (reglamentos anteriores de información al consumidor): base legal citada, sin lectura del texto.
 - Reglamento de cobranza extrajudicial (consulta pública desde el 09-09-2025) y propuesta de reglamento de crédito de consumo (octubre de 2025): sin texto oficial publicado o leído.
