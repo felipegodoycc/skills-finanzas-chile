@@ -21,7 +21,7 @@ Basadas en fuentes oficiales (CMF, SERNAC, Superir, leychile.cl). Cada cifra tra
 
 ```bash
 npx skills add felipegodoycc/skills-finanzas-chile            # elige interactivamente
-npx skills add felipegodoycc/skills-finanzas-chile --list     # ver las 23 skills
+npx skills add felipegodoycc/skills-finanzas-chile --list     # ver las 24 skills
 npx skills add felipegodoycc/skills-finanzas-chile --skill diagnostico-financiero
 ```
 
@@ -99,6 +99,7 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `independientes-honorarios` | Boleta de honorarios: retención, cotización obligatoria, Operación Renta, presupuesto con ingreso variable | **N3**: DL 3.500 (arts. 89 a 92 G) y DL 824 (arts. 50, 52, 74) vigentes leídos, más Ley 21.133 y Ley 21.735 (arts. 15 a 23 y transitorio 46); cifras de 2026 contrastadas con SII y Previsión Social |
 | `operacion-renta-beneficios` | Beneficios de la Operación Renta: APV, intereses hipotecarios, crédito por educación, gasto presunto | **N3**: texto consolidado del DL 824 (BCN, vigente al 01-11-2026) leído; sin cifras en pesos; leídos también arts. 43, 65, 68, 69 y 97; faltan reglamentos y circulares |
 | `ahorro-bajo-riesgo` | Método para comparar depósitos, cuentas de ahorro y fondos mutuos de deuda: tasa real, riesgo, liquidez, costos e impuestos; no recomienda productos | **N3 en lo esencial**: arts. 41 bis, 57 y 107 del DL 824 y plazos del Compendio del Banco Central leídos; garantía estatal según la Ley General de Bancos (arts. 144 a 153, leídos); sin tasas ni inflación; falta la metodología de la TAC |
+| `pensiones` | Reforma de pensiones (Ley 21.735): cotización del empleador y su calendario, Seguro Social, beneficio por años cotizados, CRP, compensación por expectativa de vida y PGU | **N3 en lo esencial**: arts. 1 a 23 y transitorios 4, 34 y 46 leídos (BCN); cifras de la PGU y cotizaciones vigentes según IPS y Superintendencia de Pensiones; falta el art. 67 en adelante (cambios al DL 3.500) |
 | `fraude-medios-de-pago` | Robo, extravío o fraude con tarjetas y transferencias: aviso, reclamo, plazos de restitución | **N3**: texto consolidado de la Ley 20.009 (BCN, versión 30-05-2024) leído completo, más el Decreto exento 473 (umbral 35 UF, 2026) y la NCG 538 de la CMF con sus modificaciones |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
 
@@ -158,6 +159,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **Ley General de Bancos (DFL 3 de 1997)**, arts. 144 a 153, **CMF Educa** (fondos mutuos) y **DL 824**, arts. 41 bis y 57 | Garantía de 200 UF por banco y 400 UF en total por persona y año, rescate de fondos, exención de intereses hasta 20 UTM para dependientes | `ahorro-bajo-riesgo` |
 | **DL 3.500 de 1980**, arts. 89 a 92 G (BCN, vigente al 01-09-2026) | Cotización obligatoria de independientes: base 80%, piso de 4 ingresos mínimos, orden de pago | `independientes-honorarios` |
 | **Ley 21.133** (DO 02-02-2019) y fichas del SII, Previsión Social y Superintendencia de Pensiones | Retención y cotización obligatoria de quienes emiten boletas de honorarios (15,25% en 2026) | `independientes-honorarios` |
+| **Ley 21.735** (BCN, DO 26-03-2025), **IPS**, **ChileAtiende** y **Superintendencia de Pensiones** | Cotización del empleador, Seguro Social, PGU y calendario de la reforma | `pensiones`, `independientes-honorarios` |
 | **Ley 20.009** (Leyes 21.234, DO 29-05-2020, y 21.673, DO 30-05-2024) y **Decretos 435 (2024) y 473 exento (DO 30-01-2026) de Hacienda** y **NCG 538 de la CMF** | Limitación de responsabilidad por fraude con medios de pago, plazos de restitución y umbral de 35 UF | `fraude-medios-de-pago` |
 | **NCG 460** (CMF, 13-08-2021; mod. NCG 464) | Seguros que se pueden contratar con un crédito, ratificación a 30 días y retracto a distancia | `cotizacion-y-comparacion` |
 | **Código de Comercio, arts. 538 y 538 bis** (Ley 20.667 y Ley 21.314) | Retracto de 10 días del seguro contratado a distancia (N3: texto oficial de la Ley 20.667 leído) y ratificación de seguros asociados a créditos | `cotizacion-y-comparacion` |
