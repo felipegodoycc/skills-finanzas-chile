@@ -25,6 +25,13 @@ description: Detecta suscripciones, cobros recurrentes y gasto pequeño frecuent
 - Un cobro que sube sin aviso o un cargo desconocido: revisa con el comercio y, si no corresponde, con el banco; el consumidor puede terminar un contrato y el silencio no es aceptación (regla general de consumo; la regla precisa para suscripciones genéricas **no fue verificada**).
 - Las suscripciones digitales se pueden pausar; anota la fecha de renovación.
 
+## Cómo cancelar una suscripción (Ley 21.398, texto leído completo el 26-11-2026)
+La Ley 21.398 modificó la Ley 19.496 (del consumidor). Para contratos de adhesión (los de "aceptar términos y condiciones", como la mayoría de las suscripciones):
+- **Art. 17 A:** al contratar, el proveedor debe informar los mecanismos y condiciones para ponerle término. No puede condicionar el término al pago de montos adeudados ni a la devolución de bienes, ni imponer condiciones más gravosas que las exigidas para contratar; todo pacto en contrario se tiene por no escrito. Si no informó el mecanismo, solo quedas obligado a lo que se te informó al aceptar. Hay una excepción para el monto de término anticipado de productos financieros (art. 17 D).
+- **Art. 3 bis (retracto):** en contratos por medios electrónicos o a distancia puedes retractarte sin expresión de causa, **pero en servicios el proveedor puede excluir el retracto si te lo informó de forma inequívoca, destacada y accesible antes de contratar y pagar**. Para ejercerlo puedes usar los mismos medios con que contrataste. El plazo corre desde la contratación (servicios) o la recepción (bienes) si el proveedor envió la confirmación escrita del art. 12 A; si no, es de 90 días.
+- La ley **no contiene una regla específica sobre renovación automática** de suscripciones digitales. La herramienta "Me quiero salir" del Sernac cubre telecomunicaciones y seguros generales, según su sitio (fuente secundaria).
+- Si no te dejan cancelar, guarda pruebas, reclama al proveedor y luego al Sernac.
+
 ## Caso de ejemplo
 `docs/casos/casos.md`, caso 5.
 

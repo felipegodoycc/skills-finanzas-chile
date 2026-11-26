@@ -132,6 +132,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **Ley 21.236** (portabilidad financiera, DO 09-06-2020) | Plazos, retracto, costos y sanciones de la portabilidad | `prepago-y-portabilidad` |
 | **Ley 20.720** (insolvencia y reemprendimiento), arts. 2, 260-268, con Ley 21.563 | Renegociación de la persona deudora ante la Superir | `cobranza-y-renegociacion`, `plan-refinanciamiento` |
 | **Ley 19.496** (protección del consumidor), arts. 3 bis y 37, y **Ley 21.320** (cobranza extrajudicial) | Retracto, tope de gastos de cobranza, límites a la cobranza | `cobranza-y-renegociacion`, `cotizacion-y-comparacion` |
+| **Ley 21.398** (Pro Consumidor, DO 24-12-2021), arts. 3 bis, 17 A, 17 D, 17 H y 17 N de la Ley 19.496 | Término de contratos y suscripciones, retracto, bloqueo de tarjetas, certificados para renegociar, descuentos con medio de pago propio, análisis de solvencia | `analisis-gasto-recurrente`, `cobranza-y-renegociacion`, `cotizacion-y-comparacion` |
 | **Ley 21.680** (Registro de Deuda Consolidada) | Consentimiento, límite de 5 años y derechos en el REDEC | `cobranza-y-renegociacion` |
 | **Ley 19.728** (seguro de desempleo) | Cotizaciones, cuenta individual y Fondo Solidario | `fondo-emergencia-y-metas` |
 | **Decreto 1.154 de 2020** (reglamento de portabilidad financiera) | Oferta, arrepentimiento y certificados | `prepago-y-portabilidad` |
