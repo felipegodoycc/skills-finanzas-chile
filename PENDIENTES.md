@@ -23,9 +23,10 @@
 - [ ] Cifras EFH 2024: hogares con y sin deuda (51% vs. 48,6%) y consistencia de la Encuesta CAF-CMF sobre cobertura de gastos.
 - [ ] **Revisión legal (Ley Fintec 21.521):** si un agente de IA que entrega evaluaciones de capacidad de pago o recomendaciones sobre créditos queda sujeto a autorización y registro; el repositorio asume que NO recomienda productos concretos.
 
+- [ ] **Entrada de datos:** probar `skills/entrada-segura-de-datos/data/rol_lectura_postgres.sql` en una base real (no se ejecutó); validar formatos de CSV/cartola de cada banco; confirmar en la CMF el calendario vigente de Finanzas Abiertas (julio de 2027 según CMF, ago-2026) y su alcance para personas.
+
 ## Temas sin investigar
 - Registro de Deuda Consolidada (Ley 21.680): operación y NCG 540 (solo revisado en general).
-- Sistema de Finanzas Abiertas (NCG 514; entrada en vigor prevista para julio de 2027 según fuente secundaria).
 - Boletín comercial / DICOM y plazos de permanencia de deuda.
 - Impuestos personales (Global Complementario, devolución de renta), seguro de cesantía, fondos de emergencia.
 - Reglamento de información al consumidor de tarjetas (Decreto 75/2025, Diario Oficial 06-08-2026): detalle y fecha de aplicación.

@@ -34,6 +34,7 @@ Al buscar skills de finanzas para agentes, lo disponible está pensado para EE. 
 | `pago-minimo-tarjetas` | Pago mínimo NCG 537, proyección y costo de pagar solo el mínimo | Fórmula verificada; hitos intermedios deducidos |
 | `fondo-emergencia-y-metas` | Colchón, metas por tramos, alinear objetivos | Heurísticas declaradas |
 | `calidad-de-datos-financieros` | Duplicados, reembolsos, fondos de terceros, formato genérico | Probado (4 pruebas) |
+| `entrada-segura-de-datos` | Cómo entregar datos a la IA de forma segura según el origen (CSV, PDF, base de datos, automatización); normalizador con enmascarado y plantilla de rol de solo lectura | Probado (4 pruebas); SQL no ejecutado |
 | `lectura-pdf-segura` | PDF (con clave) → Markdown enmascarado, con avisos de privacidad | Probado con 8 pruebas y datos falsos; ver límites en su SKILL.md |
 
 Casos de ejemplo (métodos de análisis con cifras ficticias): [docs/casos/casos.md](docs/casos/casos.md).
