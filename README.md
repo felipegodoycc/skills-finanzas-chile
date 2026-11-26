@@ -157,7 +157,10 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **DFL 3 de 1997** (Ley General de Bancos), arts. 69, 103 a 109 | Procedimiento especial hipotecario: requerimiento, oposición, prenda pretoria, remate, preferencias | `plan-refinanciamiento` |
 | **DFL 1 de 2009** (Ley de Tránsito, versión del 22-10-2026), art. 114 (el art. 200 N° 7 lo leí y no menciona el TAG) | Multa de 1 UTM por circular sin TAG | `plan-refinanciamiento` |
 | **DS 900 de 1996** (Ley de Concesiones de Obras Públicas, versión del 5-02-2026), arts. 42 y 43 | Cobro judicial del peaje, multa de 5 y 15 veces, sitio electrónico unificado | `plan-refinanciamiento` |
-| **Ley 21.547** (DO 30-03-2023, texto original; arts. 43 bis y 43 ter de la Ley 18.287 no leídos en su versión vigente) | Rebaja de 80 %, extinción de multas TAG por el menor entre 20 % o 100 UTM, convenio en 48 cuotas | `plan-refinanciamiento` |
+| **Ley 21.547** (DO 30-03-2023, texto original) y **Ley 18.287** (versión del 2-06-2026), arts. 24, 43 bis y 43 ter | Rebaja de 80 %, extinción de multas TAG por el menor entre 20 % o 100 UTM, convenio en 48 cuotas | `plan-refinanciamiento` |
+| **Ley 1.552, Código de Procedimiento Civil** (versión del 15-09-2022), arts. 434, 443, 445, 459, 464, 489 y 499 | Juicio ejecutivo: título, requerimiento, oposición, excepciones, inembargables, remate | `plan-refinanciamiento` |
+| **DFL 1 de 2000, Código Civil** (versión del 28-08-2025), arts. 1496 y 1497 | Exigibilidad anticipada del plazo | `plan-refinanciamiento` |
+| **Ley 18.010** (versión del 4-06-2025), arts. 2, 8, 10 y 30 | Intereses, prepago y cláusula de aceleración | `plan-refinanciamiento` |
 | Cámara de Diputados, noticias sobre el boletín 16346 (25-11-2025) | Proyecto que elimina la multa del art. 114; en tramitación, sin ley | `plan-refinanciamiento` |
 | **Ley 17.322** (cobranza de cotizaciones previsionales), arts. 1, 12 y 13 | Cobro a empleadores, apremio y sanción penal por retención indebida | `plan-refinanciamiento`, `independientes-honorarios` |
 
