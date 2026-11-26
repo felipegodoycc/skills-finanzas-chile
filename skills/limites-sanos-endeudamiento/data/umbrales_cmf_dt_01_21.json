@@ -1,0 +1,85 @@
+{
+  "fuente": "Pulgar, Corradi y Lemus (2021). CMF Documento de Trabajo 01/21; versión publicada: Lemus y Pulgar (2023), Revista de Análisis Económico 38(1). Datos: Encuesta Financiera de Hogares (EFH) 2017.",
+  "url": null,
+  "fecha_consulta": "2026-11-26",
+  "definiciones": {
+    "RCI": "Razón de carga de la deuda: porcentaje del ingreso mensual del hogar que se destina a pagar créditos, incluyendo intereses.",
+    "RDI": "Razón de deuda a ingreso: deuda total sin intereses dividida por el ingreso mensual, en múltiplos del ingreso.",
+    "sostenible": "RCI máximo al que la tasa implícita que cobraría un banco (con spread) no supera la Tasa Máxima Convencional."
+  },
+  "nodos_sin_hipotecario": {
+    "ingreso_mensual_clp": [
+      200000,
+      300000,
+      500000,
+      1000000,
+      2000000,
+      3000000,
+      4000000
+    ],
+    "rci_maximo": [
+      0.01,
+      0.06,
+      0.13,
+      0.22,
+      0.31,
+      0.37,
+      0.41
+    ],
+    "rdi_maximo": [
+      0.2,
+      1.5,
+      3.1,
+      5.3,
+      7.5,
+      8.9,
+      9.9
+    ]
+  },
+  "nodos_con_hipotecario": {
+    "ingreso_mensual_clp": [
+      100000,
+      300000,
+      600000,
+      1000000,
+      2000000,
+      4000000
+    ],
+    "rci_maximo": [
+      0.09,
+      0.24,
+      0.35,
+      0.43,
+      0.53,
+      0.65
+    ],
+    "rdi_maximo": [
+      13,
+      34,
+      49,
+      60,
+      74,
+      91
+    ]
+  },
+  "agregados": {
+    "sin_hipotecario": {
+      "rci": 0.23,
+      "rdi": 6.0
+    },
+    "con_hipotecario": {
+      "rci": 0.51,
+      "rdi": 71.0
+    }
+  },
+  "umbral_cmf_reporte": 0.5,
+  "limitaciones": [
+    "Estimado con la EFH 2017 y un modelo de tasa implícita; no es una norma ni una regla de la CMF.",
+    "Son umbrales de HOGAR con ingreso del hogar; aplicarlos a un ingreso individual es una aproximación.",
+    "Dependen de la TMC y del costo de fondeo supuestos (34% nominal en consumo, 5% real en UF en hipotecario).",
+    "No modela explícitamente el gasto de subsistencia ni el racionamiento de crédito.",
+    "El texto del documento da 1,4 de RDI a $300k y el anexo 1,5: se usa el anexo."
+  ],
+  "nota_interpolacion": "El documento entrega solo los nodos; los valores intermedios se interpolan linealmente (aproximación de este repositorio).",
+  "url_nota": "URL exacta no registrada: buscar 'Pulgar Corradi Lemus Documento de Trabajo 01/21' en cmfchile.cl y completar."
+}

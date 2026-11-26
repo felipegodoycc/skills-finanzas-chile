@@ -2,7 +2,7 @@
 
 Skills (formato `SKILL.md`) para que un agente de IA converse sobre **finanzas personales en Chile** con base en fuentes oficiales: CMF, SERNAC, Superir, Diario Oficial y leyes en leychile.cl.
 
-> **Esto no es asesoría financiera, tributaria ni legal.** Es material informativo y de apoyo a la decisión. Las cifras normativas cambian; cada dato indica su fuente y fecha de consulta. Si algo está desactualizado o es incorrecto, abre un issue.
+> **Esto no es asesoría financiera, tributaria ni legal, y el agente que use estas skills es un asesor basado en IA**: debe decirlo y recomendar verificar con la entidad correspondiente. No recomienda bancos, tarjetas, créditos ni inversiones concretas (ver la nota sobre la Ley Fintec en `guardrails-finanzas-chile`). Es material informativo y de apoyo a la decisión. Las cifras normativas cambian; cada dato indica su fuente y fecha de consulta. Si algo está desactualizado o es incorrecto, abre un issue.
 
 ## Por qué existe
 Al buscar skills de finanzas para agentes, lo disponible está pensado para EE. UU. o para finanzas institucionales (banca de inversión, equity research). No encontré un set adaptado a Chile (CAE/CTC, TMC, indicadores CMF, derechos del deudor, Superir). Una búsqueda no prueba que no exista: si conoces uno, avísame y lo enlazamos.
@@ -25,7 +25,18 @@ Al buscar skills de finanzas para agentes, lo disponible está pensado para EE. 
 | `cobranza-y-renegociacion` | Derechos SERNAC, cobranza extrajudicial, Superir | Medio (varios puntos marcados) |
 | `apv-chile` | APV régimen A y B | **Bajo**: falta fuente oficial |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
+| `diagnostico-financiero` | Punto de entrada: objetivos, flujo, carga de deuda y derivación a las demás skills | Probado (4 pruebas) |
+| `limites-sanos-endeudamiento` | Carga de deuda vs. umbrales sostenibles por ingreso (CMF DT 01/21) | Alto en fuente; umbrales con limitaciones declaradas |
+| `presupuesto-personal` | Presupuesto de régimen y de transición con límites graduales | Método; metas son propuestas |
+| `analisis-gasto-recurrente` | Suscripciones, gasto hormiga, reemplazos o controles | Umbral hormiga es definición operativa |
+| `plan-refinanciamiento` | Avalancha vs. nieve, prepago neto, compra de cartera, ruta CMF | Medio (hibrido y adaptación a Chile sin fuente) |
+| `cotizacion-y-comparacion` | Cómo cotizar y comparar consumo, hipotecario y tarjetas; leer rankings | Medio; comparadores a reverificar |
+| `pago-minimo-tarjetas` | Pago mínimo NCG 537, proyección y costo de pagar solo el mínimo | Fórmula verificada; hitos intermedios deducidos |
+| `fondo-emergencia-y-metas` | Colchón, metas por tramos, alinear objetivos | Heurísticas declaradas |
+| `calidad-de-datos-financieros` | Duplicados, reembolsos, fondos de terceros, formato genérico | Probado (4 pruebas) |
 | `lectura-pdf-segura` | PDF (con clave) → Markdown enmascarado, con avisos de privacidad | Probado con 8 pruebas y datos falsos; ver límites en su SKILL.md |
+
+Casos de ejemplo (métodos de análisis con cifras ficticias): [docs/casos/casos.md](docs/casos/casos.md).
 
 Compatibilidad con Claude, ChatGPT, NanoClaw y otros: [docs/uso-con-otros-asistentes.md](docs/uso-con-otros-asistentes.md).
 
@@ -35,6 +46,8 @@ Nota: la fórmula de CAE de `scripts/cae.py` proviene de un **borrador** de regl
 Copia las carpetas de `skills/` al directorio de skills de tu agente (por ejemplo `.claude/skills/` en Claude Code o el Claude Agent SDK). El formato es el estándar de Agent Skills; otros agentes que leen `SKILL.md` deberían funcionar, pero solo lo probé con la estructura estándar.
 
 ```bash
+python3 skills/limites-sanos-endeudamiento/scripts/limites.py --ingreso 1800000 --servicio-deuda 600000
+python3 skills/pago-minimo-tarjetas/scripts/pago_minimo.py calcular --cargos 60000 --cuotas-sin-interes 200000 --otros 600000 --fecha 2026-12-20
 python3 skills/credito-cae-ctc/scripts/cae.py credito --monto-neto 970000 --cuota 52000 --n 24
 python3 skills/endeudamiento-cmf/scripts/indicadores.py --ingreso 1500000 --servicio-deuda 300000 --deuda-total 6000000
 ```
