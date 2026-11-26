@@ -17,7 +17,7 @@ class T(unittest.TestCase):
     def test_etapa2_25pct(self):
         r = m.pago_minimo(0, 100_000, 0, date(2026, 12, 10))
         self.assertEqual(r["pago_minimo"], 28_750)
-        self.assertEqual(r["estatus_de_la_fecha_del_calendario"], "deducido")
+        self.assertEqual(r["estatus_de_la_fecha_del_calendario"], "norma")
 
     def test_100pct_en_2028(self):
         r = m.pago_minimo(0, 100_000, 0, date(2028, 6, 10))

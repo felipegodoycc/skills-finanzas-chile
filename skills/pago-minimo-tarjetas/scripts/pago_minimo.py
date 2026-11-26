@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """Pago mínimo de tarjetas de crédito según la NCG 537 de la CMF (Ley 21.673).
 
-Fórmula (CMF, comunicado 29-05-2026): pago_minimo = 100% del Monto No Financiable (MNF)
+Fórmula (NCG 537 de la CMF, 04-06-2025, numerales 5.2 y 7): pago_minimo = 100% del Monto No Financiable (MNF)
 + 5% del Monto Financiable (MF). Es un PISO: el emisor puede exigir más.
 - MNF = cuotas sin interés (en la proporción que corresponda a la etapa) + intereses + comisiones + otros cargos.
 - MF  = remanente del monto facturado.
 
 Calendario de las cuotas sin interés dentro del MNF:
   desde 04-06-2026: 0%   (NORMA: entra solo 5% de su valor, por estar en el MF)
-  04-12-2026: 25%, 04-06-2027: 50%, 04-12-2027: 75%   (DEDUCIDO: el texto dice "25% cada 6 meses")
+  04-12-2026: 25%, 04-06-2027: 50%, 04-12-2027: 75%   (NORMA: "luego de 6, 12 y 18 meses"; fechas contadas desde 04-06-2026)
   04-06-2028: 100%       (NORMA)
 Antes del 04-06-2026 el emisor aplicaba su propia regla: esta herramienta no la modela.
-Verifica la NCG 537 completa y la política de tu emisor; hay excepciones que el comunicado no detalla.
+Texto de la NCG 537 leído completo. Las excepciones (máx. 24 meses de amortización y 2 meses consecutivos) dependen de la política de cada emisor; esta herramienta no las modela.
 
 Uso:
   pago_minimo.py calcular --cargos 60000 --cuotas-sin-interes 200000 --otros 600000 --fecha 2026-12-20
@@ -29,9 +29,9 @@ AVISO = ("Herramienta de apoyo basada en IA; no es asesoría financiera. "
 INICIO = date(2026, 6, 4)
 ETAPAS = [  # (desde, fracción de cuotas sin interés en el MNF, estatus de la fecha)
     (date(2026, 6, 4), 0.0, "norma"),
-    (date(2026, 12, 4), 0.25, "deducido"),
-    (date(2027, 6, 4), 0.50, "deducido"),
-    (date(2027, 12, 4), 0.75, "deducido"),
+    (date(2026, 12, 4), 0.25, "norma"),
+    (date(2027, 6, 4), 0.50, "norma"),
+    (date(2027, 12, 4), 0.75, "norma"),
     (date(2028, 6, 4), 1.00, "norma"),
 ]
 PCT_FINANCIABLE = 0.05

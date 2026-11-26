@@ -7,7 +7,7 @@
 - Cobranza (Ley 21.320): "dos gestiones al mes" era una regla transitoria (estado de excepción + 60 días); la regla permanente es semanal.
 - TMC: base de anualización (lineal anual en pesos no reajustables; compuesta en el resto) según el certificado mensual de la CMF. La tabla vigente no se incluye por diseño: cambia cada mes.
 - Ley 21.236: certificado de liquidación en 5 días hábiles; oferta con vigencia mínima de 7 días hábiles bancarios; pago del nuevo proveedor en 6 días hábiles bancarios.
-- NCG 537: excepciones (deuda exceptuada amortizada en máx. 24 meses; cada excepción máx. 2 meses consecutivos); calendario de 25% cada 6 meses desde el 04-06-2026.
+- NCG 537 (texto completo leído el 26-11-2026; calendario de 6/12/18/24 meses y componentes del MNF confirmados): excepciones (deuda exceptuada amortizada en máx. 24 meses; cada excepción máx. 2 meses consecutivos); calendario de 25% cada 6 meses desde el 04-06-2026.
 - Fuente de los umbrales de endeudamiento: es Lemus y Pulgar (MPRA 106958, 2021; Rev. Análisis Económico 2023), no un "Documento de Trabajo CMF 01/21". Esto también responde al punto sobre el estudio del Banco Central (el artículo está alojado en su sitio).
 - APV: tope conjunto de 600 UF anuales (doctrina SII 2011), 50 UF mensuales por planilla en régimen B, 6 UTM de bonificación en régimen A.
 - Superir: documentos exigidos y efectos del art. 264.
@@ -19,8 +19,7 @@
 ## Para verificar en fuente oficial
 - [ ] Ley 21.719: confirmar la publicación en el Diario Oficial de la ley que la posterga (antes del 01-12-2026; si no, rige esa fecha).
 - [ ] Ley 21.236 y art. 10 de la Ley 18.010: lectura hecha vía resumen automático del texto oficial; confirmar los artículos citados en leychile.cl.
-- [ ] NCG 537 completa (https://www.cmfchile.cl/normativa/ncg_537_2025.pdf; no se pudo descargar): situaciones que habilitan excepciones, lista de "otros cargos" y fechas intermedias del calendario (deducidas del 25% semestral).
-- [ ] Reglamentos de información: consumo (propuesta de oct-2025; se asume vigente el Decreto 43/2012), hipotecario (publicado 27-02-2026; vigencia sin verificar) y tarjetas (definición numérica de f: las fórmulas no se leyeron).
+- [ ] Reglamentos de información: consumo (propuesta de oct-2025; se asume vigente el Decreto 43/2012), hipotecario (publicado 27-02-2026; vigencia sin verificar) y tarjetas (Decreto 75 leído completo; falta f y las fórmulas, que son imágenes en el PDF).
 - [ ] Reglamento de cobranza extrajudicial: confirmar si se publicó.
 - [ ] Superir: requisitos de admisibilidad detallados y efectos en el historial crediticio.
 - [ ] APV: condiciones y costos de retiro; confirmar que la doctrina del SII de 2011 siga vigente.

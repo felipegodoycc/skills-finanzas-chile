@@ -72,7 +72,7 @@ Este proyecto lo construimos **Felipe y Claude** trabajando juntos, a partir de 
 | `calidad-de-datos-financieros` | Duplicados, reembolsos, fondos de terceros | Probado |
 | `endeudamiento-cmf` | Carga financiera, apalancamiento, alta carga | Alto |
 | `limites-sanos-endeudamiento` | Deuda vs. umbrales por ingreso (Lemus y Pulgar) | Alto en fuente; límites declarados |
-| `pago-minimo-tarjetas` | Pago mínimo NCG 537, proyección, costo de pagar solo el mínimo | Fórmula verificada; hitos deducidos |
+| `pago-minimo-tarjetas` | Pago mínimo NCG 537, proyección, costo de pagar solo el mínimo | Verificada contra el texto completo de la NCG 537 |
 | `credito-cae-ctc` | CAE, CTC, comparar créditos, consolidación | Alto (ver nota) |
 | `tasa-maxima-convencional` | TMC y verificación del interés pactado | Alto en método; tabla vigente no incluida |
 | `cotizacion-y-comparacion` | Cómo cotizar y leer rankings: consumo, hipotecario, tarjetas | Medio |

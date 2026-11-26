@@ -30,3 +30,9 @@ Ese documento es un **proyecto de decreto**; su artículo transitorio fija vigen
 
 ## Dato útil con fuente
 SERNAC publicó un estudio donde el CTC de $2.000.000 a 36 meses fluctuaba entre $2.501.928 y $3.547.512 según la institución (https://sernac.cl/portal/619/w3-article-7302.html; fecha del estudio no visible en el extracto, verifícala antes de citarlo como actual). Conclusión robusta: **cotizar en más de una institución importa**.
+
+## CAE de tarjetas de crédito (Decreto 75 de 2025, leído completo el 26-11-2026)
+- Es otro reglamento (información al consumidor de **tarjetas**): publicado el 06-08-2026, vigente 18 meses después (≈ 07-02-2028). Hasta entonces rige el Decreto 44 de 2012.
+- Ecuación general: la CAE es la tasa que iguala el valor presente de los pagos (amortización, intereses, gastos y productos voluntarios) con el del capital recibido o adeudado.
+- Para rotativo, compra en cuotas y avance en efectivo, la CAE de referencia usa un capital fijo de **20 UF**, **M = 12** pagos futuros, sin meses de gracia, y reparte en partes iguales las comisiones que no son de la operación. También define la CAE de prepago (CAEP).
+- Las fórmulas del PDF son imágenes: no las leí; la definición de f no se verificó. `scripts/cae.py` **no** implementa la CAE de tarjetas.

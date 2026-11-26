@@ -5,12 +5,14 @@ description: Calcula y proyecta el pago mínimo de tarjetas de crédito con la f
 
 # Pago mínimo en tarjetas (NCG 537)
 
-## Qué dice la norma (nivel: norma; fuente: CMF, comunicado del 29-05-2026)
+## Qué dice la norma (nivel: norma; fuente: texto de la NCG 537, 04-06-2025, leído completo el 26-11-2026; comunicados CMF del 04-06-2025 y 29-05-2026)
 - **Pago mínimo = 100% del Monto No Financiable (MNF) + 5% del Monto Financiable (MF).**
   MNF = cuotas sin interés (según la etapa), intereses, comisiones y otros cargos. MF = el resto de lo facturado.
 - Es un **piso**: el emisor puede exigir un mínimo mayor.
-- **Calendario de las cuotas sin interés:** desde el 04-06-2026 están en el MF (entra solo 5% de su valor); luego pasan al MNF "a una tasa de 25% cada 6 meses" hasta 100% el 04-06-2028 (**norma**). Los hitos intermedios (04-12-2026, 04-06-2027, 04-12-2027) son **deducidos** del texto, no datos explícitos.
-- Excepciones (comunicado CMF de la NCG 537: https://www.cmfchile.cl/portal/prensa/615/w3-article-95105.html): el emisor puede eximir del pago mínimo según sus políticas internas, con dos condiciones: la deuda exceptuada debe amortizarse totalmente en un máximo de 24 meses y cada excepción dura como máximo dos meses consecutivos. El comunicado no lista las situaciones que las habilitan: consulta el texto de la NCG 537 y la política de tu emisor.
+- **Calendario de las cuotas sin interés:** desde el 04-06-2026 están en el MF (entra solo 5% de su valor); luego pasan al MNF "a una tasa de 25% cada 6 meses" hasta 100% el 04-06-2028 (**norma**). El texto de la NCG fija 25%, 50% y 75% "luego de 6, 12 y 18 meses" de aplicada la fórmula (12 meses después de su publicación); las fechas 04-12-2026, 04-06-2027 y 04-12-2027 resultan de contar esos meses desde el 04-06-2026. En la etapa inicial la fórmula es PM ≥ MNF_A + 5% · (MF + 100% de las cuotas sin interés), donde MNF_A es el MNF sin las cuotas sin interés.
+- **Componentes (NCG 537, numeral 5.2):** el MNF incluye cuotas sin interés pagaderas en el período; intereses (refundidos, rotativos, moratorios, de cuotas pagaderas en el período u otros); comisiones; y otros cargos (impuestos, cargos administrativos, operativos o de mantención, primas de seguros, cargos por productos voluntarios, saldos morosos, costos de cobranza). El MF es lo facturado menos el MNF e incluye las cuotas con interés. Se calcula sobre el monto facturado antes de cualquier renegociación que posponga el pago, aunque el deudor consienta.
+- **Excepciones (numeral 5.3):** el emisor puede eximir del pago mínimo en situaciones excepcionales si la deuda exceptuada se amortiza totalmente en un máximo de 24 meses y la excepción dura como máximo dos meses consecutivos. La norma **no lista** las situaciones: cada emisor define y documenta su política, que la CMF puede revisar.
+- **Emisores no bancarios:** se atienen a lo dispuesto por el Banco Central y al Capítulo 8-41 de la RAN (Circular N°1, numeral 6.6).
 - Ojo: algunos medios dijeron "25% de la deuda en dic-2026". No coincide con el texto de la CMF: es el 25% de las *cuotas sin interés* que se reclasifica. Usa solo la fuente oficial.
 
 ## Cómo usarla
@@ -27,7 +29,6 @@ description: Calcula y proyecta el pago mínimo de tarjetas de crédito con la f
 - Tratar el mínimo de un mes como permanente.
 - Suponer que el mínimo es 5% de todo.
 - Antes del 04-06-2026 aplicaba la regla del emisor: el script rechaza esas fechas.
-- No declarar que las fechas intermedias fueron deducidas.
 
 ## Caso de ejemplo
 `docs/casos/casos.md`, caso 7.
