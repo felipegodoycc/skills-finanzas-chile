@@ -35,7 +35,7 @@ Orientación informativa, no asesoría tributaria. Consultado 2026-11-26. El age
 - **Qué cubre:** matrícula y colegiatura en instituciones de educación pre escolar, básica, diferencial y media reconocidas por el Estado, cuotas de centro de padres, transporte escolar particular y gastos similares relacionados con la educación.
 - **Requisitos:** hijo de hasta 25 años, certificado de matrícula y **85% de asistencia mínima** (salvo impedimento justificado); las rentas anuales **sumadas del padre y la madre** no pueden superar **792 UF**.
 - **Limitación:** si el crédito excede el impuesto, el excedente no se imputa a otro impuesto ni se devuelve. Solo se devuelve lo retenido o pagado en exceso.
-- El detalle de los requisitos lo fija un reglamento del Ministerio de Educación y una resolución del SII: no los leí.
+- **Cómo se acredita (SII y ChileAtiende, actualizados en 2026):** los colegios informan la asistencia al SII por la Declaración Jurada 1904 (Res. Ex. SII N° 24 de 2013), el SII propone el crédito en la declaración sugerida, y los padres pueden **ceder entre sí** su parte por declaración jurada simple antes de declarar (Res. Ex. SII N° 39 de 2013; ChileAtiende ficha 19885). Si solo uno de los padres tiene rentas afectas, recibe el 100%. El reglamento del Ministerio de Educación mismo no lo leí.
 
 ### 4. Otras rebajas que aparecen en el art. 55 (para quien las tenga)
 - Impuesto territorial efectivamente pagado, en la medida que sea deducible (art. 55 letra a); no procede en los casos que el artículo excluye.
@@ -57,7 +57,7 @@ Orientación informativa, no asesoría tributaria. Consultado 2026-11-26. El age
 4. No recomiendes productos de ahorro ni instituciones (ver `guardrails-finanzas-chile`).
 
 ## Qué falta verificar
-- Reglamento del Ministerio de Educación y resolución del SII sobre el crédito de educación (formas de acreditar matrícula y asistencia).
+- Reglamento del Ministerio de Educación sobre matrícula y asistencia (los requisitos operativos los tomé del SII, no del reglamento).
 - Circulares del SII 2025-2026 sobre estos beneficios; lo que hay en el repositorio (Circular 51 de 2008 y 08 de 2012) es del APV.
 - Calendario de abril de 2027: el texto solo dice "abril"; las fechas por modalidad las fija el SII.
 - Otros créditos y rebajas de la ley (donaciones, rentas de arriendo, ahorro para la vivienda) no están cubiertos aquí.
