@@ -82,7 +82,7 @@ Este proyecto lo construimos **Felipe y Claude** trabajando juntos, a partir de 
 | `presupuesto-personal` | Presupuesto de régimen y de transición | Método; metas son propuestas |
 | `analisis-gasto-recurrente` | Suscripciones, gasto hormiga | Umbral operativo |
 | `fondo-emergencia-y-metas` | Colchón y metas por tramos | Heurísticas declaradas |
-| `apv-chile` | APV régimen A y B | **Bajo**: falta fuente oficial |
+| `apv-chile` | APV régimen A y B | Medio-alto: leyes y circulares leídas; faltan costos de retiro |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
 
 Casos de ejemplo con cifras ficticias: [docs/casos/casos.md](docs/casos/casos.md).
@@ -107,6 +107,44 @@ Nunca subas claves de PDF, contraseñas, tokens ni números completos de tarjeta
 ## 🛠️ Contribuir
 
 Lee `CONTRIBUTING.md`. Regla central: **toda cifra normativa debe traer URL oficial y fecha de verificación**. Lo pendiente está en `PENDIENTES.md`. Las pruebas corren en CI con cada push.
+
+## 📖 Fuentes consultadas
+
+Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado completo. **Texto completo** = el documento oficial se leyó íntegro (26-11-2026); **extracto** = solo se consultó el resumen oficial o una fuente secundaria, y la skill lo marca como no verificado.
+
+### Leyes, decretos ley y decretos (texto completo)
+| Norma | Para qué se usa | Skill |
+|---|---|---|
+| **Ley 18.010** (operaciones de crédito de dinero), art. 10, versión con Ley 21.398 | Prepago, comisión y umbral de consentimiento del 10% | `prepago-y-portabilidad` |
+| **Ley 21.236** (portabilidad financiera, DO 09-06-2020) | Plazos, retracto, costos y sanciones de la portabilidad | `prepago-y-portabilidad` |
+| **Ley 20.720** (insolvencia y reemprendimiento), arts. 2, 260-268, con Ley 21.563 | Renegociación de la persona deudora ante la Superir | `cobranza-y-renegociacion`, `plan-refinanciamiento` |
+| **Ley 20.448** (integración del mercado de capitales), art. 8 | Seguros asociados a créditos | `cotizacion-y-comparacion` |
+| **Ley 21.719** (protección de datos personales) y **Ley 21.855** (fija su vigencia el 15-10-2027) | Tratamiento de datos | `entrada-segura-de-datos` |
+| **DL 3.500 de 1980**, arts. 20, 20 L y 20 O | Regímenes del APV y bonificación | `apv-chile` |
+| **DL 824 de 1974** (Ley de la Renta), arts. 42 bis y 52 | Rebaja de base, impuesto al retiro del APV, tabla del Global Complementario | `apv-chile` |
+| **Decreto 75 de 2025** (Economía, DO 06-08-2026), reglamento de información al consumidor de tarjetas | CAE de tarjetas, cotización, estado de cuenta | `cotizacion-y-comparacion`, `credito-cae-ctc` |
+| **Decreto 49 de 2024** (Economía, DO 27-02-2026), reglamento de créditos hipotecarios | Cotización, cartillas y vigencia (12 meses) | `cotizacion-y-comparacion` |
+
+### Normas de la CMF y circulares del SII (texto completo)
+| Norma | Para qué se usa | Skill |
+|---|---|---|
+| **NCG 537** (CMF), pago mínimo de tarjetas, con calendario de gradualidad | Fórmula del monto mínimo a facturar | `pago-minimo-tarjetas` |
+| **NCG 569** (CMF, 01-06-2026), modifica la **NCG 514** | Plazos del Sistema de Finanzas Abiertas | `entrada-segura-de-datos` |
+| **NCG 576** (CMF, 14-09-2026), modifica la **NCG 540** | Consentimiento y revocación en el REDEC | contexto (ver `PENDIENTES.md`) |
+| **Circular SII N° 51 de 2008** y **Circular SII N° 08 de 2012** | Instrucciones sobre el tratamiento tributario del APV | `apv-chile` |
+
+### Estudios académicos (texto completo)
+- Lemus, A. y Pulgar, R. (2021), *Endeudamiento máximo sostenible de los hogares en Chile*, MPRA Paper 106958; publicado en Revista de Análisis Económico (2023). Base de los umbrales de `limites-sanos-endeudamiento`.
+
+### Leyes y normas citadas pero no leídas completas (extracto o fuente secundaria)
+- **Ley 19.496** (protección del consumidor, art. 37 y reglamentos) y **Ley 21.320** (cobranza extrajudicial): resumen del Sernac y de estudios jurídicos.
+- **Ley 21.521** (Ley Fintec) y **Ley 21.680** (REDEC): consultadas a través de las NCG de la CMF.
+- **Ley 20.555** (Sernac Financiero), **Ley 21.673** (origen de la NCG 537) y **Decretos 42, 43 y 44 de 2012** (reglamentos anteriores de información al consumidor): base legal citada, sin lectura del texto.
+- **NCG 540 y NCG 567** (REDEC), reglamento de cobranza extrajudicial (consulta pública desde el 09-09-2025) y propuesta de reglamento de crédito de consumo (octubre de 2025): sin texto oficial publicado o leído.
+- Fichas y comparadores oficiales: CMF Educa, simulador hipotecario de la CMF, comparadores del Sernac, ChileAtiende y Ventanilla Única Social.
+
+### Pendientes de verificar
+Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, el seguro de cesantía, el historial crediticio tras una renegociación y la regla de retracto en seguros asociados a créditos.
 
 ## 📄 Licencia
 

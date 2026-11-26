@@ -1,22 +1,35 @@
 ---
 name: apv-chile
-description: Explica el Ahorro Previsional Voluntario (APV) en Chile y la diferencia entre régimen A (bonificación estatal) y régimen B (rebaja de base imponible), señalando qué datos hay que verificar en fuentes oficiales. Úsala cuando pregunten por APV, ahorro previsional o beneficios tributarios al ahorrar para la pensión.
+description: Explica el Ahorro Previsional Voluntario (APV) en Chile y la diferencia entre régimen A (bonificación estatal al pensionarse) y régimen B (rebaja de base imponible), con topes y tributación de retiros según el texto de la ley. Úsala cuando pregunten por APV, ahorro previsional o beneficios tributarios al ahorrar para la pensión.
 ---
 
 # APV: Ahorro Previsional Voluntario (Chile)
 
-**Estado de verificación: BAJO.** No pude abrir el texto oficial de la Superintendencia de Pensiones (solo vi su título: https://www.spensiones.cl/portal/institucional/594/w3-article-5795.html). Lo siguiente viene de CMF Educa y de AFP (instituciones que comercializan el producto) y de medios secundarios. **Antes de dar cifras, contrasta con spensiones.cl y sii.cl.**
+**Estado de verificación: MEDIO-ALTO para las reglas legales** (leídas el 26-11-2026 en el texto del DL 3.500, el DL 824 y las circulares SII 51/2008 y 08/2012). **No verificado:** costos y condiciones de retiro de cada institución, valores vigentes de UF/UTM, tramos de impuesto del año y normas conjuntas de las superintendencias. Orientación informativa; no es asesoría tributaria.
 
-## Estructura general (fuentes AFP/CMF)
-- Al abrir un APV se elige un **régimen tributario (A o B)** y el fondo de pensiones donde se invierte (AFP Habitat: https://www.afphabitat.cl/?p=52981). Si no se elige, por depósito directo queda por defecto en A y por descuento del empleador en B (misma fuente; puede variar por AFP).
-- **Régimen A**: el Estado bonifica el 15% del ahorro anual, con tope de 6 UTM de beneficio; los aportes ya pagaron impuestos (Cuprum: https://www6.cuprum.cl/sites/default/files/inline-files/Ahorro%20Previsional%20Voluntario%20%28APV%29.pdf).
-- **Régimen B**: los aportes se rebajan de la base imponible y se paga impuesto al retirar (CMF Educa: https://www.cmfchile.cl/educa/621/w3-article-951.html; Cuprum, misma fuente).
-- Topes: el APV con beneficio (régimen A y B en conjunto) no puede exceder **600 UF por año tributario** según doctrina del SII de 2011 (https://www.sii.cl/normativa_legislacion/jurisprudencia_administrativa/ley_impuesto_renta/2011/ja2400.doc); en régimen B por planilla el tope es 50 UF mensuales (https://www.afphabitat.cl/ahorro-voluntario/apv/regimen-b/); régimen A: 15% con tope de 6 UTM al año (https://www.afphabitat.cl/?p=52981). Confirma que la doctrina de 2011 siga vigente. **No verificado**: condiciones y costos de retiro.
+## Los dos regímenes (DL 3.500, art. 20 L)
+Cada aporte se acoge a **uno** de dos regímenes; se puede cambiar de régimen para los aportes siguientes.
 
-## Cuál conviene (heurística, no regla)
-Una asociación de AFP sugiere que el régimen A suele convenir a quienes pagan poco o nada de impuesto a la renta, y el B a quienes están en tramos altos (https://www.aafp.cl/?p=20077). Es una **heurística de la industria**: la decisión real depende de tu tramo, aporte, horizonte y reglas de retiro. No la presentes como conclusión.
+| | **Régimen A** (art. 20 L letra a) | **Régimen B** (art. 20 L letra b) |
+|---|---|---|
+| Al depositar | No rebaja la base imponible | Rebaja la base del impuesto (DL 824, art. 42 bis) |
+| Bonificación fiscal | 15% de lo ahorrado, solo si el saldo se destina a **adelantar o mejorar la pensión**; máx. **6 UTM por año calendario** (art. 20 O) | No aplica |
+| Al retirar (sin destinarlo a pensión) | El aporte no tributa; la rentabilidad tributa como la cuenta de ahorro voluntario (art. 22) | Todo el monto retirado paga un impuesto único (art. 42 bis N° 3) |
+
+- **Tope conjunto:** los aportes en ambos regímenes no pueden exceder **600 UF por año calendario** (art. 20 L).
+- **Régimen B, dos vías (art. 42 bis):** por descuento del empleador se rebaja hasta **50 UF mensuales**; si se deposita directo, se reliquida el impuesto con un máximo anual igual a 600 UF menos lo ya acogido por la vía anterior (UF al 31 de diciembre).
+- **Bonificación A:** el 15% se calcula sobre lo que se destine a pensión y solo se paga al pensionarse. Además se exige que los aportes del año no superen 10 veces las cotizaciones obligatorias del trabajador en ese año (art. 20 O). El SII calcula el monto y la Tesorería lo deposita.
+- **Retiro en B (art. 42 bis N° 3):** la tasa es 3 puntos porcentuales sobre el resultado de multiplicar por 1,1 el aumento medio que provoca el retiro en el Global Complementario. La AFP o institución **retiene 15%**, que se abona al impuesto único. Si quien retira ya es pensionado o cumple los requisitos de edad y monto de pensión de los arts. 3 y 68 b) del DL 3.500, no se aplican el recargo ni el factor.
+- **Traspasos** entre instituciones autorizadas no son retiros (art. 20 y art. 42 bis).
+- Impuesto del retiro depende de tu renta del año: para estimarlo usa la tabla del Global Complementario del art. 52 DL 824 (tasas del 4% al 40%, en tramos medidos en UTA; exento hasta 13,5 UTA) con la UTA vigente.
+
+## Cuál conviene
+La ley no dice cuál conviene; depende de tu tramo, aporte, horizonte y de si destinarás el ahorro a pensión. La heurística de la industria (A para tramos bajos, B para altos; https://www.aafp.cl/?p=20077) es **solo una guía**, no conclusión. Simula con cifras reales; no concluyas por el tramo solamente.
 
 ## Qué debes hacer
-1. Pregunta por tramo de impuesto, monto de aporte, horizonte y liquidez necesaria. El APV puede tener **condiciones y costos de retiro**: verifícalos antes de recomendar usarlo como fondo de emergencia.
-2. Pide el simulador oficial de la AFP o de la Superintendencia/SII para cifras personales.
-3. Marca todo número como "referencial, verificar en fuente oficial".
+1. Pregunta por tramo de impuesto, monto de aporte, horizonte y liquidez necesaria. Un retiro anticipado en B paga impuesto y en A pierde la bonificación: **no lo uses como fondo de emergencia** sin verificar costos y condiciones de retiro de la institución.
+2. Verifica valores de UF/UTM/UTA del año y pide el simulador oficial de la AFP, de la Superintendencia de Pensiones o del SII para cifras personales.
+3. Marca todo número como "referencial" y cita el artículo.
+
+## Fuentes
+DL 3.500 de 1980, arts. 20, 20 L y 20 O (BCN, versión 26-11-2026); DL 824 de 1974, arts. 42 bis y 52 (BCN, versión 01-11-2026); SII, Circular N° 51 de 2008 y Circular N° 08 de 2012.
