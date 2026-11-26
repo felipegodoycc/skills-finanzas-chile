@@ -151,6 +151,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **NCG 569** (CMF, 01-06-2026), modifica la **NCG 514** | Plazos del Sistema de Finanzas Abiertas | `entrada-segura-de-datos` |
 | **NCG 540** (CMF, 14-07-2025) y **NCG 576** (CMF, 14-09-2026) | Funcionamiento del REDEC, consentimiento y revocación | `cobranza-y-renegociacion` |
 | **NCG 460** (CMF, 13-08-2021; mod. NCG 464) | Seguros que se pueden contratar con un crédito, ratificación a 30 días y retracto a distancia | `cotizacion-y-comparacion` |
+| **Código de Comercio, arts. 538 y 538 bis** (Ley 20.667 y Ley 21.314) | Retracto de 10 días del seguro contratado a distancia (N3: contrastado en transcripciones, sin PDF oficial) y ratificación de seguros asociados a créditos | `cotizacion-y-comparacion` |
 | **Certificados de interés corriente y máximo convencional N° 05/2026 y 07/2026** (CMF, Diario Oficial 15-05-2026 y 15-07-2026) | Verificación de la TMC por fecha | `tasa-maxima-convencional` |
 | **NCG 28 de la Superir** (Res. Ex. 22802, 19-11-2025) | Requisitos y documentos de la renegociación | `cobranza-y-renegociacion` |
 | **Res. Ex. 383 de la Superintendencia de Pensiones** (DO 17-03-2026), valores del Fondo de Cesantía Solidario (leída en extracto) | Montos vigentes hasta 28-02-2027 | `fondo-emergencia-y-metas` |
@@ -167,7 +168,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 - Fichas y comparadores oficiales: CMF Educa, simulador hipotecario de la CMF, comparadores del Sernac, ChileAtiende y Ventanilla Única Social.
 
 ### Pendientes de verificar
-Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, la tabla de montos del seguro de cesantía, el historial crediticio tras una renegociación y la regla de retracto en seguros asociados a créditos.
+Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, el historial crediticio tras una renegociación (Superir) y si el retracto de seguros a distancia alcanza al seguro de desgravamen de un crédito.
 
 ## 📄 Licencia
 
