@@ -21,7 +21,7 @@ Varias skills dependen de valores que cambian (UF para topes y comisiones, UTM p
 |---|---|---|---|---|---|
 | CMF | `cmf` | sí, gratis | sí | UF, UTM, IPC, dólar, euro | rutas distintas de `uf` por confirmar |
 | Banco Central | `bcch` | token gratis | sí | cualquier serie de la BDE | formato JSON sin ejemplo oficial |
-| SII | `sii` | no | sí | UF, UTM, UTA, IPC (puntos) | lee HTML: si el SII rediseña la página, falla |
+| SII | `sii` | no | sí | UF, UTM, UTA, IPC (puntos) | lee HTML: si el SII rediseña la página, falla. **Probado con la página real el 26-11-2026**: UF 41.412,34, UTM 72.440, UTA 869.280 |
 | mindicador.cl | `mindicador` | no | **no, terceros** | UF, UTM, dólar, IPC, otros | depende de un tercero; rutas sin verificar |
 | A mano | n/a | no | sí | lo que copies de sii.cl | error humano |
 
@@ -39,4 +39,4 @@ Varias skills dependen de valores que cambian (UF para topes y comisiones, UTM p
 
 ## Límites
 - Sin conexión desde un entorno restringido, el script falla con un mensaje claro: pasa el valor manualmente.
-- Los tests usan respuestas y HTML simulados, no reales; el HTML real del SII no se pudo descargar desde el entorno de desarrollo (solo vista de texto).
+- Los tests usan respuestas y HTML simulados, no reales; los tests usan HTML simulado, pero el lector del SII se probó además contra la página real (26-11-2026, UF, UTM y UTA). IPC del SII, CMF, Banco Central y mindicador siguen sin prueba real.
