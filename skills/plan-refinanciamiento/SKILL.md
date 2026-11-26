@@ -23,6 +23,11 @@ description: Ordena el pago de varias deudas (avalancha vs. bola de nieve), calc
 5. **Portabilidad** (Ley 21.236): el nuevo proveedor tramita; el certificado de liquidación es gratis. Los plazos y costos legales deben leerse en la ley (la página de la CMF no los detalla). Ver `prepago-y-portabilidad`.
 6. **Renegociación y cobranza:** ver `cobranza-y-renegociacion`.
 
+## Contraste con datos reales (26-11-2026)
+- `tasa_implicita` devuelve 0% en compras en cuotas sin interés (cuota × n = capital) y tasas mensuales de 2,8% a 5,1% en 6 planes con interés de dos emisores; el total pagado coincide con cuota × n salvo redondeo (hasta $99).
+- En un crédito hipotecario en UF (9 cuotas reales), el interés de cada mes, calculado como cuota menos amortización del saldo, da una tasa mensual casi constante (0,349% a 0,350%): consistente con amortización francesa. La tasa implícita calculada sobre la cuota completa salió algo mayor (0,362%); lo más probable es que la cuota incluya seguros u otros cargos (inferencia, no verificada). Por eso `tasa_implicita` sobre una cuota con seguros sobrestima la tasa del crédito.
+- No se comparó con la tasa máxima convencional del mes: requiere el valor publicado por la CMF.
+
 ## Errores a evitar
 Consolidar con flujo negativo; mirar solo la cuota; ignorar la comisión de prepago; mezclar tasas con bases distintas (usa la tasa implícita mensual); prometer que una opción es "la mejor": muestra el costo numérico de cada una.
 
