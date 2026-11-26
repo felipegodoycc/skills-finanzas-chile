@@ -81,5 +81,5 @@
     "El texto del documento da 1,4 de RDI a $300k y el anexo 1,5: se usa el anexo."
   ],
   "nota_interpolacion": "El documento entrega solo los nodos; los valores intermedios se interpolan linealmente (aproximación de este repositorio).",
-  "verificacion_2026_11_26": "Nodos sin hipotecario y con hipotecario (100k, 300k, 1M, 2M, 4M) coinciden con el Apéndice D (extracto leído). NO verificados: nodo 600.000 con hipotecario, bloque 'agregados' y el uso de la EFH 2017."
+  "verificacion_2026_11_26": "Todos los nodos (sin y con hipotecario, incluido 600k) coinciden con el Apéndice D del PDF completo (MPRA 106958). Agregados: el texto da RCI 23% y RDI 6x sin hipotecario, y RDI 71x con hipotecario; para el RCI agregado con hipotecario el texto indica un máximo de 52% con spread y 51% sin spread (se usa 51%). Datos: Encuesta Financiera de Hogares 2017."
 }

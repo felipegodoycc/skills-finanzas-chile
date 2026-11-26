@@ -9,6 +9,7 @@
 - Ley 21.236: certificado de liquidación en 5 días hábiles; oferta con vigencia mínima de 7 días hábiles bancarios; pago del nuevo proveedor en 6 días hábiles bancarios.
 - NCG 537 (texto completo leído el 26-11-2026; calendario de 6/12/18/24 meses y componentes del MNF confirmados): excepciones (deuda exceptuada amortizada en máx. 24 meses; cada excepción máx. 2 meses consecutivos); calendario de 25% cada 6 meses desde el 04-06-2026.
 - Fuente de los umbrales de endeudamiento: es Lemus y Pulgar (MPRA 106958, 2021; Rev. Análisis Económico 2023), no un "Documento de Trabajo CMF 01/21". Esto también responde al punto sobre el estudio del Banco Central (el artículo está alojado en su sitio).
+- Nodos de umbrales (incluido el de 600k con hipotecario) y agregados verificados contra el PDF completo de Lemus y Pulgar (26-11-2026).
 - APV: tope conjunto de 600 UF anuales (doctrina SII 2011), 50 UF mensuales por planilla en régimen B, 6 UTM de bonificación en régimen A.
 - Superir: documentos exigidos y efectos del art. 264.
 - Reglamento de tarjetas: Decreto 75 de 2025, DO 06-08-2026, vigencia a los 18 meses.
@@ -23,7 +24,6 @@
 - [ ] Reglamento de cobranza extrajudicial: confirmar si se publicó.
 - [ ] Superir: requisitos de admisibilidad detallados y efectos en el historial crediticio.
 - [ ] APV: condiciones y costos de retiro; confirmar que la doctrina del SII de 2011 siga vigente.
-- [ ] Umbrales Lemus y Pulgar: nodo 600.000 con hipotecario, bloque "agregados" y EFH 2017 (el resto de los nodos coincide con el Apéndice D).
 - [ ] Vigencia actual del comparador de tarjetas del Sernac (2022) y del simulador hipotecario de la CMF.
 - [ ] Boletín comercial tras Ley 21.719 y REDEC (art. 18 Ley 19.628).
 - [ ] Reglas aplicables a suscripciones y término de contratos de servicios digitales.
