@@ -25,6 +25,9 @@ Al buscar skills de finanzas para agentes, lo disponible está pensado para EE. 
 | `cobranza-y-renegociacion` | Derechos SERNAC, cobranza extrajudicial, Superir | Medio (varios puntos marcados) |
 | `apv-chile` | APV régimen A y B | **Bajo**: falta fuente oficial |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
+| `lectura-pdf-segura` | PDF (con clave) → Markdown enmascarado, con avisos de privacidad | Probado con 8 pruebas y datos falsos; ver límites en su SKILL.md |
+
+Compatibilidad con Claude, ChatGPT, NanoClaw y otros: [docs/uso-con-otros-asistentes.md](docs/uso-con-otros-asistentes.md).
 
 Nota: la fórmula de CAE de `scripts/cae.py` proviene de un **borrador** de reglamento del Ministerio de Economía; no se verificó si está vigente. La CAE vinculante es siempre la que informa la institución.
 

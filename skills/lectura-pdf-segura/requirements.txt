@@ -1,0 +1,4 @@
+pdfplumber>=0.11
+# Solo para correr las pruebas (fabrican un PDF cifrado de ejemplo):
+# reportlab
+# pypdf
