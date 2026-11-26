@@ -46,9 +46,9 @@
 - [ ] CAE de tarjetas: contrastar `cae_tarjetas.py` con un ejemplo oficial del emisor o de la CMF cuando exista, y confirmar la definición de f del CAEP. Contraste con datos reales (26-11-2026): sin cargos, el script reproduce al decimal un CAE rotativo informado por un emisor (`(1+i)^12 − 1`), lo que valida el álgebra pero no el Decreto 75; los demás CAE informados no calzan, y el decreto rige desde febrero de 2028, así que los CAE vigentes pueden usar otra metodología.
 - [ ] APV: costos y condiciones de retiro por institución; norma conjunta de las superintendencias; valores UF/UTM/UTA del año.
 - [ ] Seguro de cesantía: tabla de retiro de la cuenta individual (art. 15 de la Ley 19.728) y confirmar en el PDF la Res. Ex. 383 (el art. 70 trae una vigencia con posible error). Superir: efectos de la renegociación sobre el historial crediticio y norma general de la Superir.
-- [ ] Retracto en seguros asociados a créditos: no está en el art. 8 de la Ley 20.448; buscar en la normativa de seguros (CMF) si existe.
-- [ ] Reglamento de cobranza extrajudicial: confirmar en el Diario Oficial si se publicó.
-- [ ] Vigencia del comparador de tarjetas del Sernac y del simulador hipotecario de la CMF.
+- [ ] Retracto en seguros asociados a créditos: no está en el art. 8 de la Ley 20.448. Hallado (26-11-2026): la NCG 460 de la CMF (13-08-2021), dictada conforme al art. 538 bis del Código de Comercio (Ley 21.314), fija qué seguros pueden contratarse con un crédito (los que aseguran el pago de la deuda o protegen la garantía) y exige ratificar los demás dentro de 30 días desde la suscripción (resumen CMF de la consulta pública; el texto final no se leyó). Falta leer la NCG 460 completa para confirmar plazo y condiciones del retracto y la nulidad.
+- [ ] Reglamento de cobranza extrajudicial: último hito hallado, consulta pública desde el 09-09-2025; según la minuta del Ministerio de Economía entra en vigencia 12 meses después de su publicación. No encontré publicación al 26-11-2026 (búsqueda web, no concluyente): confirmar en el Diario Oficial.
+- [ ] Vigencia del comparador de tarjetas del Sernac (la página del Sernac lo describe, sin fecha de actualización) y del simulador hipotecario de la CMF. El comparador de créditos de consumo del Sernac se presentó actualizado el 06-10-2025 (fuente: prensa).
 - [ ] Reglas de suscripciones y término de contratos de servicios digitales.
 - [ ] Origen de la regla 28/36; fuente académica del método híbrido.
 - [ ] Adaptación de la clasificación de deudas prioritarias (MoneyHelper, UK) a Chile.
