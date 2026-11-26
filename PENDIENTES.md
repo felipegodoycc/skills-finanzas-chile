@@ -12,13 +12,14 @@
 - APV: tope conjunto de 600 UF anuales (doctrina SII 2011), 50 UF mensuales por planilla en régimen B, 6 UTM de bonificación en régimen A.
 - Superir: documentos exigidos y efectos del art. 264.
 - Reglamento de tarjetas: Decreto 75 de 2025, DO 06-08-2026, vigencia a los 18 meses.
+- Art. 10 Ley 18.010: umbral de consentimiento del acreedor de 10% y comisiones, confirmados en el texto BCN (versión 24-12-2021).
+- Ley 21.236: plazos, arrepentimiento, retracto, costos y sanciones, leídos en el texto de la ley (arts. 6-12, 15, 20-21, 27-28).
 - Ley 21.719: despachada por el Congreso la postergación al 15-10-2027 (17-11-2026).
 
 ## Para verificar en fuente oficial
 - [ ] Ley 21.719: confirmar la publicación en el Diario Oficial de la ley que la posterga (antes del 01-12-2026; si no, rige esa fecha).
-- [ ] Art. 10 Ley 18.010: leer el texto vigente en leychile.cl (umbral de consentimiento 10% según CMF Educa vs. 20% en un compendio Suseso).
-- [ ] Ley 21.236: sanciones, costos permitidos por producto, retractación y desde cuándo corren los 30 días hábiles del art. 6.
-- [ ] NCG 537 completa: situaciones que habilitan excepciones, lista de "otros cargos" y fechas intermedias del calendario (deducidas del 25% semestral).
+- [ ] Ley 21.236 y art. 10 de la Ley 18.010: lectura hecha vía resumen automático del texto oficial; confirmar los artículos citados en leychile.cl.
+- [ ] NCG 537 completa (https://www.cmfchile.cl/normativa/ncg_537_2025.pdf; no se pudo descargar): situaciones que habilitan excepciones, lista de "otros cargos" y fechas intermedias del calendario (deducidas del 25% semestral).
 - [ ] Reglamentos de información: consumo (propuesta de oct-2025; se asume vigente el Decreto 43/2012), hipotecario (publicado 27-02-2026; vigencia sin verificar) y tarjetas (definición numérica de f: las fórmulas no se leyeron).
 - [ ] Reglamento de cobranza extrajudicial: confirmar si se publicó.
 - [ ] Superir: requisitos de admisibilidad detallados y efectos en el historial crediticio.

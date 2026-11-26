@@ -1,0 +1,9 @@
+{
+  "name": "skills-finanzas-chile",
+  "version": "0.1.0",
+  "description": "Skills de finanzas personales para Chile basadas en fuentes oficiales (CMF, SERNAC, Superir). Asesor de IA informativo: no recomienda productos y no reemplaza asesoría regulada.",
+  "author": { "name": "felipegodoycc", "url": "https://github.com/felipegodoycc" },
+  "homepage": "https://github.com/felipegodoycc/skills-finanzas-chile",
+  "repository": "https://github.com/felipegodoycc/skills-finanzas-chile",
+  "license": "MIT"
+}

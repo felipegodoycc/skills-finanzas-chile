@@ -1,0 +1,15 @@
+{
+  "name": "skills-finanzas-chile",
+  "owner": { "name": "felipegodoycc", "url": "https://github.com/felipegodoycc" },
+  "metadata": { "description": "Skills de finanzas personales para Chile" },
+  "plugins": [
+    {
+      "name": "skills-finanzas-chile",
+      "source": "./",
+      "description": "18 skills: diagnóstico, endeudamiento, pago mínimo, cotización, refinanciamiento, derechos del deudor y entrada segura de datos.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": ["finanzas", "chile", "cmf", "sernac", "deuda"]
+    }
+  ]
+}
