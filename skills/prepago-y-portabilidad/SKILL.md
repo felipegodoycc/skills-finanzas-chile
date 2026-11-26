@@ -21,7 +21,7 @@ Todas las afirmaciones: fuente oficial o marcadas. Consultado 2026-11-26.
 3. Prepagar con dinero que cuesta más (tarjeta rotativa, línea) que el crédito que se cancela empeora la situación. Cuantifica ambas tasas.
 
 ## Portabilidad financiera (Ley 21.236)
-- Vigente desde el 8-09-2020; supervisa la CMF (https://neatpagos.com/blog/articulo/que-es-la-portabilidad-financiera, fuente secundaria; vigencia también en https://www.ccs.cl/wp-content/uploads/2020/09/Portabilidad-Financiera.pdf).
+- Vigente desde el 8-09-2020, fecha que coincide con la publicación del Decreto 1.154 (reglamento, leído); no encontré en el texto de la Ley 21.236 la disposición que fija su entrada en vigencia, así que la fecha se apoya en fuentes secundarias; supervisa la CMF (https://neatpagos.com/blog/articulo/que-es-la-portabilidad-financiera, fuente secundaria; vigencia también en https://www.ccs.cl/wp-content/uploads/2020/09/Portabilidad-Financiera.pdf).
 - Modalidad con **subrogación**: el crédito inicial queda sustituido por un crédito nuevo a favor del proveedor que lo pagó en nombre y representación del cliente (texto de la ley: https://www.bcn.cl/leychile/navegar?idNorma=1146340).
 - Es el **nuevo proveedor** quien gestiona los trámites y paga el costo total de prepago del crédito inicial con los fondos del nuevo (https://www.camara.cl/cms/2020/09/16/paso-a-paso-para-acceder-a-la-portabilidad-financiera/).
 - Aplica a cuentas corrientes, tarjetas de crédito, créditos hipotecarios, de consumo y automotrices (SERNAC: https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html).
