@@ -1,0 +1,13 @@
+{
+  "_comentario": "EJEMPLO HISTÓRICO, NO VIGENTE. Copia este archivo a tmc.json y reemplaza con la publicación más reciente de la CMF en el Diario Oficial. Cada tramo necesita su fuente.",
+  "vigencia_desde": "2026-07-15",
+  "fuente": "Diario Oficial 15-07-2026, publicación CMF de tasas de interés (https://www.diariooficial.interior.gob.cl/publicaciones/2026/07/15/44500/01/2839188.pdf)",
+  "verificado_el": "2026-11-26",
+  "tramos": [
+    {
+      "clave": "no_reaj_90d_hasta_50uf",
+      "descripcion": "Operaciones no reajustables en moneda nacional de 90 días o más, hasta 50 UF (punto 2.a de la publicación)",
+      "tasa_anual_pct": 41.46
+    }
+  ]
+}
