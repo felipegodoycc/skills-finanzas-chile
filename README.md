@@ -195,8 +195,9 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 - Fichas y comparadores oficiales: CMF Educa, simulador hipotecario de la CMF, comparadores del Sernac, ChileAtiende y Ventanilla Única Social.
 
 ### Pendientes de verificar
-Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, la versión vigente de la Ley 19.628 tras la Ley 21.719, el texto final del Cap. III.E.1 del Banco Central y si el retracto de seguros a distancia alcanza al seguro de desgravamen de un crédito (el art. 538 no lo excluye; el informe normativo de la NCG 460 no lo trata).
 - **Criterio de prioridad de deudas (referencia, N2/N1; consultado el 26-11-2026):** no hay jerarquía oficial chilena en la CMF, el Banco Central, la Superir ni el SERNAC. Fuentes usadas: CFPB, *Your Money, Your Goals* (módulos de priorización de facturas y plan de deudas, y blog "Resolve to take control of your debt"); MoneyHelper (Reino Unido), "How to prioritise your debts", en resúmenes secundarios (Legal & General, MoneyMagpie), porque la página original no abrió; Federal Reserve Bank of Philadelphia, documento de trabajo DP 26-01; Banco Central de Chile, Madeira, C. (2018), *Priorización de pago de deudas de consumo en Chile: el caso de bancos y casas comerciales*, Economía Chilena 21(1), 118-132 (estudio descriptivo, EFH 2010-2014); CMF Educa, "¿Qué pasa si me atraso en el pago de una cuota de mi crédito?"; prensa: Las Últimas Noticias (J. Berríos y G. Yáñez, U. de Chile, junio de 2026 y enero de 2026) y CNN Chile; Diario Constitucional (preferencias de pago en materia concursal, 8-06-2026).
+
+Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, la versión vigente de la Ley 19.628 tras la Ley 21.719, el texto final del Cap. III.E.1 del Banco Central y si el retracto de seguros a distancia alcanza al seguro de desgravamen de un crédito (el art. 538 no lo excluye; el informe normativo de la NCG 460 no lo trata).
 
 ## 📄 Licencia
 
