@@ -21,7 +21,7 @@ Basadas en fuentes oficiales (CMF, SERNAC, Superir, leychile.cl). Cada cifra tra
 
 ```bash
 npx skills add felipegodoycc/skills-finanzas-chile            # elige interactivamente
-npx skills add felipegodoycc/skills-finanzas-chile --list     # ver las 18 skills
+npx skills add felipegodoycc/skills-finanzas-chile --list     # ver las 19 skills
 npx skills add felipegodoycc/skills-finanzas-chile --skill diagnostico-financiero
 ```
 
@@ -85,7 +85,7 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `endeudamiento-cmf` | Carga financiera, apalancamiento, alta carga | N2: definiciones por contrastar con el Informe de Endeudamiento de la CMF |
 | `limites-sanos-endeudamiento` | Deuda vs. umbrales por ingreso (Lemus y Pulgar) | N3 sobre el estudio (Lemus y Pulgar, MPRA 106958); es un estudio, no una norma |
 | `pago-minimo-tarjetas` | Pago mínimo NCG 537, proyección, costo de pagar solo el mínimo | **N3**: NCG 537 leída completa |
-| `credito-cae-ctc` | CAE, CTC, comparar créditos, consolidación | Crédito de consumo: método N2; CAE de tarjetas (Decreto 75): **fórmulas en proceso** |
+| `credito-cae-ctc` | CAE, CTC, comparar créditos, consolidación, CAE de tarjetas | Crédito de consumo: método N2; CAE y CAEP de tarjetas: **N3** (Decreto 75, fórmulas transcritas del PDF, con tests) |
 | `tasa-maxima-convencional` | TMC y verificación del interés pactado | Método N2; tabla vigente no incluida |
 | `cotizacion-y-comparacion` | Cómo cotizar y leer rankings: consumo, hipotecario, tarjetas | **N3 parcial**: Decretos 75 y 49, Ley 20.448 art. 8, Ley 19.496 art. 3 bis; reglamento de consumo sin publicar |
 | `prepago-y-portabilidad` | Prepago (Ley 18.010 art. 10), portabilidad (Ley 21.236) | **N3**: Ley 18.010 art. 10, Ley 21.236, Decreto 1.154 |
@@ -95,11 +95,12 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `analisis-gasto-recurrente` | Suscripciones, gasto hormiga | Método N1: umbral operativo |
 | `fondo-emergencia-y-metas` | Colchón y metas por tramos | Seguro de cesantía **N3** (Ley 19.728, Res. Ex. 383); "3 a 6 meses" N1 |
 | `apv-chile` | APV régimen A y B | **N3**: DL 3.500, DL 824 y circulares SII; faltan costos de retiro por institución |
+| `indicadores-oficiales-chile` | UF, UTM, IPC y dólar desde las APIs de la CMF y el Banco Central | Fuente oficial; código con tests sobre respuestas simuladas, falta una consulta real |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
 
 Casos de ejemplo con cifras ficticias: [docs/casos/casos.md](docs/casos/casos.md).
 
-> La fórmula de CAE de `credito-cae-ctc/scripts/cae.py` viene de un **borrador** de reglamento; no se verificó su vigencia. La CAE vinculante es siempre la que informa la institución.
+> La fórmula de CAE de `credito-cae-ctc/scripts/cae.py` (créditos de consumo) viene de un **borrador** de reglamento; no se verificó su vigencia. La CAE vinculante es siempre la que informa la institución.
 
 ## 🚀 Prueba rápida
 
