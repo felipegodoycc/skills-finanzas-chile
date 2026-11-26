@@ -20,7 +20,7 @@ Los valores dependen del **tipo de operación** (reajustable o no, plazo, monto 
 
 ## Qué certificado usar
 - Cada certificado rige **desde su publicación en el Diario Oficial hasta el día anterior a la siguiente**. Para saber si un crédito excedió la TMC, usa el certificado vigente **el día en que se pactó**, no el de hoy.
-- Certificados leídos completos (tramo 2.a, no reajustables, 90 días o más, hasta 50 UF; TMC anual lineal): N° 05/2026 (DO 15-05-2026, operaciones de abril) 41,28%; N° 07/2026 (DO 15-07-2026, operaciones de junio) 41,46%. Son datos históricos para contrastar, no valores vigentes.
+- Certificados leídos completos (tramo 2.a, no reajustables, 90 días o más, hasta 50 UF; TMC anual lineal): N° 04/2026 (DO 15-04-2026, operaciones de marzo) 40,60%; N° 05/2026 (DO 15-05-2026, operaciones de abril) 41,28%; N° 07/2026 (DO 15-07-2026, operaciones de junio) 41,46%. Son datos históricos para contrastar, no valores vigentes.
 
 ## Límites a declarar
 - La TMC se compara con la **tasa de interés pactada**, no con la CAE (la CAE incluye gastos y seguros).

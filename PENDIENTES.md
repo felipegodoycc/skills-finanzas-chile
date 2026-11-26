@@ -49,9 +49,8 @@
 - [ ] Retracto en seguros: la NCG 460 (leída completa el 26-11-2026) establece que en seguros voluntarios contratados a distancia se puede retractar, pero **no fija el plazo**; buscar el plazo en la ley o norma que lo establece (Código de Comercio, art. 538 bis y siguientes, y normas de comercialización de seguros).
 - [ ] Reglamento de cobranza extrajudicial: último hito hallado, consulta pública desde el 09-09-2025; según la minuta del Ministerio de Economía entra en vigencia 12 meses después de su publicación. No encontré publicación al 26-11-2026 (búsqueda web, no concluyente): confirmar en el Diario Oficial.
 - [ ] Vigencia del comparador de tarjetas del Sernac (la página del Sernac lo describe, sin fecha de actualización) y del simulador hipotecario de la CMF. El comparador de créditos de consumo del Sernac se presentó actualizado el 06-10-2025 (fuente: prensa).
-- [ ] Reglas de suscripciones y término de contratos de servicios digitales.
-- [ ] Origen de la regla 28/36; fuente académica del método híbrido.
+- [ ] Suscripciones digitales: la Ley 21.398 (Pro Consumidor, DO 24-12-2021) modificó la Ley 19.496 para facilitar el término de contratos; falta leer su texto completo (la página del Sernac no se pudo abrir desde el entorno) y confirmar si hay una regla específica para suscripciones digitales y renovación automática. Necesito el PDF de la Ley 21.398.
+- [ ] Fuente académica del método híbrido (`plan-refinanciamiento`): solo hay blogs comerciales; el SKILL ya lo declara. La regla 28/36 no se usa en ninguna skill del repositorio: si se agrega, citar fuente primaria (solo hallé fuentes comerciales que la describen como guía de préstamos convencionales de EE.UU.).
 - [ ] Adaptación de la clasificación de deudas prioritarias (MoneyHelper, UK) a Chile.
-- [ ] Cifras EFH 2024 (51% vs. 48,6%) y Encuesta CAF-CMF sobre cobertura de gastos.
 - [ ] **Revisión legal (Ley Fintec 21.521):** si un agente de IA que evalúa capacidad de pago o recomienda sobre créditos queda sujeto a autorización y registro; el repositorio asume que NO recomienda productos concretos.
 - [ ] **Entrada de datos:** probar `skills/entrada-segura-de-datos/data/rol_lectura_postgres.sql` en una base real; validar formatos de CSV/cartola de cada banco.
