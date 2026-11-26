@@ -43,7 +43,7 @@
 
 ## Para verificar en fuente oficial
 - [ ] Indicadores: el lector del SII ya se probó con la página real (UF, UTM, UTA, 26-11-2026); falta el IPC del SII y repetir la prueba si el SII cambia su formato; contrastar el de mindicador.cl con respuestas reales; probar `indicadores.py` con una clave real de la CMF y del Banco Central; confirmar el formato JSON de respuesta y las rutas `utm`, `ipc`, `dolar` y `euro` de la CMF.
-- [ ] CAE de tarjetas: contrastar `cae_tarjetas.py` con un ejemplo oficial del emisor o de la CMF cuando exista, y confirmar la definición de f del CAEP.
+- [ ] CAE de tarjetas: contrastar `cae_tarjetas.py` con un ejemplo oficial del emisor o de la CMF cuando exista, y confirmar la definición de f del CAEP. Contraste con datos reales (26-11-2026): sin cargos, el script reproduce al decimal un CAE rotativo informado por un emisor (`(1+i)^12 − 1`), lo que valida el álgebra pero no el Decreto 75; los demás CAE informados no calzan, y el decreto rige desde febrero de 2028, así que los CAE vigentes pueden usar otra metodología.
 - [ ] APV: costos y condiciones de retiro por institución; norma conjunta de las superintendencias; valores UF/UTM/UTA del año.
 - [ ] Seguro de cesantía: tabla de retiro de la cuenta individual (art. 15 de la Ley 19.728) y confirmar en el PDF la Res. Ex. 383 (el art. 70 trae una vigencia con posible error). Superir: efectos de la renegociación sobre el historial crediticio y norma general de la Superir.
 - [ ] Retracto en seguros asociados a créditos: no está en el art. 8 de la Ley 20.448; buscar en la normativa de seguros (CMF) si existe.

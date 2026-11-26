@@ -15,6 +15,9 @@ description: Calcula y proyecta el pago mínimo de tarjetas de crédito con la f
 - **Emisores no bancarios:** se atienen a lo dispuesto por el Banco Central y al Capítulo 8-41 de la RAN (Circular N°1, numeral 6.6).
 - Ojo: algunos medios dijeron "25% de la deuda en dic-2026". No coincide con el texto de la CMF: es el 25% de las *cuotas sin interés* que se reclasifica. Usa solo la fuente oficial.
 
+## Contraste con liquidaciones reales (26-11-2026)
+Con 7 estados de cuenta de una tarjeta BCI (ago-nov 2026), el piso `MNF + 5% · (facturado − MNF)` coincidió al peso (±1) en todos, tomando como MNF los intereses, las comisiones brutas y el impuesto de timbres. Dos detalles que el contraste mostró: el "traspaso de deuda internacional" quedó en el MF, y la devolución de comisión (DEV.COM) **no** redujo el MNF. En Santander y CMR el mínimo cobrado fue mayor que el piso, lo que es compatible con que la norma fije un piso; su regla propia no se pudo confirmar. Muestra pequeña y un solo emisor con calce exacto: no es una prueba general.
+
 ## Cómo usarla
 1. `scripts/pago_minimo.py calcular --cargos X --cuotas-sin-interes Y --otros Z --fecha YYYY-MM-DD`
    - cargos = intereses + comisiones + otros cargos del período; cuotas-sin-interes = valor de las cuotas sin interés facturadas; otros = el resto facturado.
