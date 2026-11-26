@@ -21,7 +21,7 @@ Basadas en fuentes oficiales (CMF, SERNAC, Superir, leychile.cl). Cada cifra tra
 
 ```bash
 npx skills add felipegodoycc/skills-finanzas-chile            # elige interactivamente
-npx skills add felipegodoycc/skills-finanzas-chile --list     # ver las 22 skills
+npx skills add felipegodoycc/skills-finanzas-chile --list     # ver las 23 skills
 npx skills add felipegodoycc/skills-finanzas-chile --skill diagnostico-financiero
 ```
 
@@ -98,6 +98,7 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `indicadores-oficiales-chile` | UF, UTM, UTA, IPC y dólar; el usuario elige fuente (CMF, Banco Central, SII sin clave, terceros) | Fuente oficial; lector del SII probado con la página real (UF, UTM, UTA); CMF, Banco Central y mindicador sin prueba real |
 | `independientes-honorarios` | Boleta de honorarios: retención, cotización obligatoria, Operación Renta, presupuesto con ingreso variable | **N3**: DL 3.500 (arts. 89 a 92 G) y DL 824 (arts. 50, 52, 74) vigentes leídos, más Ley 21.133; cifras de 2026 contrastadas con SII y Previsión Social |
 | `operacion-renta-beneficios` | Beneficios de la Operación Renta: APV, intereses hipotecarios, crédito por educación, gasto presunto | **N3**: texto consolidado del DL 824 (BCN, vigente al 01-11-2026) leído; sin cifras en pesos; leídos también arts. 43, 65, 68, 69 y 97; faltan reglamentos y circulares |
+| `ahorro-bajo-riesgo` | Método para comparar depósitos, cuentas de ahorro y fondos mutuos de deuda: tasa real, riesgo, liquidez, costos e impuestos; no recomienda productos | **N2 a N3**: arts. 41 bis y 57 del DL 824 leídos y garantía estatal según CMF Educa; sin tasas ni inflación; falta Ley General de Bancos, tributación de fondos mutuos y metodología de la TAC |
 | `fraude-medios-de-pago` | Robo, extravío o fraude con tarjetas y transferencias: aviso, reclamo, plazos de restitución | **N3**: texto consolidado de la Ley 20.009 (BCN, versión 30-05-2024) leído completo; falta la NCG 538 y el decreto de 2026 del umbral |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
 
@@ -154,6 +155,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **NCG 569** (CMF, 01-06-2026), modifica la **NCG 514** | Plazos del Sistema de Finanzas Abiertas | `entrada-segura-de-datos` |
 | **NCG 540** (CMF, 14-07-2025) y **NCG 576** (CMF, 14-09-2026) | Funcionamiento del REDEC, consentimiento y revocación | `cobranza-y-renegociacion` |
 | **DL 824 de 1974**, arts. 42 bis, 50, 52, 55 bis, 55 ter y 56 (BCN, vigente al 01-11-2026) | Beneficios y créditos de la Operación Renta, gasto presunto de honorarios | `operacion-renta-beneficios`, `independientes-honorarios` |
+| **CMF Educa** (garantía estatal a los depósitos, fondos mutuos) y **DL 824**, arts. 41 bis y 57 | Garantía de 200 UF por institución y 400 UF en el sistema, rescate de fondos, exención de intereses hasta 20 UTM para dependientes | `ahorro-bajo-riesgo` |
 | **DL 3.500 de 1980**, arts. 89 a 92 G (BCN, vigente al 01-09-2026) | Cotización obligatoria de independientes: base 80%, piso de 4 ingresos mínimos, orden de pago | `independientes-honorarios` |
 | **Ley 21.133** (DO 02-02-2019) y fichas del SII, Previsión Social y Superintendencia de Pensiones | Retención y cotización obligatoria de quienes emiten boletas de honorarios (15,25% en 2026) | `independientes-honorarios` |
 | **Ley 20.009** (Leyes 21.234, DO 29-05-2020, y 21.673, DO 30-05-2024) y **Decreto 435 de Hacienda** (DO 17-12-2024) | Limitación de responsabilidad por fraude con medios de pago, plazos de restitución y umbral de 35 UF | `fraude-medios-de-pago` |
