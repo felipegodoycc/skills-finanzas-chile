@@ -96,7 +96,7 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `fondo-emergencia-y-metas` | Colchón y metas por tramos | Seguro de cesantía **N3** (Ley 19.728, Res. Ex. 383); "3 a 6 meses" N1 |
 | `apv-chile` | APV régimen A y B | **N3**: DL 3.500, DL 824 y circulares SII; faltan costos de retiro por institución |
 | `indicadores-oficiales-chile` | UF, UTM, UTA, IPC y dólar; el usuario elige fuente (CMF, Banco Central, SII sin clave, terceros) | Fuente oficial; lector del SII probado con la página real (UF, UTM, UTA); CMF, Banco Central y mindicador sin prueba real |
-| `fraude-medios-de-pago` | Robo, extravío o fraude con tarjetas y transferencias: aviso, reclamo, plazos de restitución | **N3 parcial**: Ley 20.009 (Leyes 21.234 y 21.673, leídas en el Diario Oficial); falta el texto consolidado y la NCG 538 |
+| `fraude-medios-de-pago` | Robo, extravío o fraude con tarjetas y transferencias: aviso, reclamo, plazos de restitución | **N3**: texto consolidado de la Ley 20.009 (BCN, versión 30-05-2024) leído completo; falta la NCG 538 y el decreto de 2026 del umbral |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
 
 Casos de ejemplo con cifras ficticias: [docs/casos/casos.md](docs/casos/casos.md).
@@ -153,10 +153,10 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **NCG 540** (CMF, 14-07-2025) y **NCG 576** (CMF, 14-09-2026) | Funcionamiento del REDEC, consentimiento y revocación | `cobranza-y-renegociacion` |
 | **Ley 20.009** (Leyes 21.234, DO 29-05-2020, y 21.673, DO 30-05-2024) y **Decreto 435 de Hacienda** (DO 17-12-2024) | Limitación de responsabilidad por fraude con medios de pago, plazos de restitución y umbral de 35 UF | `fraude-medios-de-pago` |
 | **NCG 460** (CMF, 13-08-2021; mod. NCG 464) | Seguros que se pueden contratar con un crédito, ratificación a 30 días y retracto a distancia | `cotizacion-y-comparacion` |
-| **Código de Comercio, arts. 538 y 538 bis** (Ley 20.667 y Ley 21.314) | Retracto de 10 días del seguro contratado a distancia (N3: contrastado en transcripciones, sin PDF oficial) y ratificación de seguros asociados a créditos | `cotizacion-y-comparacion` |
+| **Código de Comercio, arts. 538 y 538 bis** (Ley 20.667 y Ley 21.314) | Retracto de 10 días del seguro contratado a distancia (N3: texto oficial de la Ley 20.667 leído) y ratificación de seguros asociados a créditos | `cotizacion-y-comparacion` |
 | **Certificados de interés corriente y máximo convencional N° 05/2026 y 07/2026** (CMF, Diario Oficial 15-05-2026 y 15-07-2026) | Verificación de la TMC por fecha | `tasa-maxima-convencional` |
 | **NCG 28 de la Superir** (Res. Ex. 22802, 19-11-2025) | Requisitos y documentos de la renegociación | `cobranza-y-renegociacion` |
-| **Res. Ex. 383 de la Superintendencia de Pensiones** (DO 17-03-2026), valores del Fondo de Cesantía Solidario (leída en extracto) | Montos vigentes hasta 28-02-2027 | `fondo-emergencia-y-metas` |
+| **Res. Ex. 383 de la Superintendencia de Pensiones** (DO 17-03-2026), valores del Fondo de Cesantía Solidario (leída completa; con dos erratas del texto marcadas en la skill) | Montos vigentes hasta 28-02-2027 | `fondo-emergencia-y-metas` |
 | Informe normativo de la CMF sobre la modificación de la NCG 514 (junio de 2026) | Fecha de publicación de la NCG 514 (julio de 2024) | `entrada-segura-de-datos` |
 | **Circular SII N° 51 de 2008** y **Circular SII N° 08 de 2012** | Instrucciones sobre el tratamiento tributario del APV | `apv-chile` |
 
@@ -170,7 +170,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 - Fichas y comparadores oficiales: CMF Educa, simulador hipotecario de la CMF, comparadores del Sernac, ChileAtiende y Ventanilla Única Social.
 
 ### Pendientes de verificar
-Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, el historial crediticio tras una renegociación (Superir) y si el retracto de seguros a distancia alcanza al seguro de desgravamen de un crédito.
+Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, el historial crediticio tras una renegociación (Superir) y si el retracto de seguros a distancia alcanza al seguro de desgravamen de un crédito (el art. 538 no lo excluye; el informe normativo de la NCG 460 no lo trata).
 
 ## 📄 Licencia
 
