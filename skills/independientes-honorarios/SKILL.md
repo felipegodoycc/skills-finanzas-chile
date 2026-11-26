@@ -7,7 +7,7 @@ description: Orienta a quien emite boletas de honorarios en Chile: retención, c
 
 Orientación informativa, no asesoría tributaria ni previsional. Consultado 2026-11-26. El agente es un asesor basado en IA: las cifras anuales cambian y la declaración final es del contribuyente; verifica en sii.cl y con tu AFP, Fonasa o Isapre.
 
-**Nivel de verificación: N3 parcial.** Leí el texto de la Ley 21.133 (DO 02-02-2019, PDF) y contrasté las cifras de 2026 en el SII, la Subsecretaría de Previsión Social, la Superintendencia de Pensiones y ChileAtiende. No leí el texto vigente del DL 3.500 (arts. 89 a 92 G) ni el de la Ley de Impuesto a la Renta: lo que dicen esos artículos viene de la Ley 21.133 (que los modifica) y de las fichas oficiales.
+**Nivel de verificación: N3.** Leí los textos consolidados de la BCN del DL 3.500 (versión vigente al 01-09-2026, arts. 89 a 92 G), del DL 824 (versión vigente al 01-11-2026, arts. 50, 52, 74 N° 2) y de la Ley 21.133. Las cifras de 2026 (retención 15,25%, cobertura parcial de 80%, tope en UF) las contrasté con el SII, Previsión Social y ChileAtiende; los reglamentos y circulares del SII y de la Superintendencia de Pensiones no los leí.
 
 ## Lo esencial
 1. **La retención de la boleta no es el impuesto final.** Es un pago anticipado. En 2026 es **15,25%** del monto bruto (SII, 26-12-2025). El SII la calcula solo al emitir la boleta en sii.cl.
@@ -20,16 +20,18 @@ Sube 0,75 puntos por año desde 2020, con un alza de 1 punto en 2028. La Superin
 Cálculo (si la tasa es t): líquido = bruto × (1 − t); bruto = líquido / (1 − t). Ejemplo 2026: para recibir $1.000.000 líquidos, la boleta es de $1.000.000 / 0,8475 = **$1.179.941** (retención $179.941). La retención se calcula sobre el bruto, no sobre el líquido.
 
 ## Cotizaciones (Ley 21.133 y fichas oficiales)
-- **Renta imponible anual = 80% de las boletas del año anterior** (ChileAtiende, previsionsocial.gob.cl). Para la Operación Renta 2026 es sobre lo emitido en 2025. AFP Habitat indica un mínimo de 5 ingresos mínimos mensuales y un máximo de 12 veces el tope imponible mensual (90 UF para 2026; fuente secundaria).
-- **Qué se paga:** seguro de invalidez y sobrevivencia (SIS), seguro de accidentes del trabajo y enfermedades profesionales (ATEP), seguro SANNA, salud (7%) y pensiones. El orden de pago de la ley (art. 92 G del DL 3.500 según la Ley 21.133) es: SIS, ATEP, SANNA, salud y, al final, pensión junto con la comisión de la AFP. Durante la transición (primeros nueve años desde 2019), quien no opta por la gradualidad cotiza para pensión **la diferencia entre lo retenido y el resto de las cotizaciones** (art. quinto transitorio).
+- **Renta imponible anual = 80% de las rentas brutas del art. 42 N° 2 del año calendario anterior** (art. 90 DL 3.500). No puede ser menor a **4 ingresos mínimos mensuales** ni mayor a **12 veces el límite máximo imponible mensual** (art. 16), con la UF del último día de diciembre. Para la Operación Renta 2026 se calcula sobre lo emitido en 2025. El valor en UF del límite (AFP Habitat dice 90 UF para 2026) no lo verifiqué en la Superintendencia de Pensiones.
+- Si tienes además sueldo, las rentas y remuneraciones se suman para el tope, y si las cotizaciones lo superan las instituciones deben devolver el exceso (art. 90 inc. 2).
+- **Qué se paga:** seguro de invalidez y sobrevivencia (SIS), seguro de accidentes del trabajo y enfermedades profesionales (ATEP), seguro SANNA, salud (7%) y pensiones. El orden de pago de la ley (art. 92 G del DL 3.500, texto vigente) es: 1° seguro de invalidez y sobrevivencia (art. 59), 2° seguro de accidentes del trabajo (Ley 16.744), 3° SANNA (Ley 21.063), 4° salud, 5° pensión y comisión de la AFP, a prorrata, y 6° saldos de pensión impagos de años anteriores. Si la retención no alcanza, queda sin pagar lo de más abajo en esa lista, es decir, la pensión primero.
 - **Cobertura completa o parcial.** La completa destina toda la retención a cotizaciones. La **parcial** es transitoria: salud y pensiones se cotizan sobre un % menor de la renta imponible, que sube cada año: 70% en 2025, **80% en 2026**, 90% en 2027 y 100% en 2028; SIS, ATEP y SANNA siempre por el 100%. Menos cotización significa menor pensión y menores subsidios por incapacidad y maternales.
 - **Calendario:** la cotización se paga en la Operación Renta de abril y cubre 12 meses, de julio a junio del año siguiente (ej.: OR 2026 cubre del 01-07-2026 al 30-06-2027).
 - **Las cotizaciones tienen carácter previsional para la Ley de Impuesto a la Renta** (Ley 20.255, art. 88, según la Ley 21.133).
 
 ## Operación Renta y gastos
-- Los honorarios (art. 42 N° 2) pagan Global Complementario. Debes declarar si tus rentas imponibles antes de deducciones superan **13,5 UTA**; si son menores, declaras solo para recuperar la retención (SII).
-- **Gastos:** puedes rebajar gastos efectivos (con respaldo) **o** un gasto presunto del **30% de los ingresos con tope de 15 UTA**; no ambos a la vez (SII, observación A38; ficha del SII de la guía de asistencia de renta, de años anteriores: el valor del tope depende de la UTA del año).
-- El ahorro previsional voluntario del art. 42 bis también rebaja la base (ver `apv-chile`).
+- Los honorarios (art. 42 N° 2) pagan Global Complementario; las rentas hasta **13,5 UTA** están exentas (art. 52 DL 824). Si superas ese monto debes declarar; si no, declaras solo para recuperar la retención (SII).
+- **Gastos (art. 50 DL 824):** declaras la renta efectiva con gastos efectivos y su respaldo, **o**, si ejerces en forma individual, solo con ingresos brutos y un **gasto presunto del 30% de los ingresos brutos anuales, con tope de 15 UTA** vigentes al cierre del ejercicio. El SII observa a quien declara gastos efectivos y presuntos a la vez (observación A38).
+- **Con gasto presunto, tus cotizaciones previsionales no se rebajan como gasto** (art. 50 inc. final). Si no usas el presunto, las cotizaciones de cargo del independiente sí son deducibles (art. 50 inc. 2).
+- El ahorro previsional voluntario también rebaja la base del independiente: hasta 600 UF al 31 de diciembre, aun si usa el gasto presunto, y siempre que cumpla las condiciones de los números 3 y 4 del art. 42 bis (art. 50 inc. 3). Ver `apv-chile` y `operacion-renta-beneficios`.
 
 ## Cómo presupuestar con ingreso variable
 - Presupuesta sobre el **líquido**, no sobre el bruto de la boleta, y separa tres bolsas cuando llega un pago: gastos del mes, reserva para meses bajos y una provisión por si en abril el impuesto supera la retención.
@@ -37,7 +39,7 @@ Cálculo (si la tasa es t): líquido = bruto × (1 − t); bruto = líquido / (1
 - Las cuotas de créditos y la TMC no cambian por ser independiente, pero los bancos suelen pedir más antecedentes de ingresos: ten a mano la declaración de renta y los certificados de honorarios.
 
 ## Qué falta verificar
-- Texto vigente de los arts. 89 a 92 G del DL 3.500 y de los arts. 42 N° 2, 50, 74 N° 2 y 84 de la Ley de Impuesto a la Renta (leí solo lo que modifica la Ley 21.133).
-- **Umbral de obligación:** el texto de la Ley 21.133 que leí dice "cuatro ingresos mínimos mensuales" en el art. 90; las fichas oficiales de 2026 dicen **cinco**. No leí la ley que lo cambió; sigue la ficha oficial (5) y confírmalo.
-- Tasa del ATEP por actividad (la ficha de la AFP habla de 0% a 3,4% de la renta imponible, fuente secundaria), el trato de un faltante o excedente de la retención al pagar las cotizaciones y la cotización mensual voluntaria.
-- Efecto de la reforma de pensiones de 2025 sobre los independientes: no lo revisé.
+- **Umbral de obligación (resuelto en parte):** el art. 90 del DL 3.500 vigente fija un **piso de 4 ingresos mínimos mensuales para la renta imponible**; como esta es el 80% de lo facturado, equivale a **5 ingresos mínimos de boletas** (5 × 80% = 4). Es mi inferencia aritmética, coherente con las fichas oficiales de 2026. No leí el artículo que fija la obligación por monto, así que la cifra de 5 queda apoyada en las fichas, no en el texto.
+- Valor en UF del límite máximo imponible vigente para 2026 (Superintendencia de Pensiones) y tasa del ATEP por actividad (la ficha de la AFP habla de 0% a 3,4%, fuente secundaria).
+- Trámite exacto cuando la retención no alcanza (plazo y forma del pago directo): el art. 92 F lo remite a una norma conjunta de las Superintendencias de Pensiones y Salud, que no leí.
+- Efecto de la reforma de pensiones de 2025 (Ley 21.735) sobre los independientes: no lo revisé.

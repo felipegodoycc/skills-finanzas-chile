@@ -6,7 +6,7 @@
     {
       "name": "skills-finanzas-chile",
       "source": "./",
-      "description": "21 skills: diagnóstico, endeudamiento, pago mínimo, cotización, refinanciamiento, derechos del deudor, fraude con medios de pago, independientes y honorarios, entrada segura de datos e indicadores oficiales.",
+      "description": "22 skills: diagnóstico, endeudamiento, pago mínimo, cotización, refinanciamiento, derechos del deudor, fraude con medios de pago, independientes y honorarios, Operación Renta, entrada segura de datos e indicadores oficiales.",
       "version": "0.1.0",
       "license": "MIT",
       "keywords": ["finanzas", "chile", "cmf", "sernac", "deuda"]
