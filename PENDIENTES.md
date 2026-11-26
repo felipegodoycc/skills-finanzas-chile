@@ -25,7 +25,7 @@
 - Finanzas Abiertas: la NCG 514 se publicó en julio de 2024 (informe normativo CMF, junio de 2026): vigencia hacia julio de 2027 y APIs de personas naturales hacia abril de 2028 (derivado).
 - Cobranza (Ley 21.320 y art. 37 Ley 19.496, texto leído): el límite semanal es permanente; tope de gastos de cobranza 9%/6%/3% por tramos de UF; fin de la cobranza al emplazar o iniciar concurso.
 - NCG 28 de la Superir (texto leído): 91 días corridos, dos o más acreedores, el Informe de Deudas CMF y el Boletín Comercial no bastan solos, documentos de ingresos y certificado de cotizaciones de 12 meses.
-- Seguro de cesantía (Ley 19.728 leída): 0,6% trabajador y 2,4% empleador; 2,2% a la cuenta individual y 0,8% al Fondo Solidario; requisitos de los arts. 12 y 24. La tabla de montos (arts. 15 y 25) no se pudo leer.
+- Seguro de cesantía (Ley 19.728 leída): 0,6% trabajador y 2,4% empleador; 2,2% a la cuenta individual y 0,8% al Fondo Solidario; requisitos de los arts. 12 y 24. Montos del Fondo Solidario (art. 25) vigentes hasta 28-02-2027 según la Res. Ex. 383 de la Superintendencia de Pensiones (DO 17-03-2026), leída en extracto; falta la tabla del art. 15 (cuenta individual).
 - Decreto 1.154 (reglamento de portabilidad, texto leído): oferta vigente 7 días hábiles bancarios; arrepentimiento y devolución en 5 días.
 - Ley 19.496 art. 3 bis (retracto de 10 días y su efecto sobre el crédito asociado): texto leído.
 - REDEC: la NCG 576 (texto leído) es del 14-09-2026 (acordada el 10-09-2026) y modifica la NCG 540: consentimiento del deudor, notificación al deudor, revocación de autorizaciones a terceros. No confirma la NCG 567 ni el límite de 5 años (esos puntos siguen sin texto).

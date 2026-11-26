@@ -136,6 +136,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **NCG 569** (CMF, 01-06-2026), modifica la **NCG 514** | Plazos del Sistema de Finanzas Abiertas | `entrada-segura-de-datos` |
 | **NCG 540** (CMF, 14-07-2025) y **NCG 576** (CMF, 14-09-2026) | Funcionamiento del REDEC, consentimiento y revocación | `cobranza-y-renegociacion` |
 | **NCG 28 de la Superir** (Res. Ex. 22802, 19-11-2025) | Requisitos y documentos de la renegociación | `cobranza-y-renegociacion` |
+| **Res. Ex. 383 de la Superintendencia de Pensiones** (DO 17-03-2026), valores del Fondo de Cesantía Solidario (leída en extracto) | Montos vigentes hasta 28-02-2027 | `fondo-emergencia-y-metas` |
 | Informe normativo de la CMF sobre la modificación de la NCG 514 (junio de 2026) | Fecha de publicación de la NCG 514 (julio de 2024) | `entrada-segura-de-datos` |
 | **Circular SII N° 51 de 2008** y **Circular SII N° 08 de 2012** | Instrucciones sobre el tratamiento tributario del APV | `apv-chile` |
 
