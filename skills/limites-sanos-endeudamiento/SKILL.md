@@ -1,19 +1,19 @@
 ---
 name: limites-sanos-endeudamiento
-description: Compara la carga de deuda de una persona (pago mensual de deudas sobre ingreso) con umbrales sostenibles que dependen del tramo de ingreso y de si hay hipotecario, según el estudio de la CMF (Pulgar, Corradi y Lemus 2021). Úsala cuando pregunten si su nivel de deuda es "sano", sostenible o preocupante.
+description: Compara la carga de deuda de una persona (pago mensual de deudas sobre ingreso) con umbrales sostenibles que dependen del tramo de ingreso y de si hay hipotecario, según Lemus y Pulgar (2021; publicado en 2023). Úsala cuando pregunten si su nivel de deuda es "sano", sostenible o preocupante.
 ---
 
 # Límites "sanos" de endeudamiento
 
 ## La respuesta corta (y por qué no es un número)
-**No existe un umbral único sano.** El estudio de la CMF (Documento de Trabajo 01/21; Lemus y Pulgar 2023) define "sostenible" como la carga máxima a la que la tasa implícita que cobraría un banco (con spread) no supera la TMC. Resultado: los umbrales **suben con el ingreso** y **con la deuda hipotecaria**.
+**No existe un umbral único sano.** El estudio de Lemus y Pulgar (MPRA Paper 106958, 2021; Revista de Análisis Económico 38(1), 2023; Pulgar trabaja en la CMF) define "sostenible" como la carga máxima a la que la tasa implícita que cobraría un banco (con spread) no supera la TMC. Resultado: los umbrales **suben con el ingreso** y **con la deuda hipotecaria**.
 - Sin hipotecario, RCI máximo por ingreso mensual: $300k 6%; $500k 13%; $1M 22%; $2M 31%; $4M 41% (agregado 23%).
 - Con hipotecario: $300k 24%; $1M 43%; $2M 53%; $4M 65% (agregado 51%).
 - El **50%** de la CMF es un umbral de *reporte* de alta carga, no un nivel sano. La mediana (11,9% en jun-2025) es descriptiva, no una meta.
 
 ## Cómo usarla
 1. Pide ingreso líquido mensual, pago mensual de **todas** las deudas financieras (con intereses; incluye hipotecario si lo hay) y, opcional, la deuda total sin intereses futuros.
-2. Ejecuta `scripts/limites.py --ingreso X --servicio-deuda Y [--hipotecario] [--deuda-sin-interes Z]`. Los umbrales están en `data/umbrales_cmf_dt_01_21.json` (con fuente y limitaciones); los valores intermedios se interpolan linealmente (aproximación de este repositorio).
+2. Ejecuta `scripts/limites.py --ingreso X --servicio-deuda Y [--hipotecario] [--deuda-sin-interes Z]`. Los umbrales están en `data/umbrales_lemus_pulgar_2021.json` (con fuente y limitaciones); los valores intermedios se interpolan linealmente (aproximación de este repositorio).
 3. Reporta el RCI, el umbral de su tramo, el margen en puntos y la **banda** (holgado < 70% del umbral, cercano 70–100%, sobre ≥ 100%). Las bandas son una convención del repositorio.
 4. Siempre agrega las limitaciones del estudio.
 

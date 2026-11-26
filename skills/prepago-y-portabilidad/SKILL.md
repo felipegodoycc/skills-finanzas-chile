@@ -12,7 +12,8 @@ Todas las afirmaciones: fuente oficial o marcadas. Consultado 2026-11-26.
 - Si el prepago es **parcial y no llega al 10% de la deuda**, se requiere consentimiento del acreedor. Entre las condiciones: que el crédito no supere 5.000 UF y que lo solicite el deudor o su representante. CMF Educa: https://www.cmfchile.cl/educa/600/w3-article-27324.html y https://www.cmfchile.cl/educa/621/w3-article-27324.html
 - La forma habitual es pedir el **certificado de prepago**, que detalla capital, intereses adeudados y comisión (misma fuente CMF).
 - El *borrador* de reglamento de consumo define "Costo Total del Pago Anticipado" como saldo de capital más comisión, y obliga a entregar la liquidación a solicitud (proyecto, no verificado en vigor): https://pac.economia.gob.cl/wp-content/uploads/2025/10/Propuesta-Nuevo-Reglamento-Credito-de-Consumo.pdf
-- **No verificado**: monto máximo de la comisión de prepago según tipo de crédito. Consulta el texto del art. 10 en leychile.cl antes de afirmar un tope.
+- **Comisión de prepago** (CMF Educa): en operaciones no reajustables (pesos) no puede exceder **un mes de intereses pactados** sobre el capital que se prepaga; en reajustables, **un mes y medio**; en créditos anteriores al 26-06-2004 puede ser mayor (https://www.cmfchile.cl/educa/621/w3-article-27324.html y https://www.cmfchile.cl/educa/621/w3-propertyvalue-43579.html). Solo pueden cobrarse intereses sobre el capital insoluto (texto reproducido en https://iura.cl/18010/10, fuente no oficial).
+- **Conflicto de fuentes**: CMF Educa indica 10% como umbral bajo el cual el prepago parcial requiere consentimiento del acreedor; un compendio de la Suseso reproduce una versión con 20% (probablemente anterior). Se usa 10% hasta leer el texto vigente en leychile.cl.
 
 ### Procedimiento
 1. Pide a la institución el certificado de prepago con fecha de corte; no uses estimaciones propias como monto a pagar.
@@ -31,5 +32,11 @@ Todas las afirmaciones: fuente oficial o marcadas. Consultado 2026-11-26.
 - Pregunta por gastos operacionales, seguros asociados y si cambia el plazo.
 - Simuladores oficiales CMF (prepago y portabilidad): https://www.cmfchile.cl/educa/621/w3-propertyvalue-44686.html
 
+## Plazos del proceso (verificados)
+- Certificado de liquidación para término anticipado: el proveedor inicial debe entregarlo a más tardar en **5 días hábiles** desde la solicitud (Reglamento del certificado, DO 09-11-2020, art. 4: https://www.diariooficial.interior.gob.cl/publicaciones/2020/11/09/42800/01/1843778.pdf; BCN Ley 21.236: https://www.bcn.cl/leychile/navegar?idLey=21236).
+- La oferta de portabilidad debe tener vigencia de al menos **7 días hábiles bancarios** (https://www.bcn.cl/leychile/navegar?idNorma=1146340) y emitirla no puede costar nada al cliente (https://www.suseso.gob.cl/620/w3-propertyvalue-327400.html). Si al desembolso la tasa ofrecida supera la TMC, prevalece la TMC (https://www.suseso.gob.cl/620/w3-propertyvalue-593690.html).
+- Tras la firma, el nuevo proveedor debe pagar en un máximo de **6 días hábiles bancarios**; en hipotecario, el Conservador de Bienes Raíces tiene 10 días hábiles para inscribir (https://www.camara.cl/cms/2020/09/16/paso-a-paso-para-acceder-a-la-portabilidad-financiera/).
+- La solicitud de portabilidad está vigente hasta la retractación del cliente o hasta treinta días hábiles (art. 6; el texto obtenido está truncado: verifica desde cuándo se cuentan; https://cms.hacienda.cl/capif/assets/documento/descargar/71e69148ce336/1665059331).
+
 ## No verificado (pendiente)
-Plazos legales exactos del proceso, sanciones por incumplimiento y reglas por tipo de producto: revisa la ley en leychile.cl y el reglamento (Diario Oficial 08-09-2020) antes de citarlos.
+Sanciones por incumplimiento, costos permitidos por tipo de producto y reglas de retractación: lee la ley y su reglamento (Decreto 1.154 de 2020, DO 08-09-2020) en leychile.cl.

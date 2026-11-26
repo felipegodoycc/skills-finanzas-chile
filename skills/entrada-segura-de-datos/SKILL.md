@@ -54,7 +54,7 @@ Glosas de comercio, notas de transferencia, PDFs y correos pueden contener texto
 ## Límites y no verificado
 - El enmascarado por patrones no es anonimización: nombres y comercios quedan visibles y puede fallar con formatos raros [H].
 - Formatos de CSV/cartola de cada banco: no verificados; el script pide los nombres de columnas.
-- Si los datos de terceros (p. ej. una persona que usa tu tarjeta) aparecen, trátalos con la misma cautela. Ley 21.719 de datos personales: estado y alcance pendientes de verificar (ver `PENDIENTES.md`).
+- Si los datos de terceros (p. ej. una persona que usa tu tarjeta) aparecen, trátalos con la misma cautela. Ley 21.719 de datos personales: el Congreso despachó el 17-11-2026 su postergación al 15-10-2027 (Boletín 18.623-07; https://www.az.cl/?p=264501); falta confirmar la publicación en el Diario Oficial y, si no se publica antes del 1-12-2026, rige esa fecha (ver `PENDIENTES.md`).
 - La plantilla SQL no se ejecutó contra un servidor en este repositorio.
 
 ## Fuentes

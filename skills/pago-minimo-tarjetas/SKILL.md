@@ -10,7 +10,7 @@ description: Calcula y proyecta el pago mínimo de tarjetas de crédito con la f
   MNF = cuotas sin interés (según la etapa), intereses, comisiones y otros cargos. MF = el resto de lo facturado.
 - Es un **piso**: el emisor puede exigir un mínimo mayor.
 - **Calendario de las cuotas sin interés:** desde el 04-06-2026 están en el MF (entra solo 5% de su valor); luego pasan al MNF "a una tasa de 25% cada 6 meses" hasta 100% el 04-06-2028 (**norma**). Los hitos intermedios (04-12-2026, 04-06-2027, 04-12-2027) son **deducidos** del texto, no datos explícitos.
-- La Ley 21.673 faculta a la CMF a normar excepciones en que el emisor puede eximir del pago mínimo; el comunicado **no las detalla**. Verifica la NCG 537 completa y la política de tu emisor.
+- Excepciones (comunicado CMF de la NCG 537: https://www.cmfchile.cl/portal/prensa/615/w3-article-95105.html): el emisor puede eximir del pago mínimo según sus políticas internas, con dos condiciones: la deuda exceptuada debe amortizarse totalmente en un máximo de 24 meses y cada excepción dura como máximo dos meses consecutivos. El comunicado no lista las situaciones que las habilitan: consulta el texto de la NCG 537 y la política de tu emisor.
 - Ojo: algunos medios dijeron "25% de la deuda en dic-2026". No coincide con el texto de la CMF: es el 25% de las *cuotas sin interés* que se reclasifica. Usa solo la fuente oficial.
 
 ## Cómo usarla

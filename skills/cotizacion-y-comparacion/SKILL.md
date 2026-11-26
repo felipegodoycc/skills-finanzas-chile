@@ -37,3 +37,9 @@ Tabla comparativa ordenada por CTC, alertas (cotización vencida, CAE informada 
 
 ## Aviso obligatorio
 Herramienta de apoyo basada en IA; no es asesoría financiera ni crediticia regulada y no recomienda entidades. Verifica cada condición con la entidad.
+
+## Normativa de información al consumidor (estado al 26-11-2026)
+- Tarjetas: Decreto 75 de 2025 (Ministerio de Economía), publicado el 06-08-2026; entra en vigor 18 meses después de su publicación (≈ febrero de 2028) y deroga el Decreto 44 de 2012 desde esa fecha (https://www.diariooficial.interior.gob.cl/publicaciones/2026/08/06/44518/01/2846533.pdf). Hasta entonces rige el Decreto 44.
+- Hipotecarios: nuevo reglamento publicado el 27-02-2026 (https://www.carey.cl/api/archivo/ministerio-de-economia-publica-nuevo-reglamento-sobre-informacion-al-consumidor-de-creditos-hipotecarios?lang=es); **vigencia no verificada**.
+- Consumo: el nuevo reglamento es una propuesta de octubre de 2025 (https://pac.economia.gob.cl/wp-content/uploads/2025/10/Propuesta-Nuevo-Reglamento-Credito-de-Consumo.pdf); no confirmé su publicación, así que se asume vigente el Decreto 43 de 2012.
+- Comparadores del Sernac: crédito de consumo actualizado en octubre de 2025 (https://eldesconcierto.cl/2025/10/06/sernac-lanza-nuevo-comparador-de-creditos-de-consumo-filtra-por-monto-cuotas-y-seguros-con-datos-actualizados); tarjetas lanzado en 2022 (vigencia actual no confirmada).

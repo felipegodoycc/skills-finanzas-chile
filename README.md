@@ -26,7 +26,7 @@ Al buscar skills de finanzas para agentes, lo disponible está pensado para EE. 
 | `apv-chile` | APV régimen A y B | **Bajo**: falta fuente oficial |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
 | `diagnostico-financiero` | Punto de entrada: objetivos, flujo, carga de deuda y derivación a las demás skills | Probado (4 pruebas) |
-| `limites-sanos-endeudamiento` | Carga de deuda vs. umbrales sostenibles por ingreso (CMF DT 01/21) | Alto en fuente; umbrales con limitaciones declaradas |
+| `limites-sanos-endeudamiento` | Carga de deuda vs. umbrales sostenibles por ingreso (Lemus y Pulgar 2021/2023) | Alto en fuente; umbrales con limitaciones declaradas |
 | `presupuesto-personal` | Presupuesto de régimen y de transición con límites graduales | Método; metas son propuestas |
 | `analisis-gasto-recurrente` | Suscripciones, gasto hormiga, reemplazos o controles | Umbral hormiga es definición operativa |
 | `plan-refinanciamiento` | Avalancha vs. nieve, prepago neto, compra de cartera, ruta CMF | Medio (hibrido y adaptación a Chile sin fuente) |

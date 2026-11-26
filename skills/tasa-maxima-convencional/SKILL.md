@@ -20,6 +20,6 @@ Los valores dependen del **tipo de operación** (reajustable o no, plazo, monto 
 
 ## Límites a declarar
 - La TMC se compara con la **tasa de interés pactada**, no con la CAE (la CAE incluye gastos y seguros).
-- No confirmé la base exacta de anualización de las tasas CMF. El script calcula nominal (×12) y compuesta; si el veredicto depende de la base, responde "depende, verificar metodología CMF".
+- Base de anualización (certificado mensual de la CMF): la TMC en pesos no reajustables se expresa en forma **lineal anual** (tasa mensual × 12); para las demás operaciones se expresa en forma **compuesta** (https://www.cmfchile.cl/portal/estadisticas/626/articles-113468_recurso_1.pdf). Compara en la misma base que el tramo.
 - Un exceso sobre la TMC es un **posible** cobro indebido: se reclama ante la institución, el SERNAC o la CMF. Esta skill no determina ilegalidad.
 - No incluí los tramos por monto/plazo porque no tengo la tabla vigente verificada.

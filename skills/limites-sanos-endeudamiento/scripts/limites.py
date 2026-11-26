@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Compara tu carga de deuda (RCI) con el umbral sostenible según tu tramo de ingreso.
 
-Fuente de los umbrales: CMF DT 01/21 (ver data/umbrales_cmf_dt_01_21.json).
+Fuente de los umbrales: Lemus y Pulgar 2021/2023, MPRA 106958 (ver data/umbrales_lemus_pulgar_2021.json).
 NO existe un umbral único sano: los umbrales suben con el ingreso y con la
 deuda hipotecaria. Las bandas "holgado/cercano/sobre" son una convención de
 este repositorio, no de la CMF.
@@ -18,7 +18,7 @@ import sys
 AVISO = ("Herramienta de apoyo basada en IA; no es asesoría financiera ni crediticia regulada. "
          "Verifica cifras y condiciones con la entidad correspondiente.")
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data",
-                    "umbrales_cmf_dt_01_21.json")
+                    "umbrales_lemus_pulgar_2021.json")
 
 
 def interpolar(x, xs, ys):

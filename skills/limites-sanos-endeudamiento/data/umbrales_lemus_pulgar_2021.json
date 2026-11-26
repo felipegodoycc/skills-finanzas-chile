@@ -1,6 +1,6 @@
 {
-  "fuente": "Pulgar, Corradi y Lemus (2021). CMF Documento de Trabajo 01/21; versión publicada: Lemus y Pulgar (2023), Revista de Análisis Económico 38(1). Datos: Encuesta Financiera de Hogares (EFH) 2017.",
-  "url": null,
+  "fuente": "Lemus y Pulgar (2021), 'Households' Debt Thresholds: A Market Aspects Approach', MPRA Paper 106958 (no es una serie de Documentos de Trabajo CMF); versión publicada: Lemus y Pulgar (2023), Revista de Análisis Económico 38(1), 71-99, DOI 10.4067/S0718-88702023000100071.",
+  "url": "https://mpra.ub.uni-muenchen.de/106958/",
   "fecha_consulta": "2026-11-26",
   "definiciones": {
     "RCI": "Razón de carga de la deuda: porcentaje del ingreso mensual del hogar que se destina a pagar créditos, incluyendo intereses.",
@@ -81,5 +81,5 @@
     "El texto del documento da 1,4 de RDI a $300k y el anexo 1,5: se usa el anexo."
   ],
   "nota_interpolacion": "El documento entrega solo los nodos; los valores intermedios se interpolan linealmente (aproximación de este repositorio).",
-  "url_nota": "URL exacta no registrada: buscar 'Pulgar Corradi Lemus Documento de Trabajo 01/21' en cmfchile.cl y completar."
+  "verificacion_2026_11_26": "Nodos sin hipotecario y con hipotecario (100k, 300k, 1M, 2M, 4M) coinciden con el Apéndice D (extracto leído). NO verificados: nodo 600.000 con hipotecario, bloque 'agregados' y el uso de la EFH 2017."
 }
