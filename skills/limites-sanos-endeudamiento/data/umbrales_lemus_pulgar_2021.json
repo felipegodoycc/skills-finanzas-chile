@@ -78,7 +78,8 @@
     "Son umbrales de HOGAR con ingreso del hogar; aplicarlos a un ingreso individual es una aproximación.",
     "Dependen de la TMC y del costo de fondeo supuestos (34% nominal en consumo, 5% real en UF en hipotecario).",
     "No modela explícitamente el gasto de subsistencia ni el racionamiento de crédito.",
-    "El texto del documento da 1,4 de RDI a $300k y el anexo 1,5: se usa el anexo."
+    "El texto del documento da 1,4 de RDI a $300k y el anexo 1,5: se usa el anexo.",
+    "Para el RCI agregado sin hipotecario el paper es inconsistente consigo mismo: la sección 5.1 dice 25% con spread y 36% sin spread, mientras la nota de las figuras y la sección posterior dicen 23%; se usa 23% (figuras)."
   ],
   "nota_interpolacion": "El documento entrega solo los nodos; los valores intermedios se interpolan linealmente (aproximación de este repositorio).",
   "verificacion_2026_11_26": "Todos los nodos (sin y con hipotecario, incluido 600k) coinciden con el Apéndice D del PDF completo (MPRA 106958). Agregados: el texto da RCI 23% y RDI 6x sin hipotecario, y RDI 71x con hipotecario; para el RCI agregado con hipotecario el texto indica un máximo de 52% con spread y 51% sin spread (se usa 51%). Datos: Encuesta Financiera de Hogares 2017."

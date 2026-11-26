@@ -32,5 +32,5 @@ Fuente: https://www.cmfchile.cl/portal/prensa/615/articles-102984_doc_pdf.pdf
 ## Para quien está sobreendeudado
 La CMF propone en "La Ruta del endeudamiento" pasos para quien ya está sobreendeudado; su criterio clave: que la nueva carga financiera mensual **sea algo que se pueda pagar** y que la persona se comprometa a no seguir aumentando su endeudamiento (https://www.cmfchile.cl/educa/621/w3-article-93975.html). Ver también `cobranza-y-renegociacion`.
 
-## Pendiente
-El Banco Central publicó un estudio sobre **endeudamiento máximo sostenible de los hogares en Chile** (https://www.bcentral.cl/documents/d/banco-central/lemus-y-pulgar-2023); no lo revisé en detalle, así que esta skill no cita umbrales de él.
+## Complemento
+El estudio del Banco Central y la CMF sobre **endeudamiento máximo sostenible de los hogares** (Lemus y Pulgar, MPRA 106958; https://www.bcentral.cl/documents/d/banco-central/lemus-y-pulgar-2023) sí está leído en `limites-sanos-endeudamiento`, con sus umbrales por ingreso y sus limitaciones. Esta skill solo mide los indicadores de la CMF y no cita esos umbrales.
