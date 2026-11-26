@@ -89,8 +89,8 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `tasa-maxima-convencional` | TMC y verificación del interés pactado | Método N2; tabla vigente no incluida |
 | `cotizacion-y-comparacion` | Cómo cotizar y leer rankings: consumo, hipotecario, tarjetas | **N3 parcial**: Decretos 75 y 49, Ley 20.448 art. 8, Ley 19.496 art. 3 bis; reglamento de consumo sin publicar |
 | `prepago-y-portabilidad` | Prepago (Ley 18.010 art. 10), portabilidad (Ley 21.236) | **N3**: Ley 18.010 art. 10, Ley 21.236, Decreto 1.154 |
-| `plan-refinanciamiento` | Avalancha vs. bola de nieve, prepago, compra de cartera | Método N1-N2; cálculos con tests |
-| `cobranza-y-renegociacion` | Derechos del deudor, cobranza, Superir | **N3**: Ley 19.496 art. 37, Ley 21.320, Ley 20.720 arts. 260-268, NCG 28, Ley 21.680, NCG 540; historial crediticio según Ley 19.628 arts. 17-19 (versión de 2023) y OFC CMF 1.403; falta confirmar la versión vigente tras la Ley 21.719 |
+| `plan-refinanciamiento` | Avalancha vs. bola de nieve, prepago, compra de cartera, consecuencias de impago | Método N1-N2; cálculos con tests; consecuencias de impago N3 (Leyes 21.389, 21.442, 18.101/21.461, 17.322, DFL 4, DFL 382, Código Tributario); hipotecario, contribuciones y TAG sin verificar |
+| `cobranza-y-renegociacion` | Derechos del deudor, cobranza, Superir | **N3**: Ley 19.496 art. 37, Ley 21.320, Ley 20.720 arts. 260-268, NCG 28 (derogada en agosto de 2026; el Compendio que la reemplaza no está leído), Ley 21.680, NCG 540; historial crediticio según Ley 19.628 arts. 17-19 (versión de 2023) y OFC CMF 1.403; falta confirmar la versión vigente tras la Ley 21.719 |
 | `presupuesto-personal` | Presupuesto de régimen y de transición | Método N1: metas son propuestas |
 | `analisis-gasto-recurrente` | Suscripciones, gasto hormiga | Método N1: umbral operativo |
 | `fondo-emergencia-y-metas` | Colchón y metas por tramos | Seguro de cesantía **N3** (Ley 19.728, Res. Ex. 383); "3 a 6 meses" N1 |
@@ -136,18 +136,24 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **Ley 18.010** (operaciones de crédito de dinero), art. 10, versión con Ley 21.398 | Prepago, comisión y umbral de consentimiento del 10% | `prepago-y-portabilidad` |
 | **Ley 21.236** (portabilidad financiera, DO 09-06-2020) | Plazos, retracto, costos y sanciones de la portabilidad | `prepago-y-portabilidad` |
 | **Ley 20.720** (insolvencia y reemprendimiento), arts. 2, 260-268, con Ley 21.563 | Renegociación de la persona deudora ante la Superir | `cobranza-y-renegociacion`, `plan-refinanciamiento` |
-| **Ley 19.496** (protección del consumidor), arts. 3 bis y 37, y **Ley 21.320** (cobranza extrajudicial) | Retracto, tope de gastos de cobranza, límites a la cobranza | `cobranza-y-renegociacion`, `cotizacion-y-comparacion` |
+| **Ley 19.496** (protección del consumidor), arts. 3 bis y 37 (versión vigente: DFL 3 de 2021, texto refundido de 11-07-2025), y **Ley 21.320** (cobranza extrajudicial) | Retracto, tope de gastos de cobranza, límites a la cobranza | `cobranza-y-renegociacion`, `cotizacion-y-comparacion` |
 | **Ley 21.398** (Pro Consumidor, DO 24-12-2021), arts. 3 bis, 17 A, 17 D, 17 H y 17 N de la Ley 19.496 | Término de contratos y suscripciones, retracto, bloqueo de tarjetas, certificados para renegociar, descuentos con medio de pago propio, análisis de solvencia | `analisis-gasto-recurrente`, `cobranza-y-renegociacion`, `cotizacion-y-comparacion` |
 | **DFL 3 de 2021** (texto refundido de la Ley 19.496, leído) y **Ley 19.728** (seguro de cesantía, arts. 12, 15, 24 y 25, tablas leídas) | Informe de contratos financieros (art. 17 B), art. 17 D, retiro de la cuenta individual y Fondo Solidario | `cobranza-y-renegociacion`, `analisis-gasto-recurrente`, `fondo-emergencia-y-metas` |
 | **Ley 21.680** (Registro de Deuda Consolidada) | Consentimiento, límite de 5 años y derechos en el REDEC | `cobranza-y-renegociacion` |
 | **Ley 19.728** (seguro de desempleo) | Cotizaciones, cuenta individual y Fondo Solidario | `fondo-emergencia-y-metas` |
 | **Decreto 1.154 de 2020** (reglamento de portabilidad financiera) | Oferta, arrepentimiento y certificados | `prepago-y-portabilidad` |
 | **Ley 20.448** (integración del mercado de capitales), art. 8 | Seguros asociados a créditos | `cotizacion-y-comparacion` |
-| **Ley 21.719** (protección de datos personales) y **Ley 21.855** (fija su vigencia el 15-10-2027) | Tratamiento de datos | `entrada-segura-de-datos` |
+| **Ley 21.719** (protección de datos personales) y **Ley 21.855** (fija su vigencia el 15-10-2027; hasta entonces rige la Ley 19.628) | Tratamiento de datos | `entrada-segura-de-datos`, `guardrails-finanzas-chile` |
 | **DL 3.500 de 1980**, arts. 20, 20 L y 20 O | Regímenes del APV y bonificación | `apv-chile` |
 | **DL 824 de 1974** (Ley de la Renta), arts. 42 bis y 52 | Rebaja de base, impuesto al retiro del APV, tabla del Global Complementario | `apv-chile` |
 | **Decreto 75 de 2025** (Economía, DO 06-08-2026), reglamento de información al consumidor de tarjetas | CAE de tarjetas, cotización, estado de cuenta | `cotizacion-y-comparacion`, `credito-cae-ctc` |
 | **Decreto 49 de 2024** (Economía, DO 27-02-2026), reglamento de créditos hipotecarios | Cotización, cartillas y vigencia (12 meses) | `cotizacion-y-comparacion` |
+| **Ley 21.389** (Registro Nacional de Deudores de Pensiones de Alimentos, DO 18-11-2021), arts. 21-38 y art. 14 bis de la Ley 14.908 | Quién se inscribe, cómo se sale, retenciones sobre créditos, devolución de impuestos, juicios y concursos, pasaporte y licencia | `plan-refinanciamiento` |
+| **Ley 18.101** (arrendamiento de predios urbanos, versión 2026) y **Ley 21.461** ("Devuélveme mi casa", DO 30-06-2022) | Obligación de pagar hasta restituir, procedimiento monitorio de cobro de rentas y lanzamiento | `plan-refinanciamiento` |
+| **Ley 21.442** (copropiedad inmobiliaria, DO 13-04-2022), arts. 20 N° 9, 36 y 37 | Suspensión de servicios por tres o más cuotas de gastos comunes impagas y sus excepciones | `plan-refinanciamiento` |
+| **DFL 4 de 2006** (Ley General de Servicios Eléctricos), art. 141, y **DFL 382 de 1988** (Ley General de Servicios Sanitarios), arts. 36-38 | Plazos y condiciones para suspender luz y agua por no pago | `plan-refinanciamiento` |
+| **DL 830 de 1974** (Código Tributario), arts. 53 y 192 | Reajuste e interés penal de impuestos impagos, convenios de pago con Tesorería | `plan-refinanciamiento` |
+| **Ley 17.322** (cobranza de cotizaciones previsionales), arts. 1, 12 y 13 | Cobro a empleadores, apremio y sanción penal por retención indebida | `plan-refinanciamiento`, `independientes-honorarios` |
 
 ### Normas de la CMF y circulares del SII (texto completo)
 | Norma | Para qué se usa | Skill |
@@ -155,7 +161,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **NCG 537** (CMF), pago mínimo de tarjetas, con calendario de gradualidad | Fórmula del monto mínimo a facturar | `pago-minimo-tarjetas` |
 | **NCG 569** (CMF, 01-06-2026), modifica la **NCG 514** | Plazos del Sistema de Finanzas Abiertas | `entrada-segura-de-datos` |
 | **NCG 540** (CMF, 14-07-2025) y **NCG 576** (CMF, 14-09-2026) | Funcionamiento del REDEC, consentimiento y revocación | `cobranza-y-renegociacion` |
-| **DL 824 de 1974**, arts. 42 bis, 50, 52, 55 bis, 55 ter y 56 (BCN, vigente al 01-11-2026) | Beneficios y créditos de la Operación Renta, gasto presunto de honorarios | `operacion-renta-beneficios`, `independientes-honorarios` |
+| **DL 824 de 1974**, arts. 42 bis, 43, 50, 52, 55, 55 bis, 55 ter, 56, 65, 69 y 97 (BCN, vigente al 01-11-2026) | Beneficios y créditos de la Operación Renta, gasto presunto de honorarios | `operacion-renta-beneficios`, `independientes-honorarios` |
 | **Ley General de Bancos (DFL 3 de 1997)**, arts. 144 a 153, **CMF Educa** (fondos mutuos) y **DL 824**, arts. 41 bis y 57 | Garantía de 200 UF por banco y 400 UF en total por persona y año, rescate de fondos, exención de intereses hasta 20 UTM para dependientes | `ahorro-bajo-riesgo` |
 | **DL 3.500 de 1980**, arts. 89 a 92 G (BCN, vigente al 01-09-2026) | Cotización obligatoria de independientes: base 80%, piso de 4 ingresos mínimos, orden de pago | `independientes-honorarios` |
 | **Ley 21.133** (DO 02-02-2019) y fichas del SII, Previsión Social y Superintendencia de Pensiones | Retención y cotización obligatoria de quienes emiten boletas de honorarios (15,25% en 2026) | `independientes-honorarios` |
@@ -164,7 +170,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **NCG 460** (CMF, 13-08-2021; mod. NCG 464) | Seguros que se pueden contratar con un crédito, ratificación a 30 días y retracto a distancia | `cotizacion-y-comparacion` |
 | **Código de Comercio, arts. 538 y 538 bis** (Ley 20.667 y Ley 21.314) | Retracto de 10 días del seguro contratado a distancia (N3: texto oficial de la Ley 20.667 leído) y ratificación de seguros asociados a créditos | `cotizacion-y-comparacion` |
 | **Certificados de interés corriente y máximo convencional N° 05/2026 y 07/2026** (CMF, Diario Oficial 15-05-2026 y 15-07-2026) | Verificación de la TMC por fecha | `tasa-maxima-convencional` |
-| **NCG 28 de la Superir** (Res. Ex. 22802, 19-11-2025) | Requisitos y documentos de la renegociación | `cobranza-y-renegociacion` |
+| **NCG 28 de la Superir** (Res. Ex. 22802, 19-11-2025), **derogada desde el 13-08-2026** por la **Res. Ex. 19752 de la Superir** (12-08-2026, leída), que aprueba el Compendio de Normas sobre los Procedimientos Concursales y las Asesorías Económicas de Insolvencia (el Compendio no está leído) | Requisitos y documentos de la renegociación | `cobranza-y-renegociacion` |
 | **Res. Ex. 383 de la Superintendencia de Pensiones** (DO 17-03-2026), valores del Fondo de Cesantía Solidario (leída completa; con dos erratas del texto marcadas en la skill) | Montos vigentes hasta 28-02-2027 | `fondo-emergencia-y-metas` |
 | Informe normativo de la CMF sobre la modificación de la NCG 514 (junio de 2026) | Fecha de publicación de la NCG 514 (julio de 2024) | `entrada-segura-de-datos` |
 | **Circular SII N° 51 de 2008** y **Circular SII N° 08 de 2012** | Instrucciones sobre el tratamiento tributario del APV | `apv-chile` |
@@ -173,7 +179,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 - Lemus, A. y Pulgar, R. (2021), *Endeudamiento máximo sostenible de los hogares en Chile*, MPRA Paper 106958; publicado en Revista de Análisis Económico (2023). Base de los umbrales de `limites-sanos-endeudamiento`.
 
 ### Leyes y normas citadas pero no leídas completas (extracto o fuente secundaria)
-- **Leídos solo en los artículos o secciones que usa la skill (26-11-2026):** Código Procesal Penal (Ley 19.696) arts. 173-174; Circular 108 de la CMF (cooperativas), numeral 1; DFL 5 de 2003 (Ley General de Cooperativas) art. 87; Ley General de Bancos art. 65; Ley 19.628 (versión 09-05-2023) arts. 17-19; Oficio Circular CMF 1.403 (22-01-2026), códigos de baja del REDEC; Informe de Costos de Inversión en Fondos Mutuos de la CMF (2023), anexo metodológico de la TAC; Acuerdo 2448 del Banco Central (06-01-2022), solo una propuesta; ISL y Compendio SUSESO sobre la cotización adicional de independientes (D.S. 110 de 1968).
+- **Leídos solo en los artículos o secciones que usa la skill (26-11-2026):** Código Procesal Penal (Ley 19.696) arts. 173-174; Circular 108 de la CMF (cooperativas), numeral 1; DFL 5 de 2003 (Ley General de Cooperativas) art. 87; Ley General de Bancos art. 65; Ley 19.628 (versión 09-05-2023) arts. 17-19; Oficio Circular CMF 1.403 (22-01-2026), códigos de baja del REDEC; Informe de Costos de Inversión en Fondos Mutuos de la CMF (2023), anexo metodológico de la TAC; Acuerdo 2448 del Banco Central (06-01-2022), solo una propuesta; Ley 18.840 (Ley Orgánica del Banco Central) y Ley 20.255 (art. 88, según Ley 21.133), en lo que usan `ahorro-bajo-riesgo` e `independientes-honorarios`; ISL y Compendio SUSESO sobre la cotización adicional de independientes (D.S. 110 de 1968).
 - **Ley 21.521** (Ley Fintec): arts. 2, 3 y 5 y la NCG 502 de la CMF leídos (26-11-2026); lo que sigue pendiente es la revisión legal, no la lectura.
 - **Ley 20.555** (Sernac Financiero), **Ley 21.673** (origen de la NCG 537) y **Decretos 42, 43 y 44 de 2012** (reglamentos anteriores de información al consumidor): base legal citada, sin lectura del texto.
 - Reglamento de cobranza extrajudicial (consulta pública desde el 09-09-2025) y propuesta de reglamento de crédito de consumo (octubre de 2025): sin texto oficial publicado o leído.
