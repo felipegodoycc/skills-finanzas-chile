@@ -45,3 +45,8 @@ Todas las afirmaciones: fuente oficial o marcadas. Consultado 2026-11-26.
 
 ## No verificado (pendiente)
 Artículos citados verificados contra el texto completo de la Ley 21.236 (versión de 09-06-2020), leído el 26-11-2026. El arrepentimiento (art. 9) se entiende ejercido, respecto de los contratos no celebrados, si el cliente no contrata dentro del plazo de suscripción de la oferta. El art. 26 sanciona penalmente la falsedad documental en los documentos del proceso. Reglamento: Decreto 1.154 de 2020 (DO 08-09-2020), no leído.
+
+## Reglamento (Decreto 1.154 de 2020, Hacienda; texto leído el 26-11-2026)
+- Art. 9: la oferta de portabilidad tiene vigencia mínima de **7 días hábiles bancarios** desde su emisión y se dirige a un cliente con riesgo comercial ya evaluado.
+- Art. 18: puedes arrepentirte sin expresar causa de los contratos no celebrados, por escrito por el canal de la oferta; el nuevo proveedor devuelve lo abonado en 5 días hábiles bancarios (reteniendo solo servicios ya prestados, de lo que rinde cuenta en 10 días hábiles bancarios).
+- Arts. 5 y 25: el certificado de liquidación y el de actualización de deudas circulan entre proveedores; los plazos exactos están en el reglamento y en la Ley 21.236.

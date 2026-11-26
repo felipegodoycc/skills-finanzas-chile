@@ -118,6 +118,10 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **Ley 18.010** (operaciones de crédito de dinero), art. 10, versión con Ley 21.398 | Prepago, comisión y umbral de consentimiento del 10% | `prepago-y-portabilidad` |
 | **Ley 21.236** (portabilidad financiera, DO 09-06-2020) | Plazos, retracto, costos y sanciones de la portabilidad | `prepago-y-portabilidad` |
 | **Ley 20.720** (insolvencia y reemprendimiento), arts. 2, 260-268, con Ley 21.563 | Renegociación de la persona deudora ante la Superir | `cobranza-y-renegociacion`, `plan-refinanciamiento` |
+| **Ley 19.496** (protección del consumidor), arts. 3 bis y 37, y **Ley 21.320** (cobranza extrajudicial) | Retracto, tope de gastos de cobranza, límites a la cobranza | `cobranza-y-renegociacion`, `cotizacion-y-comparacion` |
+| **Ley 21.680** (Registro de Deuda Consolidada) | Consentimiento, límite de 5 años y derechos en el REDEC | `cobranza-y-renegociacion` |
+| **Ley 19.728** (seguro de desempleo) | Cotizaciones, cuenta individual y Fondo Solidario | `fondo-emergencia-y-metas` |
+| **Decreto 1.154 de 2020** (reglamento de portabilidad financiera) | Oferta, arrepentimiento y certificados | `prepago-y-portabilidad` |
 | **Ley 20.448** (integración del mercado de capitales), art. 8 | Seguros asociados a créditos | `cotizacion-y-comparacion` |
 | **Ley 21.719** (protección de datos personales) y **Ley 21.855** (fija su vigencia el 15-10-2027) | Tratamiento de datos | `entrada-segura-de-datos` |
 | **DL 3.500 de 1980**, arts. 20, 20 L y 20 O | Regímenes del APV y bonificación | `apv-chile` |
@@ -130,21 +134,22 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 |---|---|---|
 | **NCG 537** (CMF), pago mínimo de tarjetas, con calendario de gradualidad | Fórmula del monto mínimo a facturar | `pago-minimo-tarjetas` |
 | **NCG 569** (CMF, 01-06-2026), modifica la **NCG 514** | Plazos del Sistema de Finanzas Abiertas | `entrada-segura-de-datos` |
-| **NCG 576** (CMF, 14-09-2026), modifica la **NCG 540** | Consentimiento y revocación en el REDEC | contexto (ver `PENDIENTES.md`) |
+| **NCG 540** (CMF, 14-07-2025) y **NCG 576** (CMF, 14-09-2026) | Funcionamiento del REDEC, consentimiento y revocación | `cobranza-y-renegociacion` |
+| **NCG 28 de la Superir** (Res. Ex. 22802, 19-11-2025) | Requisitos y documentos de la renegociación | `cobranza-y-renegociacion` |
+| Informe normativo de la CMF sobre la modificación de la NCG 514 (junio de 2026) | Fecha de publicación de la NCG 514 (julio de 2024) | `entrada-segura-de-datos` |
 | **Circular SII N° 51 de 2008** y **Circular SII N° 08 de 2012** | Instrucciones sobre el tratamiento tributario del APV | `apv-chile` |
 
 ### Estudios académicos (texto completo)
 - Lemus, A. y Pulgar, R. (2021), *Endeudamiento máximo sostenible de los hogares en Chile*, MPRA Paper 106958; publicado en Revista de Análisis Económico (2023). Base de los umbrales de `limites-sanos-endeudamiento`.
 
 ### Leyes y normas citadas pero no leídas completas (extracto o fuente secundaria)
-- **Ley 19.496** (protección del consumidor, art. 37 y reglamentos) y **Ley 21.320** (cobranza extrajudicial): resumen del Sernac y de estudios jurídicos.
-- **Ley 21.521** (Ley Fintec) y **Ley 21.680** (REDEC): consultadas a través de las NCG de la CMF.
+- **Ley 21.521** (Ley Fintec): consultada a través de las NCG de la CMF.
 - **Ley 20.555** (Sernac Financiero), **Ley 21.673** (origen de la NCG 537) y **Decretos 42, 43 y 44 de 2012** (reglamentos anteriores de información al consumidor): base legal citada, sin lectura del texto.
-- **NCG 540 y NCG 567** (REDEC), reglamento de cobranza extrajudicial (consulta pública desde el 09-09-2025) y propuesta de reglamento de crédito de consumo (octubre de 2025): sin texto oficial publicado o leído.
+- Reglamento de cobranza extrajudicial (consulta pública desde el 09-09-2025) y propuesta de reglamento de crédito de consumo (octubre de 2025): sin texto oficial publicado o leído.
 - Fichas y comparadores oficiales: CMF Educa, simulador hipotecario de la CMF, comparadores del Sernac, ChileAtiende y Ventanilla Única Social.
 
 ### Pendientes de verificar
-Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, el seguro de cesantía, el historial crediticio tras una renegociación y la regla de retracto en seguros asociados a créditos.
+Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, la tabla de montos del seguro de cesantía, el historial crediticio tras una renegociación y la regla de retracto en seguros asociados a créditos.
 
 ## 📄 Licencia
 
