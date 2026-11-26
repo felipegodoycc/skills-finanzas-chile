@@ -90,7 +90,7 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `cotizacion-y-comparacion` | Cómo cotizar y leer rankings: consumo, hipotecario, tarjetas | **N3 parcial**: Decretos 75 y 49, Ley 20.448 art. 8, Ley 19.496 art. 3 bis; reglamento de consumo sin publicar |
 | `prepago-y-portabilidad` | Prepago (Ley 18.010 art. 10), portabilidad (Ley 21.236) | **N3**: Ley 18.010 art. 10, Ley 21.236, Decreto 1.154 |
 | `plan-refinanciamiento` | Avalancha vs. bola de nieve, prepago, compra de cartera | Método N1-N2; cálculos con tests |
-| `cobranza-y-renegociacion` | Derechos del deudor, cobranza, Superir | **N3**: Ley 19.496 art. 37, Ley 21.320, Ley 20.720 arts. 260-268, NCG 28, Ley 21.680, NCG 540; falta el historial crediticio |
+| `cobranza-y-renegociacion` | Derechos del deudor, cobranza, Superir | **N3**: Ley 19.496 art. 37, Ley 21.320, Ley 20.720 arts. 260-268, NCG 28, Ley 21.680, NCG 540; historial crediticio según Ley 19.628 arts. 17-19 (versión de 2023) y OFC CMF 1.403; falta confirmar la versión vigente tras la Ley 21.719 |
 | `presupuesto-personal` | Presupuesto de régimen y de transición | Método N1: metas son propuestas |
 | `analisis-gasto-recurrente` | Suscripciones, gasto hormiga | Método N1: umbral operativo |
 | `fondo-emergencia-y-metas` | Colchón y metas por tramos | Seguro de cesantía **N3** (Ley 19.728, Res. Ex. 383); "3 a 6 meses" N1 |
@@ -98,7 +98,7 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `indicadores-oficiales-chile` | UF, UTM, UTA, IPC y dólar; el usuario elige fuente (CMF, Banco Central, SII sin clave, terceros) | Fuente oficial; lector del SII probado con la página real (UF, UTM, UTA); CMF, Banco Central y mindicador sin prueba real |
 | `independientes-honorarios` | Boleta de honorarios: retención, cotización obligatoria, Operación Renta, presupuesto con ingreso variable | **N3**: DL 3.500 (arts. 89 a 92 G) y DL 824 (arts. 50, 52, 74) vigentes leídos, más Ley 21.133 y Ley 21.735 (arts. 15 a 23 y transitorio 46); cifras de 2026 contrastadas con SII y Previsión Social |
 | `operacion-renta-beneficios` | Beneficios de la Operación Renta: APV, intereses hipotecarios, crédito por educación, gasto presunto | **N3**: texto consolidado del DL 824 (BCN, vigente al 01-11-2026) leído; sin cifras en pesos; leídos también arts. 43, 65, 68, 69 y 97; faltan reglamentos y circulares |
-| `ahorro-bajo-riesgo` | Método para comparar depósitos, cuentas de ahorro y fondos mutuos de deuda: tasa real, riesgo, liquidez, costos e impuestos; no recomienda productos | **N3 en lo esencial**: arts. 41 bis, 57 y 107 del DL 824 y plazos del Compendio del Banco Central leídos; garantía estatal según la Ley General de Bancos (arts. 144 a 153, leídos); sin tasas ni inflación; falta la metodología de la TAC |
+| `ahorro-bajo-riesgo` | Método para comparar depósitos, cuentas de ahorro y fondos mutuos de deuda: tasa real, riesgo, liquidez, costos e impuestos; no recomienda productos | **N3 en lo esencial**: arts. 41 bis, 57 y 107 del DL 824 y plazos del Compendio del Banco Central leídos; garantía estatal según la Ley General de Bancos (arts. 144 a 153, leídos; cooperativas por la Circular 108 de la CMF); art. 107 N° 3 numeral 3.1 y TAC (informe CMF 2023) leídos; sin tasas ni inflación; falta el texto final del Cap. III.E.1 del Banco Central |
 | `pensiones` | Reforma de pensiones (Ley 21.735): cotización del empleador y su calendario, Seguro Social, beneficio por años cotizados, CRP, compensación por expectativa de vida y PGU | **N3 en lo esencial**: arts. 1 a 23 y transitorios 4, 34 y 46 leídos (BCN); cifras de la PGU y cotizaciones vigentes según IPS y Superintendencia de Pensiones; falta el art. 67 en adelante (cambios al DL 3.500) |
 | `fraude-medios-de-pago` | Robo, extravío o fraude con tarjetas y transferencias: aviso, reclamo, plazos de restitución | **N3**: texto consolidado de la Ley 20.009 (BCN, versión 30-05-2024) leído completo, más el Decreto exento 473 (umbral 35 UF, 2026) y la NCG 538 de la CMF con sus modificaciones |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
@@ -164,6 +164,9 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **NCG 460** (CMF, 13-08-2021; mod. NCG 464) | Seguros que se pueden contratar con un crédito, ratificación a 30 días y retracto a distancia | `cotizacion-y-comparacion` |
 | **Código de Comercio, arts. 538 y 538 bis** (Ley 20.667 y Ley 21.314) | Retracto de 10 días del seguro contratado a distancia (N3: texto oficial de la Ley 20.667 leído) y ratificación de seguros asociados a créditos | `cotizacion-y-comparacion` |
 | **Certificados de interés corriente y máximo convencional N° 05/2026 y 07/2026** (CMF, Diario Oficial 15-05-2026 y 15-07-2026) | Verificación de la TMC por fecha | `tasa-maxima-convencional` |
+| **Código Procesal Penal** (Ley 19.696, arts. 173-174), **Circular 108 de la CMF** (cooperativas), **DFL 5 de 2003** (Ley General de Cooperativas, art. 87), **LGB art. 65** | Denuncia por fraude; garantía estatal a cooperativas fiscalizadas; reserva técnica de depósitos a la vista | `fraude-medios-de-pago`, `ahorro-bajo-riesgo` |
+| **Ley 19.628** (BCN, versión 09-05-2023, arts. 17-19) y **Oficio Circular CMF 1.403** (22-01-2026) | Datos comerciales de obligaciones renegociadas, pagadas o de más de cinco años; bajas en el REDEC | `cobranza-y-renegociacion` |
+| **Informe de Costos de Inversión en Fondos Mutuos** (CMF, 2023), **Acuerdo 2448 del Banco Central** (06-01-2022, propuesta), **ISL** y **Compendio SUSESO** (tasa adicional ATEP) | Definición y cálculo de la TAC; propuesta sobre cuentas de ahorro a plazo; cotización adicional de independientes | `ahorro-bajo-riesgo`, `independientes-honorarios` |
 | **NCG 28 de la Superir** (Res. Ex. 22802, 19-11-2025) | Requisitos y documentos de la renegociación | `cobranza-y-renegociacion` |
 | **Res. Ex. 383 de la Superintendencia de Pensiones** (DO 17-03-2026), valores del Fondo de Cesantía Solidario (leída completa; con dos erratas del texto marcadas en la skill) | Montos vigentes hasta 28-02-2027 | `fondo-emergencia-y-metas` |
 | Informe normativo de la CMF sobre la modificación de la NCG 514 (junio de 2026) | Fecha de publicación de la NCG 514 (julio de 2024) | `entrada-segura-de-datos` |
@@ -179,7 +182,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 - Fichas y comparadores oficiales: CMF Educa, simulador hipotecario de la CMF, comparadores del Sernac, ChileAtiende y Ventanilla Única Social.
 
 ### Pendientes de verificar
-Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, el historial crediticio tras una renegociación (Superir) y si el retracto de seguros a distancia alcanza al seguro de desgravamen de un crédito (el art. 538 no lo excluye; el informe normativo de la NCG 460 no lo trata).
+Lo que falta está en [`PENDIENTES.md`](PENDIENTES.md): por ejemplo, costos de retiro del APV por institución, la versión vigente de la Ley 19.628 tras la Ley 21.719, el texto final del Cap. III.E.1 del Banco Central y si el retracto de seguros a distancia alcanza al seguro de desgravamen de un crédito (el art. 538 no lo excluye; el informe normativo de la NCG 460 no lo trata).
 
 ## 📄 Licencia
 
