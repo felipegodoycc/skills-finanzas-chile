@@ -21,7 +21,7 @@ Basadas en fuentes oficiales (CMF, SERNAC, Superir, leychile.cl). Cada cifra tra
 
 ```bash
 npx skills add felipegodoycc/skills-finanzas-chile            # elige interactivamente
-npx skills add felipegodoycc/skills-finanzas-chile --list     # ver las 20 skills
+npx skills add felipegodoycc/skills-finanzas-chile --list     # ver las 21 skills
 npx skills add felipegodoycc/skills-finanzas-chile --skill diagnostico-financiero
 ```
 
@@ -96,6 +96,7 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `fondo-emergencia-y-metas` | Colchón y metas por tramos | Seguro de cesantía **N3** (Ley 19.728, Res. Ex. 383); "3 a 6 meses" N1 |
 | `apv-chile` | APV régimen A y B | **N3**: DL 3.500, DL 824 y circulares SII; faltan costos de retiro por institución |
 | `indicadores-oficiales-chile` | UF, UTM, UTA, IPC y dólar; el usuario elige fuente (CMF, Banco Central, SII sin clave, terceros) | Fuente oficial; lector del SII probado con la página real (UF, UTM, UTA); CMF, Banco Central y mindicador sin prueba real |
+| `independientes-honorarios` | Boleta de honorarios: retención, cotización obligatoria, Operación Renta, presupuesto con ingreso variable | **N3 parcial**: Ley 21.133 leída, retención 2026 y cotizaciones contrastadas con SII y Previsión Social; falta el texto vigente del DL 3.500 y de la Ley de Impuesto a la Renta |
 | `fraude-medios-de-pago` | Robo, extravío o fraude con tarjetas y transferencias: aviso, reclamo, plazos de restitución | **N3**: texto consolidado de la Ley 20.009 (BCN, versión 30-05-2024) leído completo; falta la NCG 538 y el decreto de 2026 del umbral |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
 
@@ -151,6 +152,7 @@ Cada cifra normativa de las skills trae su URL y fecha. Aquí está el listado c
 | **NCG 537** (CMF), pago mínimo de tarjetas, con calendario de gradualidad | Fórmula del monto mínimo a facturar | `pago-minimo-tarjetas` |
 | **NCG 569** (CMF, 01-06-2026), modifica la **NCG 514** | Plazos del Sistema de Finanzas Abiertas | `entrada-segura-de-datos` |
 | **NCG 540** (CMF, 14-07-2025) y **NCG 576** (CMF, 14-09-2026) | Funcionamiento del REDEC, consentimiento y revocación | `cobranza-y-renegociacion` |
+| **Ley 21.133** (DO 02-02-2019) y fichas del SII, Previsión Social y Superintendencia de Pensiones | Retención y cotización obligatoria de quienes emiten boletas de honorarios (15,25% en 2026) | `independientes-honorarios` |
 | **Ley 20.009** (Leyes 21.234, DO 29-05-2020, y 21.673, DO 30-05-2024) y **Decreto 435 de Hacienda** (DO 17-12-2024) | Limitación de responsabilidad por fraude con medios de pago, plazos de restitución y umbral de 35 UF | `fraude-medios-de-pago` |
 | **NCG 460** (CMF, 13-08-2021; mod. NCG 464) | Seguros que se pueden contratar con un crédito, ratificación a 30 días y retracto a distancia | `cotizacion-y-comparacion` |
 | **Código de Comercio, arts. 538 y 538 bis** (Ley 20.667 y Ley 21.314) | Retracto de 10 días del seguro contratado a distancia (N3: texto oficial de la Ley 20.667 leído) y ratificación de seguros asociados a créditos | `cotizacion-y-comparacion` |
