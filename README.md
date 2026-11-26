@@ -64,25 +64,37 @@ Este proyecto lo construimos **Felipe y Claude** trabajando juntos, a partir de 
 
 ## 📚 Qué incluye
 
+### Escala de verificación
+Cada skill declara qué tan verificada está. Los niveles se miden contra fuentes y tests, no por opinión:
+
+| Nivel | Criterio |
+|---|---|
+| **N1** | Sin fuente: heurística o propuesta, declarada como tal |
+| **N2** | Fuente secundaria o estudio citado, sin leer el texto oficial |
+| **N3** | Texto oficial leído completo (artículo y fecha citados); el código tiene tests |
+| **N4** | N3 más revisión independiente (abogado, CMF o un segundo lector). *Ninguna skill llega aquí todavía.* |
+
+El tipo importa: una **norma** sube con el texto oficial; un **método** se sustenta con evidencia citada y casos de prueba, y no pasa de N2 salvo que descanse en un estudio leído completo; el **código** sube con tests y datos reales.
+
 | Skill | Qué cubre | Verificación |
 |---|---|---|
-| `diagnostico-financiero` | Punto de entrada: objetivos, flujo, carga de deuda y derivación a las demás | Probado |
-| `entrada-segura-de-datos` | Cómo entregar datos a la IA según el origen (CSV, PDF, base de datos, automatización) | Probado; SQL no ejecutado |
-| `lectura-pdf-segura` | PDF (con clave) → Markdown enmascarado | Probado, datos falsos |
-| `calidad-de-datos-financieros` | Duplicados, reembolsos, fondos de terceros | Probado |
-| `endeudamiento-cmf` | Carga financiera, apalancamiento, alta carga | Alto |
-| `limites-sanos-endeudamiento` | Deuda vs. umbrales por ingreso (Lemus y Pulgar) | Alto en fuente; límites declarados |
-| `pago-minimo-tarjetas` | Pago mínimo NCG 537, proyección, costo de pagar solo el mínimo | Verificada contra el texto completo de la NCG 537 |
-| `credito-cae-ctc` | CAE, CTC, comparar créditos, consolidación | Alto (ver nota) |
-| `tasa-maxima-convencional` | TMC y verificación del interés pactado | Alto en método; tabla vigente no incluida |
-| `cotizacion-y-comparacion` | Cómo cotizar y leer rankings: consumo, hipotecario, tarjetas | Medio |
-| `prepago-y-portabilidad` | Prepago (Ley 18.010 art. 10), portabilidad (Ley 21.236) | Medio-alto |
-| `plan-refinanciamiento` | Avalancha vs. bola de nieve, prepago, compra de cartera | Medio |
-| `cobranza-y-renegociacion` | Derechos del deudor, cobranza, Superir | Medio |
-| `presupuesto-personal` | Presupuesto de régimen y de transición | Método; metas son propuestas |
-| `analisis-gasto-recurrente` | Suscripciones, gasto hormiga | Umbral operativo |
-| `fondo-emergencia-y-metas` | Colchón y metas por tramos | Heurísticas declaradas |
-| `apv-chile` | APV régimen A y B | Medio-alto: leyes y circulares leídas; faltan costos de retiro |
+| `diagnostico-financiero` | Punto de entrada: objetivos, flujo, carga de deuda y derivación a las demás | Código con tests (datos sintéticos); método N1 |
+| `entrada-segura-de-datos` | Cómo entregar datos a la IA según el origen (CSV, PDF, base de datos, automatización) | Normas N3 (Ley 21.719/21.855, NCG 569); código con tests; SQL **no ejecutado** |
+| `lectura-pdf-segura` | PDF (con clave) → Markdown enmascarado | Código con tests (datos falsos); sin probar con PDFs reales |
+| `calidad-de-datos-financieros` | Duplicados, reembolsos, fondos de terceros | Código con tests (datos sintéticos) |
+| `endeudamiento-cmf` | Carga financiera, apalancamiento, alta carga | N2: definiciones por contrastar con el Informe de Endeudamiento de la CMF |
+| `limites-sanos-endeudamiento` | Deuda vs. umbrales por ingreso (Lemus y Pulgar) | N3 sobre el estudio (Lemus y Pulgar, MPRA 106958); es un estudio, no una norma |
+| `pago-minimo-tarjetas` | Pago mínimo NCG 537, proyección, costo de pagar solo el mínimo | **N3**: NCG 537 leída completa |
+| `credito-cae-ctc` | CAE, CTC, comparar créditos, consolidación | Crédito de consumo: método N2; CAE de tarjetas (Decreto 75): **fórmulas en proceso** |
+| `tasa-maxima-convencional` | TMC y verificación del interés pactado | Método N2; tabla vigente no incluida |
+| `cotizacion-y-comparacion` | Cómo cotizar y leer rankings: consumo, hipotecario, tarjetas | **N3 parcial**: Decretos 75 y 49, Ley 20.448 art. 8, Ley 19.496 art. 3 bis; reglamento de consumo sin publicar |
+| `prepago-y-portabilidad` | Prepago (Ley 18.010 art. 10), portabilidad (Ley 21.236) | **N3**: Ley 18.010 art. 10, Ley 21.236, Decreto 1.154 |
+| `plan-refinanciamiento` | Avalancha vs. bola de nieve, prepago, compra de cartera | Método N1-N2; cálculos con tests |
+| `cobranza-y-renegociacion` | Derechos del deudor, cobranza, Superir | **N3**: Ley 19.496 art. 37, Ley 21.320, Ley 20.720 arts. 260-268, NCG 28, Ley 21.680, NCG 540; falta el historial crediticio |
+| `presupuesto-personal` | Presupuesto de régimen y de transición | Método N1: metas son propuestas |
+| `analisis-gasto-recurrente` | Suscripciones, gasto hormiga | Método N1: umbral operativo |
+| `fondo-emergencia-y-metas` | Colchón y metas por tramos | Seguro de cesantía **N3** (Ley 19.728, Res. Ex. 383); "3 a 6 meses" N1 |
+| `apv-chile` | APV régimen A y B | **N3**: DL 3.500, DL 824 y circulares SII; faltan costos de retiro por institución |
 | `guardrails-finanzas-chile` | Reglas de conducta del agente | n/a |
 
 Casos de ejemplo con cifras ficticias: [docs/casos/casos.md](docs/casos/casos.md).

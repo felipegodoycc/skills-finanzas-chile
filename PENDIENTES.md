@@ -43,7 +43,7 @@
 
 ## Para verificar en fuente oficial
 - [ ] APV: costos y condiciones de retiro por institución; norma conjunta de las superintendencias; valores UF/UTM/UTA del año.
-- [ ] Seguro de cesantía (AFC): sin fuente oficial leída. Superir: efectos de la renegociación sobre el historial crediticio y norma general de la Superir.
+- [ ] Seguro de cesantía: tabla de retiro de la cuenta individual (art. 15 de la Ley 19.728) y confirmar en el PDF la Res. Ex. 383 (el art. 70 trae una vigencia con posible error). Superir: efectos de la renegociación sobre el historial crediticio y norma general de la Superir.
 - [ ] Retracto en seguros asociados a créditos: no está en el art. 8 de la Ley 20.448; buscar en la normativa de seguros (CMF) si existe.
 - [ ] Reglamento de cobranza extrajudicial: confirmar en el Diario Oficial si se publicó.
 - [ ] Vigencia del comparador de tarjetas del Sernac y del simulador hipotecario de la CMF.
