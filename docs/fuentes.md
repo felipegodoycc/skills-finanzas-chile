@@ -24,7 +24,7 @@ Y cada fuente tiene un **estado de lectura**:
 
 - Los enlaces a leyes apuntan a la BCN (leychile.cl), que muestra **la versión vigente al abrirlos**. La versión que se leyó está indicada en la fila; si la BCN muestra otra más nueva, puede haber cambios que las skills todavía no recogen.
 - Varios textos se leyeron desde PDFs de la BCN descargados a mano, porque la página carga con JavaScript.
-- Cuando no se encontró el enlace directo al documento, el enlace lleva al **índice oficial del emisor** y la fila lo dice ("índice").
+- Los dos decretos de Hacienda de la Ley 20.009 enlazan a la edición del Diario Oficial de su fecha de publicación, identificada por búsqueda.
 
 ---
 
@@ -66,7 +66,7 @@ Y cada fuente tiene un **estado de lectura**:
 | [DFL 1 de 2009](https://www.bcn.cl/leychile/navegar?idNorma=1007469), Ley de Tránsito (versión del 22-10-2026) | Multa de 1 UTM por circular sin TAG (art. 114) | Artículos 114 y 200 N° 7 (este último no trata el TAG) | `plan-refinanciamiento` |
 | [DS MOP 900 de 1996](https://www.bcn.cl/leychile/navegar?idNorma=16121), Ley de Concesiones de Obras Públicas (versión del 05-02-2026) | Cobro judicial del peaje y multas (arts. 42 y 43) | Artículos 42 y 43 | `plan-refinanciamiento` |
 | [DFL 4 de 2006](https://www.bcn.cl/leychile/navegar?idNorma=258171), Ley General de Servicios Eléctricos | Corte de luz por no pago (art. 141) | Artículo 141 | `plan-refinanciamiento` |
-| DFL 382 de 1988, Ley General de Servicios Sanitarios ([buscar en la BCN](https://www.bcn.cl/leychile/)) | Corte de agua por no pago (arts. 36 a 38) | Artículos 36 a 38 | `plan-refinanciamiento` |
+| [DFL 382 de 1988](https://www.bcn.cl/leychile/navegar?idNorma=5545), Ley General de Servicios Sanitarios | Corte de agua por no pago (arts. 36 a 38) | Artículos 36 a 38 | `plan-refinanciamiento` |
 | [Código de Procedimiento Civil](https://www.bcn.cl/leychile/navegar?idNorma=22740), Ley 1.552 (versión del 15-09-2022) | Juicio ejecutivo: título, requerimiento, oposición, excepciones, inembargables, remate | Artículos 434, 443, 445, 459, 464, 489 y 499 | `plan-refinanciamiento` |
 | [Código Civil](https://www.bcn.cl/leychile/navegar?idNorma=172986), DFL 1 de 2000 (versión del 28-08-2025) | Exigibilidad anticipada del plazo | Artículos 1496 y 1497 | `plan-refinanciamiento` |
 
@@ -77,7 +77,7 @@ Y cada fuente tiene un **estado de lectura**:
 | Decreto 75 de 2025 (Economía), reglamento de información al consumidor de tarjetas ([Diario Oficial, 06-08-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/08/06/44518/01/2846533.pdf)) | CAE de tarjetas, cotización, estado de cuenta | Completo (fórmulas transcritas, con tests) | `credito-cae-ctc`, `cotizacion-y-comparacion` |
 | Decreto 49 de 2024 (Economía), reglamento de créditos hipotecarios ([Diario Oficial, 27-02-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/02/27/44387/01/2769135.pdf)) | Cotización, cartillas y vigencia de 12 meses | Completo | `cotizacion-y-comparacion` |
 | [Decreto 1.154 de 2020](https://www.bcn.cl/leychile/navegar?idNorma=1146340), reglamento de portabilidad financiera, y reglamento del certificado de liquidación ([Diario Oficial, 09-11-2020](https://www.diariooficial.interior.gob.cl/publicaciones/2020/11/09/42800/01/1843778.pdf)) | Oferta, arrepentimiento y certificados | Completo | `prepago-y-portabilidad` |
-| Decretos 435 de 2024 y 473 exento de 2026 (Hacienda, DO 30-01-2026) | Umbral de restitución de 35 UF de la Ley 20.009 ([índice de la BCN](https://www.bcn.cl/leychile/)) | Completo | `fraude-medios-de-pago` |
+| Decreto 435 de 2024 ([Diario Oficial, 17-12-2024](https://www.diariooficial.interior.gob.cl/publicaciones/2024/12/17/44026/01/2583995.pdf)) y Decreto exento 473 de 2026 ([Diario Oficial, 30-01-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/01/30/44363/01/2757834.pdf)), Hacienda | Umbral de restitución de 35 UF de la Ley 20.009 | Completo | `fraude-medios-de-pago` |
 
 ### Normas de reguladores
 
@@ -85,12 +85,12 @@ Y cada fuente tiene un **estado de lectura**:
 |---|---|---|---|
 | NCG 537 de la CMF, pago mínimo de tarjetas ([comunicado y norma](https://www.cmfchile.cl/portal/prensa/615/w3-article-95105.html)) | Fórmula del pago mínimo y gradualidad | Completo | `pago-minimo-tarjetas` |
 | NCG 569 de la CMF (01-06-2026), modifica la NCG 514 ([comunicado](https://www.cmfchile.cl/portal/prensa/615/w3-article-110881.html)); informe normativo de junio de 2026 | Plazos del Sistema de Finanzas Abiertas | Completo | `entrada-segura-de-datos` |
-| NCG 540 (14-07-2025) y [NCG 576](https://www.cmfchile.cl/normativa/ncg_576_2026.pdf) (14-09-2026) de la CMF; Oficio Circular 1.403 (22-01-2026) | Funcionamiento del REDEC, consentimiento, revocación y códigos de baja | NCG completas; OFC 1.403 en los códigos de baja | `cobranza-y-renegociacion` |
-| NCG 460 (13-08-2021, mod. NCG 464), NCG 538 y NCG 502 de la CMF ([índice de NCG](https://www.cmfchile.cl/institucional/legislacion_normativa/normativa2.php?tiponorma=NCG)) | Seguros asociados a créditos; fraude con medios de pago; Ley Fintec | NCG 460 y 538 completas; NCG 502 leída para la Ley Fintec | `cotizacion-y-comparacion`, `fraude-medios-de-pago`, `guardrails-finanzas-chile` |
-| Circular 108 de la CMF (cooperativas) ([índice](https://www.cmfchile.cl/institucional/legislacion_normativa/normativa2.php?tiponorma=NCG)) | Garantía estatal en cooperativas | Numeral 1 | `ahorro-bajo-riesgo` |
+| NCG 540 (14-07-2025, [comunicado](https://www.cmfchile.cl/portal/prensa/625/w4-article-96582.html)) y [NCG 576](https://www.cmfchile.cl/normativa/ncg_576_2026.pdf) (14-09-2026) de la CMF; Oficio Circular 1.403 (22-01-2026) | Funcionamiento del REDEC, consentimiento, revocación y códigos de baja | NCG completas; OFC 1.403 en los códigos de baja | `cobranza-y-renegociacion` |
+| [NCG 460](https://www.cmfchile.cl/normativa/ncg_460_2021.pdf) (13-08-2021, mod. NCG 464), [NCG 538](https://www.cmfchile.cl/portal/normativa/624/w4-article-106921.html) y NCG 502 ([comunicado](https://www.cmfchile.cl/portal/prensa/625/w4-article-77135.html)) de la CMF | Seguros asociados a créditos; fraude con medios de pago; Ley Fintec | NCG 460 y 538 completas; NCG 502 leída para la Ley Fintec | `cotizacion-y-comparacion`, `fraude-medios-de-pago`, `guardrails-finanzas-chile` |
+| Circular 108 de la CMF, cooperativas ([texto actualizado](https://www.cmfchile.cl/institucional/mercados/ver_archivo.php?archivo=%2Fweb%2Fcompendio%2Fcir%2Fcir_2304_2022.pdf)) | Garantía estatal en cooperativas | Numeral 1 | `ahorro-bajo-riesgo` |
 | Certificados de interés corriente y máximo convencional de la CMF ([Diario Oficial, 15-07-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/07/15/44500/01/2839188.pdf); [15-10-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/10/15/44574/01/2885690.pdf)) y [metodología de cálculo](https://www.cmfchile.cl/portal/estadisticas/617/articles-102391_doc_pdf.pdf) | Verificación de la TMC por fecha | Completo | `tasa-maxima-convencional` |
-| Compendio de Normas sobre los Procedimientos Concursales y las Asesorías Económicas de Insolvencia de la Superir (Versión N° 2 del 01-10-2026, Res. Ex. 24374/2026), aprobado por la Res. Ex. 19752 (12-08-2026), que **derogó la NCG 28** desde el 13-08-2026 ([sitio de la Superir](https://www.superir.gob.cl/)) | Requisitos, audiencias y efectos de la renegociación | Libro IV, Títulos I a V. No leídos: Título VI, protocolos de audiencias asincrónicas, Libros I-III, V y VI | `cobranza-y-renegociacion` |
-| Res. Ex. 383 de la Superintendencia de Pensiones (DO 17-03-2026) ([resoluciones del seguro de cesantía](https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-5941.html)) | Valores del Fondo de Cesantía Solidario hasta el 28-02-2027 | Completo (dos erratas marcadas en la skill) | `fondo-emergencia-y-metas` |
+| Compendio de Normas sobre los Procedimientos Concursales y las Asesorías Económicas de Insolvencia de la Superir (Versión N° 2 del 01-10-2026, Res. Ex. 24374/2026), aprobado por la [Res. Ex. 19752](https://www.superir.gob.cl/wp-content/document/biblioteca_digital/compendio_de_normas/RES_NUM_19752_ANO_2026.pdf) (12-08-2026), que **derogó la NCG 28** desde el 13-08-2026 ([Compendio vigente](https://www.superir.gob.cl/compendio/)) | Requisitos, audiencias y efectos de la renegociación | Libro IV, Títulos I a V. No leídos: Título VI, protocolos de audiencias asincrónicas, Libros I-III, V y VI | `cobranza-y-renegociacion` |
+| [Res. Ex. 383 de la Superintendencia de Pensiones](https://www.bcn.cl/leychile/navegar?idNorma=1222403) (DO 17-03-2026) | Valores del Fondo de Cesantía Solidario hasta el 28-02-2027 | Completo (dos erratas marcadas en la skill) | `fondo-emergencia-y-metas` |
 | [Circular SII N° 51 de 2008](https://www.sii.cl/documentos/circulares/2008/circu51.pdf) y [Circular SII N° 08 de 2012](https://www.sii.cl/documentos/circulares/2012/circu08.htm) | Tratamiento tributario del APV | Completo | `apv-chile` |
 | Res. Ex. SII 24 y TGR 1 de 2026 | Prórroga de contribuciones solo para Ñuble y Biobío | Extracto (noticia del SII) | `plan-refinanciamiento` |
 
@@ -107,7 +107,7 @@ Y cada fuente tiene un **estado de lectura**:
 ### Normas citadas pero no leídas
 
 - **Ley 21.850** (DO 17-10-2026), exención de contribuciones para mayores de 65 años. Solo se vio en el [SII](https://www.sii.cl/noticias/2026/111126noti01pcr.htm) y la prensa.
-- **Ley 20.555** (Sernac Financiero) y **Decretos 42, 43 y 44 de 2012** (reglamentos anteriores de información al consumidor): base legal citada, sin lectura.
+- **Ley 20.555** ([Sernac Financiero](https://www.bcn.cl/leychile/navegar?idLey=20555)) y **Decretos 42, 43 y 44 de 2012** (reglamentos anteriores de información al consumidor): base legal citada, sin lectura.
 - **Reglamento de cobranza extrajudicial** (en consulta pública desde el 09-09-2025) y [propuesta de reglamento de crédito de consumo](https://pac.economia.gob.cl/wp-content/uploads/2025/10/Propuesta-Nuevo-Reglamento-Credito-de-Consumo.pdf) (octubre de 2025): borradores, no normas vigentes. La fórmula de `credito-cae-ctc/scripts/cae.py` sale de ese borrador.
 
 ---
