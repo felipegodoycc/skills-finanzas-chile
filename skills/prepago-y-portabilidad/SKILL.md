@@ -1,6 +1,6 @@
 ---
 name: prepago-y-portabilidad
-description: Explica y evalúa el pago anticipado (prepago) de créditos y la portabilidad financiera en Chile (Ley 18.010 art. 10 y Ley 21.236): derechos, certificado de prepago, qué productos se pueden portar y qué verificar antes de cambiarse de banco. Úsala cuando pregunten por prepagar, abonar a un crédito, refinanciar o cambiarse de banco.
+description: "Explica y evalúa el pago anticipado (prepago) de créditos y la portabilidad financiera en Chile (Ley 18.010 art. 10 y Ley 21.236): derechos, certificado de prepago, qué productos se pueden portar y qué verificar antes de cambiarse de banco. Úsala cuando pregunten por prepagar, abonar a un crédito, refinanciar o cambiarse de banco."
 ---
 
 # Prepago y portabilidad financiera (Chile)

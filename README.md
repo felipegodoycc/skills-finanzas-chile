@@ -122,6 +122,18 @@ Tu **política personal** (reglas, metas, cifras) no va en este repo: usa `examp
 
 Nunca subas claves de PDF, contraseñas, tokens ni números completos de tarjeta o cuenta. Enmascara primero y revisa el resultado. Detalle en `skills/entrada-segura-de-datos/SKILL.md`.
 
+### Qué ejecuta, lee y envía este plugin
+
+- **Sin hooks, sin servidores MCP, sin telemetría.** El plugin no guarda datos ni los envía a servidores propios. Solo trae skills (Markdown) y scripts de Python que el agente corre en tu equipo cuando los necesita.
+- **Única salida a internet: `indicadores-oficiales-chile/scripts/indicadores.py`**, y solo al consultar un indicador (UF, UTM, UTA, IPC o dólar). Hace un GET a la fuente que elijas con `--fuente`:
+  - `api.cmfchile.cl` (CMF): envía tu clave `CMF_API_KEY` como parámetro `apikey` de la URL.
+  - `si3.bcentral.cl` (Banco Central): envía tu token `BCCH_API_TOKEN` como parámetro `token` de la URL.
+  - `www.sii.cl` (SII): sin clave.
+  - `mindicador.cl` (terceros, no oficial): sin clave; solo si lo pides a mano.
+  Las claves se leen solo de variables de entorno, nunca se imprimen y no se envían a ningún otro destino. Ningún dato tuyo (montos, movimientos) sale en esas consultas.
+- **Archivos locales:** los scripts leen solo los archivos que les pases (CSV de movimientos, PDF de estados de cuenta). `lectura-pdf-segura` escribe un `.enmascarado.md` junto al PDF (permisos 0600) y `entrada-segura-de-datos/scripts/normalizar_movimientos.py` escribe el CSV normalizado en la ruta que indiques (permisos 0600). `lectura-pdf-segura` necesita `pdfplumber` (`pip install -r skills/lectura-pdf-segura/requirements.txt`). El resto usa solo la biblioteca estándar de Python.
+- **Base de datos (opcional):** `entrada-segura-de-datos/data/rol_lectura_postgres.sql` es una plantilla para que crees tú un rol de solo lectura; el plugin no se conecta a ninguna base.
+
 ## 🛠️ Contribuir
 
 Lee `CONTRIBUTING.md`. Regla central: **toda cifra normativa debe traer URL oficial y fecha de verificación**. Lo pendiente está en `PENDIENTES.md`. Las pruebas corren en CI con cada push.
