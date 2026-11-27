@@ -1,6 +1,6 @@
 ---
 name: fraude-medios-de-pago
-description: Guía qué hacer en Chile cuando hay robo, extravío, hurto o fraude con tarjetas, cuentas o transferencias (Ley 20.009 modificada por las Leyes 21.234 y 21.673): aviso, bloqueo, reclamo, denuncia, plazos de restitución y límites. Úsala cuando el usuario no reconoce un cargo, le robaron la tarjeta o cayó en un engaño.
+description: "Guía qué hacer en Chile cuando hay robo, extravío, hurto o fraude con tarjetas, cuentas o transferencias (Ley 20.009 modificada por las Leyes 21.234 y 21.673): aviso, bloqueo, reclamo, denuncia, plazos de restitución y límites. Úsala cuando el usuario no reconoce un cargo, le robaron la tarjeta o cayó en un engaño."
 ---
 
 # Fraude y uso no autorizado de medios de pago (Chile)

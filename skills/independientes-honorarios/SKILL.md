@@ -1,6 +1,6 @@
 ---
 name: independientes-honorarios
-description: Orienta a quien emite boletas de honorarios en Chile: retención, cotización previsional obligatoria (Ley 21.133), Operación Renta y cómo presupuestar con ingreso variable. Úsala cuando el usuario sea independiente, pregunte por la retención de la boleta o quiera calcular su líquido real.
+description: "Orienta a quien emite boletas de honorarios en Chile: retención, cotización previsional obligatoria (Ley 21.133), Operación Renta y cómo presupuestar con ingreso variable. Úsala cuando el usuario sea independiente, pregunte por la retención de la boleta o quiera calcular su líquido real."
 ---
 
 # Independientes y boletas de honorarios (Chile)

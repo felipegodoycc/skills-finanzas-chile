@@ -1,6 +1,6 @@
 ---
 name: pensiones
-description: Explica cómo funciona el sistema de pensiones chileno tras la reforma (Ley 21.735): cotización del empleador y su calendario, Seguro Social, beneficio por años cotizados, Cotización con Rentabilidad Protegida, compensación por expectativa de vida y PGU. Úsala cuando el usuario pregunte por su futura pensión, por la nueva cotización o por la PGU.
+description: "Explica cómo funciona el sistema de pensiones chileno tras la reforma (Ley 21.735): cotización del empleador y su calendario, Seguro Social, beneficio por años cotizados, Cotización con Rentabilidad Protegida, compensación por expectativa de vida y PGU. Úsala cuando el usuario pregunte por su futura pensión, por la nueva cotización o por la PGU."
 ---
 
 # Pensiones en Chile tras la Ley 21.735
