@@ -19,5 +19,5 @@
 - Ejecuta los scripts con tus casos de prueba y pégalos en la descripción.
 - Verifica que ningún archivo contenga datos personales.
 
-## Fuentes en el README
-Cada ley, decreto, norma o estudio que una skill use debe quedar listado en la sección «Fuentes consultadas» del `README.md` (texto completo, o leído solo en los artículos que usa) en el mismo commit que lo introduce. Si una norma es derogada o reemplazada, anótalo ahí y en la skill.
+## Listado de fuentes
+Cada ley, decreto, norma, estudio o referencia que una skill use debe quedar en [`docs/fuentes.md`](docs/fuentes.md) en el mismo commit que lo introduce, con su enlace, su grupo (norma oficial, orientación oficial, estudio o solo referencia) y su estado de lectura (completo, artículos, extracto o no leído). Si una norma es derogada o reemplazada, anótalo ahí y en la skill.
