@@ -32,6 +32,16 @@ npx skills add felipegodoycc/skills-finanzas-chile --skill diagnostico-financier
 /plugin install skills-finanzas-chile@skills-finanzas-chile
 ```
 
+El plugin trae además cinco comandos que atajan flujos frecuentes. Solo existen en Claude Code; con `npx skills` o a mano las skills funcionan igual sin ellos.
+
+| Comando | Qué hace |
+|---|---|
+| `/diagnostico [situación]` | Diagnóstico guiado: objetivos, flujo, carga de deuda y derivación |
+| `/revisar-cartola <archivo>` | PDF o CSV → enmascarado → duplicados y reembolsos → suscripciones y gasto hormiga, en ese orden |
+| `/fraude [qué pasó]` | Pasos inmediatos y plazos ante un cargo no reconocido, robo o engaño (Ley 20.009) |
+| `/cae <monto> <cuota> <n>` | CAE y costo total de un crédito de consumo, calculados con código |
+| `/pago-minimo [datos]` | Pago mínimo de la tarjeta (NCG 537) y costo de pagar solo el mínimo |
+
 **A mano:** copia las carpetas de `skills/` a `.claude/skills/` (proyecto) o `~/.claude/skills/` (global).
 
 > Para probar desde una copia local: `npx skills add ./ --list`. Otros asistentes (ChatGPT, NanoClaw, modelos locales): [docs/uso-con-otros-asistentes.md](docs/uso-con-otros-asistentes.md).
