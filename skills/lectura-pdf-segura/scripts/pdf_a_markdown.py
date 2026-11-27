@@ -204,6 +204,8 @@ def main(argv=None):
         sys.exit(f"{destino} ya existe (usa --sobrescribir).")
     with os.fdopen(fd, "w", encoding="utf-8") as f:
         f.write(md)
+    if os.name != "posix":  # Windows ignora el modo 0600: el archivo hereda los permisos de la carpeta
+        print("AVISO: en Windows no se pudo restringir el acceso a %s; guárdalo en una carpeta solo tuya." % destino, file=sys.stderr)
     print(f"OK -> {destino} (permisos 0600). Enmascarado: {conteos}. REVÍSALO antes de compartirlo.", file=sys.stderr)
     return 0
 

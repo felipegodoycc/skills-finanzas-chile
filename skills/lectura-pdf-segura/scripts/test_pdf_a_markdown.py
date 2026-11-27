@@ -99,7 +99,8 @@ class T(unittest.TestCase):
         nuevos = set(os.listdir(self.d)) - antes
         self.assertEqual(nuevos, {"estado.enmascarado.md"})   # ningún .pdf extra
         modo = os.stat(os.path.join(self.d, "estado.enmascarado.md")).st_mode & 0o777
-        self.assertEqual(modo, 0o600)
+        if os.name == "posix":  # Windows no aplica 0600; el script avisa en su lugar
+            self.assertEqual(modo, 0o600)
         self.assertNotEqual(correr([self.pdf, "--clave-stdin"], CLAVE + "\n").returncode, 0)  # no pisa
 
     @unittest.skipUnless(sys.platform.startswith("linux"), "usa /proc")

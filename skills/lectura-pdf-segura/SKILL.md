@@ -19,6 +19,8 @@ Siempre que un PDF con datos financieros personales vaya a pasar por un modelo. 
 
 ## Uso
 
+En Windows usa `python` o `py` en lugar de `python3`. Ahí el sistema no aplica los permisos 0600: el script lo avisa, así que guarda la salida en una carpeta solo tuya.
+
 ```bash
 pip install -r requirements.txt   # pdfplumber (MIT)
 

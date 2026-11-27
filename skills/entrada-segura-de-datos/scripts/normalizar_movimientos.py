@@ -173,6 +173,8 @@ def main(argv=None):
         w = csv.DictWriter(f, fieldnames=["id", "fecha", "monto", "tipo", "comercio", "producto", "fuente"])
         w.writeheader()
         w.writerows(filas)
+    if os.name != "posix":  # Windows ignora el modo 0600: el archivo hereda los permisos de la carpeta
+        print("AVISO: en Windows no se pudo restringir el acceso a %s; guárdalo en una carpeta solo tuya." % salida, file=sys.stderr)
     resumen = {"archivo_salida": salida, "filas": len(filas), "descartadas": descartes[:20],
                "total_descartadas": len(descartes), "reemplazos_enmascarado": masc,
                "glosas_sospechosas_removidas": sosp,

@@ -44,7 +44,8 @@ class Pruebas(unittest.TestCase):
         for secreto in ("12.345.678-5", "juan@example.com", "4111 1111 1111 1111", "evil.cl"):
             self.assertNotIn(secreto, texto)
         self.assertIn("****1111", texto)
-        self.assertEqual(stat.S_IMODE(os.stat(out).st_mode), 0o600)
+        if os.name == "posix":  # Windows no aplica 0600; el script avisa en su lugar
+            self.assertEqual(stat.S_IMODE(os.stat(out).st_mode), 0o600)
 
     def test_columna_monto_con_signo(self):
         c = "Fecha,Glosa,Monto\n2026-10-01,Cafe,-3500\n2026-10-02,Sueldo,1000000\n"
