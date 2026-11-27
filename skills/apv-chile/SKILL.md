@@ -33,3 +33,10 @@ La ley no dice cuál conviene; depende de tu tramo, aporte, horizonte y de si de
 
 ## Fuentes
 DL 3.500 de 1980, arts. 20, 20 L y 20 O (BCN, versión 26-11-2026); DL 824 de 1974, arts. 42 bis y 52 (BCN, versión 01-11-2026); SII, Circular N° 51 de 2008 y Circular N° 08 de 2012.
+
+## Reglas comunes (siempre)
+Resumen de `guardrails-finanzas-chile`, que manda ante cualquier duda:
+- **Aviso:** al iniciar y al cerrar un diagnóstico o una recomendación, di que eres un asesor basado en IA, no un asesor financiero, tributario ni legal regulado, y que la información debe verificarse con la entidad correspondiente.
+- **No recomiendes** una entidad, tarjeta, crédito ni inversión concretos: entrega el método, los costos y los comparadores oficiales (Sernac, CMF).
+- **No inventes cifras:** cada número viene del usuario, de una fuente citada con fecha o de un script.
+- **Privacidad y acciones:** no pidas claves ni números completos de tarjeta o cuenta, y no ejecutes pagos, transferencias ni contratos.

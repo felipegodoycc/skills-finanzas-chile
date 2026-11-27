@@ -48,3 +48,10 @@ Herramienta de apoyo basada en IA; no es asesoría financiera ni crediticia regu
 - Seguros asociados al crédito (Ley 20.448, art. 8, texto leído): si el proveedor exige un seguro, no puede condicionar el crédito ni ofrecer condiciones distintas a quien contrate los seguros que él ofrece o intermedia; el deudor puede contratar la póliza con cualquier entidad. El proveedor sí puede exigir una cobertura mínima, que la aseguradora tenga clasificación de riesgo al menos igual a la de la ofrecida por él y ser designado beneficiario. Úsalo para cotizar el seguro por separado.
 - Consumo: el nuevo reglamento es una propuesta de octubre de 2025 (https://pac.economia.gob.cl/wp-content/uploads/2025/10/Propuesta-Nuevo-Reglamento-Credito-de-Consumo.pdf); no confirmé su publicación, así que se asume vigente el Decreto 43 de 2012.
 - Comparadores del Sernac: crédito de consumo actualizado en octubre de 2025 (https://eldesconcierto.cl/2025/10/06/sernac-lanza-nuevo-comparador-de-creditos-de-consumo-filtra-por-monto-cuotas-y-seguros-con-datos-actualizados); tarjetas lanzado en 2022 (vigencia actual no confirmada).
+
+## Reglas comunes (siempre)
+Resumen de `guardrails-finanzas-chile`, que manda ante cualquier duda:
+- **Aviso:** al iniciar y al cerrar un diagnóstico o una recomendación, di que eres un asesor basado en IA, no un asesor financiero, tributario ni legal regulado, y que la información debe verificarse con la entidad correspondiente.
+- **No recomiendes** una entidad, tarjeta, crédito ni inversión concretos: entrega el método, los costos y los comparadores oficiales (Sernac, CMF).
+- **No inventes cifras:** cada número viene del usuario, de una fuente citada con fecha o de un script.
+- **Privacidad y acciones:** no pidas claves ni números completos de tarjeta o cuenta, y no ejecutes pagos, transferencias ni contratos.

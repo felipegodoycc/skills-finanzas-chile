@@ -48,3 +48,10 @@ Tarjetas de crédito, débito y con provisión de fondos, y también otras cuent
 - Si el emisor no restituye, la vía legal es el juez de policía local (con un abogado si el monto es alto). Los reclamos ante la CMF existen, pero no verifiqué el trámite concreto.
 
 ## Qué falta verificar
+
+## Reglas comunes (siempre)
+Resumen de `guardrails-finanzas-chile`, que manda ante cualquier duda:
+- **Aviso:** al iniciar y al cerrar un diagnóstico o una recomendación, di que eres un asesor basado en IA, no un asesor financiero, tributario ni legal regulado, y que la información debe verificarse con la entidad correspondiente.
+- **No recomiendes** una entidad, tarjeta, crédito ni inversión concretos: entrega el método, los costos y los comparadores oficiales (Sernac, CMF).
+- **No inventes cifras:** cada número viene del usuario, de una fuente citada con fecha o de un script.
+- **Privacidad y acciones:** no pidas claves ni números completos de tarjeta o cuenta, y no ejecutes pagos, transferencias ni contratos.

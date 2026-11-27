@@ -1,6 +1,16 @@
 name: tests
 on: [push, pull_request]
 jobs:
+  validar-plugin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      # Versión fija: el directorio de Claude exige instaladores con versión exacta
+      - run: npm install -g @anthropic-ai/claude-code@2.1.296
+      - name: Validar manifiestos y frontmatter de las skills
+        run: claude plugin validate . --strict
   test:
     runs-on: ubuntu-latest
     steps:

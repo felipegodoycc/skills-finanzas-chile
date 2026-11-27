@@ -37,3 +37,10 @@ SERNAC publicó un estudio donde el CTC de $2.000.000 a 36 meses fluctuaba entre
 - Para rotativo, compra en cuotas y avance en efectivo, la CAE de referencia usa un capital fijo de **20 UF**, **M = 12** pagos futuros, sin meses de gracia, y reparte en partes iguales las comisiones que no son de la operación. También define la CAE de prepago (CAEP).
 - **Fórmulas (transcritas de las imágenes del PDF, 26-11-2026):** CAE rotativo y compra en cuotas: `CAE = (1+i)^12 − 1`, con `20 UF = Σ Rm (1+i)^−m`. **Avance en efectivo: `CAE = i × 12` (nominal, no compuesta)**, con la misma ecuación. CAEP: `Qt = Σ Rm (1+i)^(t−m−1)` y `CAEP = i × f`. El PDF repite en el apartado b) la imagen del rotativo, así que la de cuotas se asume idéntica.
 - `scripts/cae_tarjetas.py` las implementa (`rotativo`, `cuotas`, `avance`, `caep`) con tests. El decreto fija la ecuación, no el flujo: con `--tasa-mensual` el script construye 12 cuotas iguales más cargos mensuales iguales (**construcción nuestra, referencial**); con `--flujos` usas los 12 pagos reales del emisor. El índice m parte en 0 en el PDF: aquí R0 es opcional y vale 0. La definición de f del CAEP no está en el texto leído (por defecto 12). El valor de la UF sale de `indicadores-oficiales-chile`.
+
+## Reglas comunes (siempre)
+Resumen de `guardrails-finanzas-chile`, que manda ante cualquier duda:
+- **Aviso:** al iniciar y al cerrar un diagnóstico o una recomendación, di que eres un asesor basado en IA, no un asesor financiero, tributario ni legal regulado, y que la información debe verificarse con la entidad correspondiente.
+- **No recomiendes** una entidad, tarjeta, crédito ni inversión concretos: entrega el método, los costos y los comparadores oficiales (Sernac, CMF).
+- **No inventes cifras:** cada número viene del usuario, de una fuente citada con fecha o de un script.
+- **Privacidad y acciones:** no pidas claves ni números completos de tarjeta o cuenta, y no ejecutes pagos, transferencias ni contratos.

@@ -58,3 +58,10 @@ Orientación informativa, no asesoría de inversión. Consultado 2026-11-26. El 
 - TAC (Informe de Costos de Inversión en Fondos Mutuos de la CMF, 2023, leído): es la suma diaria de costos (remuneraciones fijas y variables y gastos) sobre el patrimonio de la serie, en un año móvil; excluye las comisiones de cargo del inversionista y la remuneración fija suele ser más del 90% de la TAC; la CMF la reporta con datos de la Circular 1.782 de 2005, que no leí. Falta la rentabilidad neta y la versión vigente del reporte, pues la CMF tiene en consulta una norma que lo reemplazaría con el MSI de Fondos.
 - Cuentas de ahorro a plazo con giro incondicional (Capítulo III.E.1) y la versión vigente del III.E.4 tras la consulta del Banco Central.
 - Ley Fintec: revisión legal pendiente de si este tipo de comparación cae dentro de la asesoría de inversión.
+
+## Reglas comunes (siempre)
+Resumen de `guardrails-finanzas-chile`, que manda ante cualquier duda:
+- **Aviso:** al iniciar y al cerrar un diagnóstico o una recomendación, di que eres un asesor basado en IA, no un asesor financiero, tributario ni legal regulado, y que la información debe verificarse con la entidad correspondiente.
+- **No recomiendes** una entidad, tarjeta, crédito ni inversión concretos: entrega el método, los costos y los comparadores oficiales (Sernac, CMF).
+- **No inventes cifras:** cada número viene del usuario, de una fuente citada con fecha o de un script.
+- **Privacidad y acciones:** no pidas claves ni números completos de tarjeta o cuenta, y no ejecutes pagos, transferencias ni contratos.

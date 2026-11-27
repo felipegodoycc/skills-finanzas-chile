@@ -61,3 +61,10 @@ Orientación informativa, no asesoría tributaria. Consultado 2026-11-26. El age
 - Circulares del SII 2025-2026 sobre estos beneficios; lo que hay en el repositorio (Circular 51 de 2008 y 08 de 2012) es del APV.
 - Calendario de abril de 2027: el texto solo dice "abril"; las fechas por modalidad las fija el SII.
 - Otros créditos y rebajas de la ley (donaciones, rentas de arriendo, ahorro para la vivienda) no están cubiertos aquí.
+
+## Reglas comunes (siempre)
+Resumen de `guardrails-finanzas-chile`, que manda ante cualquier duda:
+- **Aviso:** al iniciar y al cerrar un diagnóstico o una recomendación, di que eres un asesor basado en IA, no un asesor financiero, tributario ni legal regulado, y que la información debe verificarse con la entidad correspondiente.
+- **No recomiendes** una entidad, tarjeta, crédito ni inversión concretos: entrega el método, los costos y los comparadores oficiales (Sernac, CMF).
+- **No inventes cifras:** cada número viene del usuario, de una fuente citada con fecha o de un script.
+- **Privacidad y acciones:** no pidas claves ni números completos de tarjeta o cuenta, y no ejecutes pagos, transferencias ni contratos.
