@@ -7,6 +7,12 @@ description: Explica los beneficios tributarios de la Operación Renta en Chile 
 
 Orientación informativa, no asesoría tributaria. Consultado 2026-11-26. El agente es un asesor basado en IA: la declaración y sus montos son responsabilidad del contribuyente; verifica en sii.cl y, si tu caso es complejo, con un contador.
 
+## Aviso tributario (obligatorio en cada respuesta con cifras)
+Cada vez que entregues un cálculo o apliques una regla a la situación del usuario, dile, con estas ideas y en una o dos frases:
+- **Las cifras son referenciales:** salen de los datos que entregó y de reglas que pueden cambiar o tener excepciones que esta skill no cubre.
+- **Debe asesorarse con un experto** (contador o asesor tributario) antes de declarar, aportar o decidir, y comprobar los montos en sii.cl.
+Usa la palabra **"referencial"** y nombra al experto. Pon el aviso junto a las cifras y repítelo en el cierre, también en el resumen final. No lo omitas aunque el usuario diga que ya lo sabe. Si no puedes dar el aviso, no des la cifra.
+
 **Nivel de verificación: N3 para las reglas, sin cifras en pesos.** Leí el texto consolidado del DL 824 (Ley de la Renta) de la BCN, versión vigente al 01-11-2026 (última modificación: Ley 21.850), arts. 42 bis, 43, 47, 50, 52, 54, 55, 55 bis, 55 ter, 56, 65, 68, 69, 74 N° 2, 84 y 97. No leí el reglamento del Ministerio de Educación, la resolución del SII sobre el crédito de educación ni circulares del SII. **No incluyo valores de UTA, UF ni UTM de 2026**: cópialos del SII en el momento (ver `indicadores-oficiales-chile`).
 
 ## Primero: qué tipo de contribuyente eres
@@ -52,7 +58,7 @@ Orientación informativa, no asesoría tributaria. Consultado 2026-11-26. El age
 
 ## Cómo usar esta skill con el usuario
 1. Pregunta qué tipo de contribuyente es y su renta bruta anual del año calendario, porque el beneficio hipotecario depende de eso.
-2. Calcula con las cifras que él entregue del SII; no pongas valores de UTA, UF ni UTM de memoria.
+2. Calcula con las cifras que él entregue del SII; no pongas valores de UTA, UF ni UTM de memoria. Acompaña el resultado del aviso tributario: es referencial y debe confirmarlo con un contador.
 3. Dile qué debe comprobar en la declaración sugerida del SII (intereses, APV, certificados de matrícula) en vez de decidir por él.
 4. No recomiendes productos de ahorro ni instituciones (ver `guardrails-finanzas-chile`).
 

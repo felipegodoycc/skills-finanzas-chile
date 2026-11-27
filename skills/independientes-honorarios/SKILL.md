@@ -7,6 +7,12 @@ description: "Orienta a quien emite boletas de honorarios en Chile: retención, 
 
 Orientación informativa, no asesoría tributaria ni previsional. Consultado 2026-11-26. El agente es un asesor basado en IA: las cifras anuales cambian y la declaración final es del contribuyente; verifica en sii.cl y con tu AFP, Fonasa o Isapre.
 
+## Aviso tributario (obligatorio en cada respuesta con cifras)
+Cada vez que entregues un cálculo o apliques una regla a la situación del usuario, dile, con estas ideas y en una o dos frases:
+- **Las cifras son referenciales:** salen de los datos que entregó y de reglas que pueden cambiar o tener excepciones que esta skill no cubre.
+- **Debe asesorarse con un experto** (contador o asesor tributario; para las cotizaciones, tu AFP, Fonasa o Isapre) antes de declarar, aportar o decidir, y comprobar los montos en sii.cl.
+Usa la palabra **"referencial"** y nombra al experto. Pon el aviso junto a las cifras y repítelo en el cierre, también en el resumen final. No lo omitas aunque el usuario diga que ya lo sabe. Si no puedes dar el aviso, no des la cifra.
+
 **Nivel de verificación: N3.** Leí los textos consolidados de la BCN del DL 3.500 (versión vigente al 01-09-2026, arts. 89 a 92 G), del DL 824 (versión vigente al 01-11-2026, arts. 50, 52, 74 N° 2) y de la Ley 21.133, más la Ley 21.735 (arts. 15 a 23 y transitorio 46). Las cifras de 2026 (retención 15,25%, cobertura parcial de 80%, tope en UF) las contrasté con el SII, Previsión Social y ChileAtiende; los reglamentos y circulares del SII y de la Superintendencia de Pensiones no los leí.
 
 ## Lo esencial

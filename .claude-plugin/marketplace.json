@@ -12,7 +12,7 @@
       "name": "skills-finanzas-chile",
       "source": "./",
       "description": "24 skills: diagnóstico, endeudamiento, pago mínimo, cotización, refinanciamiento, derechos del deudor, fraude con medios de pago, independientes y honorarios, Operación Renta, ahorro de bajo riesgo, pensiones, entrada segura de datos e indicadores oficiales.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "license": "MIT",
       "keywords": [
         "finanzas",

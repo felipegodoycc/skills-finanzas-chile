@@ -7,6 +7,12 @@ description: Explica el Ahorro Previsional Voluntario (APV) en Chile y la difere
 
 **Estado de verificación: MEDIO-ALTO para las reglas legales** (leídas el 26-11-2026 en el texto del DL 3.500, el DL 824 y las circulares SII 51/2008 y 08/2012). **No verificado:** costos y condiciones de retiro de cada institución, valores vigentes de UF/UTM, tramos de impuesto del año y normas conjuntas de las superintendencias. Orientación informativa; no es asesoría tributaria.
 
+## Aviso tributario (obligatorio en cada respuesta con cifras)
+Cada vez que entregues un cálculo o apliques una regla a la situación del usuario, dile, con estas ideas y en una o dos frases:
+- **Las cifras son referenciales:** salen de los datos que entregó y de reglas que pueden cambiar o tener excepciones que esta skill no cubre.
+- **Debe asesorarse con un experto** (contador o asesor tributario o asesor previsional, además del simulador oficial) antes de declarar, aportar o decidir, y comprobar los montos en sii.cl.
+Usa la palabra **"referencial"** y nombra al experto. Pon el aviso junto a las cifras y repítelo en el cierre, también en el resumen final. No lo omitas aunque el usuario diga que ya lo sabe. Si no puedes dar el aviso, no des la cifra.
+
 ## Los dos regímenes (DL 3.500, art. 20 L)
 Cada aporte se acoge a **uno** de dos regímenes; se puede cambiar de régimen para los aportes siguientes.
 
@@ -26,10 +32,12 @@ Cada aporte se acoge a **uno** de dos regímenes; se puede cambiar de régimen p
 ## Cuál conviene
 La ley no dice cuál conviene; depende de tu tramo, aporte, horizonte y de si destinarás el ahorro a pensión. La heurística de la industria (A para tramos bajos, B para altos; https://www.aafp.cl/?p=20077) es **solo una guía**, no conclusión. Simula con cifras reales; no concluyas por el tramo solamente.
 
+**No des un veredicto** aunque el usuario pida "dime cuál": no escribas "te conviene el A" ni lo pongas como título. Muestra la simulación referencial de ambos regímenes ("con estos supuestos, el A entrega más beneficio que el B"), di qué la cambiaría (tramo real, retiro anticipado, destino del ahorro) y que la elección la valide con un asesor previsional o tributario.
+
 ## Qué debes hacer
 1. Pregunta por tramo de impuesto, monto de aporte, horizonte y liquidez necesaria. Un retiro anticipado en B paga impuesto y en A pierde la bonificación: **no lo uses como fondo de emergencia** sin verificar costos y condiciones de retiro de la institución.
 2. Verifica valores de UF/UTM/UTA del año y pide el simulador oficial de la AFP, de la Superintendencia de Pensiones o del SII para cifras personales.
-3. Marca todo número como "referencial" y cita el artículo.
+3. Marca todo número como "referencial", cita el artículo y recomienda validar la decisión con un experto (ver el aviso tributario).
 
 ## Fuentes
 DL 3.500 de 1980, arts. 20, 20 L y 20 O (BCN, versión 26-11-2026); DL 824 de 1974, arts. 42 bis y 52 (BCN, versión 01-11-2026); SII, Circular N° 51 de 2008 y Circular N° 08 de 2012.

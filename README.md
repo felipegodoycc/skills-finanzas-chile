@@ -29,12 +29,12 @@ npx skills add felipegodoycc/skills-finanzas-chile --skill diagnostico-financier
 
 ```
 /plugin marketplace add felipegodoycc/skills-finanzas-chile
-/plugin install skills-finanzas-chile --marketplace felipegodoycc/skills-finanzas-chile
+/plugin install skills-finanzas-chile@skills-finanzas-chile
 ```
 
 **A mano:** copia las carpetas de `skills/` a `.claude/skills/` (proyecto) o `~/.claude/skills/` (global).
 
-> Los comandos de arriba funcionan cuando el repositorio esté publicado. Para probar desde una copia local: `npx skills add ./ --list`. Otros asistentes (ChatGPT, NanoClaw, modelos locales): [docs/uso-con-otros-asistentes.md](docs/uso-con-otros-asistentes.md).
+> Para probar desde una copia local: `npx skills add ./ --list`. Otros asistentes (ChatGPT, NanoClaw, modelos locales): [docs/uso-con-otros-asistentes.md](docs/uso-con-otros-asistentes.md).
 
 ## 🧭 La necesidad
 
@@ -95,7 +95,7 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 | `analisis-gasto-recurrente` | Suscripciones, gasto hormiga | Método N1: umbral operativo |
 | `fondo-emergencia-y-metas` | Colchón y metas por tramos | Seguro de cesantía **N3** (Ley 19.728, Res. Ex. 383); "3 a 6 meses" N1 |
 | `apv-chile` | APV régimen A y B | **N3**: DL 3.500, DL 824 y circulares SII; faltan costos de retiro por institución |
-| `indicadores-oficiales-chile` | UF, UTM, UTA, IPC y dólar; el usuario elige fuente (CMF, Banco Central, SII sin clave, terceros) | Fuente oficial; lector del SII probado con la página real (UF, UTM, UTA); CMF, Banco Central y mindicador sin prueba real |
+| `indicadores-oficiales-chile` | UF, UTM, UTA, IPC y dólar: dónde consultarlos (SII, CMF, Banco Central) y lectura del archivo que descargas, sin conexión | Fuente oficial; lector del SII probado con la página real (UF, UTM, UTA); CMF y Banco Central sin prueba real |
 | `independientes-honorarios` | Boleta de honorarios: retención, cotización obligatoria, Operación Renta, presupuesto con ingreso variable | **N3**: DL 3.500 (arts. 89 a 92 G) y DL 824 (arts. 50, 52, 74) vigentes leídos, más Ley 21.133 y Ley 21.735 (arts. 15 a 23 y transitorio 46); cifras de 2026 contrastadas con SII y Previsión Social |
 | `operacion-renta-beneficios` | Beneficios de la Operación Renta: APV, intereses hipotecarios, crédito por educación, gasto presunto | **N3**: texto consolidado del DL 824 (BCN, vigente al 01-11-2026) leído; sin cifras en pesos; leídos también arts. 43, 65, 68, 69 y 97; faltan reglamentos y circulares |
 | `ahorro-bajo-riesgo` | Método para comparar depósitos, cuentas de ahorro y fondos mutuos de deuda: tasa real, riesgo, liquidez, costos e impuestos; no recomienda productos | **N3 en lo esencial**: arts. 41 bis, 57 y 107 del DL 824 y plazos del Compendio del Banco Central leídos; garantía estatal según la Ley General de Bancos (arts. 144 a 153, leídos; cooperativas por la Circular 108 de la CMF); art. 107 N° 3 numeral 3.1 y TAC (informe CMF 2023) leídos; sin tasas ni inflación; falta el texto final del Cap. III.E.1 del Banco Central |
@@ -106,6 +106,20 @@ El tipo importa: una **norma** sube con el texto oficial; un **método** se sust
 Casos de ejemplo con cifras ficticias: [docs/casos/casos.md](docs/casos/casos.md).
 
 > La fórmula de CAE de `credito-cae-ctc/scripts/cae.py` (créditos de consumo) viene de un **borrador** de reglamento; no se verificó su vigencia. La CAE vinculante es siempre la que informa la institución.
+
+## 💬 Ejemplos de uso
+
+Escríbele al agente como le hablarías a una persona; no hace falta nombrar la skill.
+
+| Pregunta | Qué hace el agente | Skills |
+|---|---|---|
+| "Gano $1.800.000 líquidos, tengo tarjetas, un crédito de consumo y una línea, y aunque gasto menos no salgo. ¿Qué hago?" | Separa el problema de flujo del de estructura de deuda, pide los datos que faltan y calcula la carga con código | `diagnostico-financiero`, `limites-sanos-endeudamiento` |
+| "¿Puedo pagar solo el mínimo de la tarjeta este mes?" | Calcula el mínimo con la fórmula vigente, proyecta los meses siguientes y muestra el interés de pagar solo el mínimo | `pago-minimo-tarjetas` |
+| "Me ofrecen un crédito de $970.000 en 24 cuotas de $52.000. ¿Cuánto me cuesta de verdad?" | Calcula la CAE y el CTC desde el monto recibido y la cuota, y explica cómo comparar ofertas sin recomendar un banco | `credito-cae-ctc`, `cotizacion-y-comparacion` |
+| "Me aparece un cargo de $45.000 que no reconozco en la tarjeta." | Guía el aviso, el bloqueo, el reclamo y los plazos de la Ley 20.009, sin pedir el número completo de la tarjeta | `fraude-medios-de-pago` |
+| "¿En qué se me va la plata?" (con un CSV de movimientos) | Limpia duplicados, detecta suscripciones y gasto hormiga, y propone eliminar, reemplazar o controlar | `calidad-de-datos-financieros`, `analisis-gasto-recurrente` |
+
+Cada respuesta parte y termina con el aviso de asesor basado en IA. Los casos completos, con datos, preguntas y errores a evitar, están en [`docs/casos/casos.md`](docs/casos/casos.md) y se prueban con las evals de [`evals/`](evals/).
 
 ## 🚀 Prueba rápida
 
@@ -125,14 +139,17 @@ Nunca subas claves de PDF, contraseñas, tokens ni números completos de tarjeta
 ### Qué ejecuta, lee y envía este plugin
 
 - **Sin hooks, sin servidores MCP, sin telemetría.** El plugin no guarda datos ni los envía a servidores propios. Solo trae skills (Markdown) y scripts de Python que el agente corre en tu equipo cuando los necesita.
-- **Única salida a internet: `indicadores-oficiales-chile/scripts/indicadores.py`**, y solo al consultar un indicador (UF, UTM, UTA, IPC o dólar). Hace un GET a la fuente que elijas con `--fuente`:
-  - `api.cmfchile.cl` (CMF): envía tu clave `CMF_API_KEY` como parámetro `apikey` de la URL.
-  - `si3.bcentral.cl` (Banco Central): envía tu token `BCCH_API_TOKEN` como parámetro `token` de la URL.
-  - `www.sii.cl` (SII): sin clave.
-  - `mindicador.cl` (terceros, no oficial): sin clave; solo si lo pides a mano.
-  Las claves se leen solo de variables de entorno, nunca se imprimen y no se envían a ningún otro destino. Ningún dato tuyo (montos, movimientos) sale en esas consultas.
+- **Sin conexiones a internet.** Ningún script abre conexiones de red ni lee claves del entorno. Para la UF, la UTM u otros indicadores, `indicadores-oficiales-chile` te indica la página oficial (SII, CMF o Banco Central); tú la abres en tu navegador y el script solo lee el archivo que guardaste.
 - **Archivos locales:** los scripts leen solo los archivos que les pases (CSV de movimientos, PDF de estados de cuenta). `lectura-pdf-segura` escribe un `.enmascarado.md` junto al PDF (permisos 0600) y `entrada-segura-de-datos/scripts/normalizar_movimientos.py` escribe el CSV normalizado en la ruta que indiques (permisos 0600). `lectura-pdf-segura` necesita `pdfplumber` (`pip install -r skills/lectura-pdf-segura/requirements.txt`). El resto usa solo la biblioteca estándar de Python.
 - **Base de datos (opcional):** `entrada-segura-de-datos/data/rol_lectura_postgres.sql` es una plantilla para que crees tú un rol de solo lectura; el plugin no se conecta a ninguna base.
+
+### Datos personales
+El plugin no recopila, guarda ni envía datos personales a servidores del autor ni de terceros: todo se procesa en tu equipo y en tu conversación con Claude. Los scripts no se conectan a internet. No está pensado para menores de 18 años.
+
+## 🆘 Soporte y seguridad
+
+- **Errores, datos desactualizados o dudas:** abre un issue en https://github.com/felipegodoycc/skills-finanzas-chile/issues.
+- **Vulnerabilidades:** no las publiques en un issue; sigue [`SECURITY.md`](SECURITY.md).
 
 ## 🛠️ Contribuir
 
