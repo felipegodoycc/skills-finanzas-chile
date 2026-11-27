@@ -1,6 +1,6 @@
 ---
 name: cotizacion-y-comparacion
-description: Cómo cotizar y comparar créditos de consumo, hipotecarios y tarjetas entre entidades en Chile (CAE, CTC, hoja resumen, comparadores oficiales del Sernac y la CMF) y cómo leer rankings sin engañarse. Úsala cuando pregunten qué crédito, tarjeta o banco conviene, cómo cotizar o dónde ver rankings.
+description: Cómo cotizar y comparar créditos de consumo, hipotecarios y tarjetas entre entidades en Chile (CAE, CTC, hoja resumen, comparadores oficiales del Sernac y la CMF) y cómo leer rankings sin engañarse. Úsala cuando pregunten qué crédito, tarjeta o banco conviene, cómo cotizar o dónde ver rankings. No la uses para el CAE de estudios (Crédito con Aval del Estado).
 ---
 
 # Cotizar y comparar productos financieros

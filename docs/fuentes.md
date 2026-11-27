@@ -107,6 +107,7 @@ Y cada fuente tiene un **estado de lectura**:
 ### Normas citadas pero no leídas
 
 - **Ley 21.850** (DO 17-10-2026), exención de contribuciones para mayores de 65 años. Solo se vio en el [SII](https://www.sii.cl/noticias/2026/111126noti01pcr.htm) y la prensa.
+- **Ley 20.027** (Crédito con Aval del Estado para estudios superiores): solo se vio citada en las [preguntas frecuentes de la Comisión Ingresa](https://portal.ingresa.cl/preguntas-frecuentes/), sin lectura del texto. Se usa para distinguir este CAE de la Carga Anual Equivalente.
 - **Ley 20.555** ([Sernac Financiero](https://www.bcn.cl/leychile/navegar?idLey=20555)) y **Decretos 42, 43 y 44 de 2012** (reglamentos anteriores de información al consumidor): base legal citada, sin lectura.
 - **Reglamento de cobranza extrajudicial** (en consulta pública desde el 09-09-2025) y [propuesta de reglamento de crédito de consumo](https://pac.economia.gob.cl/wp-content/uploads/2025/10/Propuesta-Nuevo-Reglamento-Credito-de-Consumo.pdf) (octubre de 2025): borradores, no normas vigentes. La fórmula de `credito-cae-ctc/scripts/cae.py` sale de ese borrador.
 
@@ -122,6 +123,7 @@ Explican una norma, pero no son la norma. Si contradicen el texto legal, manda e
 | CMF: [Informe de Endeudamiento](https://www.cmfchile.cl/portal/prensa/615/articles-102984_doc_pdf.pdf), [encuesta CAF-CMF 2023](https://www.cmfchile.cl/portal/estadisticas/626/articles-76205_doc_pdf.pdf), informe de costos de fondos mutuos (2023, anexo de la TAC) y simulador hipotecario | Definiciones de carga y apalancamiento; datos descriptivos | `endeudamiento-cmf`, `fondo-emergencia-y-metas`, `ahorro-bajo-riesgo` |
 | SERNAC: [cobranza extrajudicial](https://www.sernac.cl/cobranza-extrajudicial/), [comparadores](https://www.sernac.cl/portal/607/w3-propertyvalue-28422.html), fichas de crédito | Derechos del deudor, comparación de créditos | `cobranza-y-renegociacion`, `credito-cae-ctc` |
 | [ChileAtiende](https://www.chileatiende.gob.cl/fichas/37401) y [Ventanilla Única Social](https://www.ventanillaunicasocial.gob.cl/ficha/369/procedimiento-concursal-renegociacion-deudas) | Trámite de renegociación | `cobranza-y-renegociacion` |
+| Comisión Ingresa: [preguntas frecuentes](https://portal.ingresa.cl/preguntas-frecuentes/), [cómo pagar](https://portal.ingresa.cl/como-pagar/) (consultado 2026-11-27) | Distinguir el CAE de estudios y derivar al organismo que lo administra | `credito-cae-ctc`, `guardrails-finanzas-chile` |
 | [TGR, pagar contribuciones](https://portal-ayuda.tgr.cl/ayuda/pagar/pagar-contribuciones) | Fechas de las cuatro cuotas | `plan-refinanciamiento` |
 | SII: [condonación de multas](https://www.sii.cl/preguntas_frecuentes/preguntas_generales/001_430_4892.htm) (actualizada el 14-05-2025), [noticia del 30-04-2026](https://www.sii.cl/noticias/2026/300426noti01pcr.htm), [valores y fechas](https://www.sii.cl/valores_y_fechas/) | Condonación, plazos e indicadores | `plan-refinanciamiento`, `indicadores-oficiales-chile` |
 | IPS, ChileAtiende y Superintendencia de Pensiones (fichas de la PGU y de cotizaciones) | Cifras vigentes de la reforma de pensiones | `pensiones`, `independientes-honorarios` |

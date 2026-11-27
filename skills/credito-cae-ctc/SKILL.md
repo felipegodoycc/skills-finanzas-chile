@@ -1,6 +1,6 @@
 ---
 name: credito-cae-ctc
-description: Compara y evalúa créditos de consumo en Chile usando CAE (Carga Anual Equivalente) y CTC (Costo Total del Crédito); calcula CAE desde monto recibido y cuota, estima saldo para prepago y compara un crédito que reemplaza deudas. Úsala cuando pregunten por costo real de un crédito, cotizaciones, consolidar deudas o refinanciar en Chile.
+description: Compara y evalúa créditos de consumo en Chile usando CAE (Carga Anual Equivalente) y CTC (Costo Total del Crédito); calcula CAE desde monto recibido y cuota, estima saldo para prepago y compara un crédito que reemplaza deudas. Úsala cuando pregunten por costo real de un crédito, cotizaciones, consolidar deudas o refinanciar en Chile. No la uses para el CAE de estudios (Crédito con Aval del Estado, Ley 20.027).
 ---
 
 # Crédito: CAE y CTC (Chile)
@@ -10,6 +10,11 @@ description: Compara y evalúa créditos de consumo en Chile usando CAE (Carga A
 - **CTC**: monto total que terminará pagando el consumidor, la suma de todas las cuotas incluyendo costos adicionales. SERNAC: https://sernac.cl/portal/619/w3-article-7302.html
 - **Base legal**: Ley 20.555 ("SERNAC Financiero"), que modificó la Ley 19.496. El consumidor tiene derecho a conocer CTC y CAE al contratar. https://www.sernac.cl/portal/607/w3-propertyvalue-28422.html
 - La CAE incluye capital, tasa, plazo, gastos propios del crédito y productos voluntariamente contratados, según el *borrador* de reglamento del Ministerio de Economía (https://pac.economia.gob.cl/wp-content/uploads/2025/10/Propuesta-Nuevo-Reglamento-Credito-de-Consumo.pdf, consultado 2026-11-26).
+
+## Si "CAE" es el crédito de estudios
+En Chile "CAE" también es el **Crédito con Aval del Estado** para la educación superior, que se rige por la Ley 20.027 y lo administra un banco (Comisión Ingresa, https://portal.ingresa.cl/preguntas-frecuentes/, consultado 2026-11-27). **Esta skill no lo cubre.**
+- Si el usuario habla de la universidad, el instituto, la Comisión Ingresa o "mi CAE" sin un crédito de consumo a la vista, pregúntale a cuál se refiere antes de calcular.
+- Si es el de estudios, no apliques las fórmulas de esta skill. Remite a la Comisión Ingresa (opciones de pago y reprogramación: https://portal.ingresa.cl/como-pagar/) y al banco que administra su crédito. Este repositorio no tiene verificadas sus reglas de cobro, retención ni beneficios: no las afirmes.
 
 ## Estado del borrador (no lo presentes como norma vigente)
 Ese documento es un **proyecto de decreto**; su artículo transitorio fija vigencia al 31-07-2026, pero **no verifiqué si fue publicado ni si está en vigor**. Su fórmula (CAE = i_f × f, con i_f la tasa que iguala valor presente de lo recibido y lo pagado) es la que implementa `scripts/cae.py`. El borrador no fija f, ni convención de días, ni redondeo.
