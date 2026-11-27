@@ -24,7 +24,7 @@ Y cada fuente tiene un **estado de lectura**:
 
 - Los enlaces a leyes apuntan a la BCN (leychile.cl), que muestra **la versión vigente al abrirlos**. La versión que se leyó está indicada en la fila; si la BCN muestra otra más nueva, puede haber cambios que las skills todavía no recogen.
 - Varios textos se leyeron desde PDFs de la BCN descargados a mano, porque la página carga con JavaScript.
-- Los dos decretos de Hacienda de la Ley 20.009 enlazan a la edición del Diario Oficial de su fecha de publicación, identificada por búsqueda.
+- **Verificación del 27-11-2026:** los 46 enlaces a la BCN se comprobaron contra el servicio de datos de la BCN (tipo, número y título de cada norma), y los dos decretos de Hacienda de la Ley 20.009 se abrieron en el Diario Oficial. El resto de los enlaces se confirmó por el título que devuelve la búsqueda web, sin abrir cada página.
 
 ---
 
@@ -76,8 +76,8 @@ Y cada fuente tiene un **estado de lectura**:
 |---|---|---|---|
 | Decreto 75 de 2025 (Economía), reglamento de información al consumidor de tarjetas ([Diario Oficial, 06-08-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/08/06/44518/01/2846533.pdf)) | CAE de tarjetas, cotización, estado de cuenta | Completo (fórmulas transcritas, con tests) | `credito-cae-ctc`, `cotizacion-y-comparacion` |
 | Decreto 49 de 2024 (Economía), reglamento de créditos hipotecarios ([Diario Oficial, 27-02-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/02/27/44387/01/2769135.pdf)) | Cotización, cartillas y vigencia de 12 meses | Completo | `cotizacion-y-comparacion` |
-| [Decreto 1.154 de 2020](https://www.bcn.cl/leychile/navegar?idNorma=1146340), reglamento de portabilidad financiera, y reglamento del certificado de liquidación ([Diario Oficial, 09-11-2020](https://www.diariooficial.interior.gob.cl/publicaciones/2020/11/09/42800/01/1843778.pdf)) | Oferta, arrepentimiento y certificados | Completo | `prepago-y-portabilidad` |
-| Decreto 435 de 2024 ([Diario Oficial, 17-12-2024](https://www.diariooficial.interior.gob.cl/publicaciones/2024/12/17/44026/01/2583995.pdf)) y Decreto exento 473 de 2026 ([Diario Oficial, 30-01-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/01/30/44363/01/2757834.pdf)), Hacienda | Umbral de restitución de 35 UF de la Ley 20.009 | Completo | `fraude-medios-de-pago` |
+| [Decreto 1.154 de 2020](https://www.suseso.gob.cl/619/w3-article-689193.html) (Hacienda), reglamento de portabilidad financiera, y reglamento del certificado de liquidación ([Diario Oficial, 09-11-2020](https://www.diariooficial.interior.gob.cl/publicaciones/2020/11/09/42800/01/1843778.pdf)) | Oferta, arrepentimiento y certificados | Completo | `prepago-y-portabilidad` |
+| Decreto exento 435 de 2024 ([Diario Oficial, 17-12-2024](https://www.diariooficial.interior.gob.cl/publicaciones/2024/12/17/44026/01/2583995.pdf)) y Decreto exento 473 de 2026 ([Diario Oficial, 30-01-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/01/30/44363/01/2757834.pdf)), Hacienda | Umbral de restitución de 35 UF de la Ley 20.009 | Completo | `fraude-medios-de-pago` |
 
 ### Normas de reguladores
 
@@ -85,19 +85,19 @@ Y cada fuente tiene un **estado de lectura**:
 |---|---|---|---|
 | NCG 537 de la CMF, pago mínimo de tarjetas ([comunicado y norma](https://www.cmfchile.cl/portal/prensa/615/w3-article-95105.html)) | Fórmula del pago mínimo y gradualidad | Completo | `pago-minimo-tarjetas` |
 | NCG 569 de la CMF (01-06-2026), modifica la NCG 514 ([comunicado](https://www.cmfchile.cl/portal/prensa/615/w3-article-110881.html)); informe normativo de junio de 2026 | Plazos del Sistema de Finanzas Abiertas | Completo | `entrada-segura-de-datos` |
-| NCG 540 (14-07-2025, [comunicado](https://www.cmfchile.cl/portal/prensa/625/w4-article-96582.html)) y [NCG 576](https://www.cmfchile.cl/normativa/ncg_576_2026.pdf) (14-09-2026) de la CMF; Oficio Circular 1.403 (22-01-2026) | Funcionamiento del REDEC, consentimiento, revocación y códigos de baja | NCG completas; OFC 1.403 en los códigos de baja | `cobranza-y-renegociacion` |
+| NCG 540 (14-07-2025, [comunicado](https://www.cmfchile.cl/portal/prensa/625/w4-article-96582.html)) y [NCG 576](https://www.cmfchile.cl/normativa/ncg_576_2026.pdf) (14-09-2026) de la CMF; [Oficio Circular 1.403](https://www.cmfchile.cl/normativa/ofc_1403_2026.pdf) (22-01-2026) | Funcionamiento del REDEC, consentimiento, revocación y códigos de baja | NCG completas; OFC 1.403 en los códigos de baja | `cobranza-y-renegociacion` |
 | [NCG 460](https://www.cmfchile.cl/normativa/ncg_460_2021.pdf) (13-08-2021, mod. NCG 464), [NCG 538](https://www.cmfchile.cl/portal/normativa/624/w4-article-106921.html) y NCG 502 ([comunicado](https://www.cmfchile.cl/portal/prensa/625/w4-article-77135.html)) de la CMF | Seguros asociados a créditos; fraude con medios de pago; Ley Fintec | NCG 460 y 538 completas; NCG 502 leída para la Ley Fintec | `cotizacion-y-comparacion`, `fraude-medios-de-pago`, `guardrails-finanzas-chile` |
 | Circular 108 de la CMF, cooperativas ([texto actualizado](https://www.cmfchile.cl/institucional/mercados/ver_archivo.php?archivo=%2Fweb%2Fcompendio%2Fcir%2Fcir_2304_2022.pdf)) | Garantía estatal en cooperativas | Numeral 1 | `ahorro-bajo-riesgo` |
 | Certificados de interés corriente y máximo convencional de la CMF ([Diario Oficial, 15-07-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/07/15/44500/01/2839188.pdf); [15-10-2026](https://www.diariooficial.interior.gob.cl/publicaciones/2026/10/15/44574/01/2885690.pdf)) y [metodología de cálculo](https://www.cmfchile.cl/portal/estadisticas/617/articles-102391_doc_pdf.pdf) | Verificación de la TMC por fecha | Completo | `tasa-maxima-convencional` |
 | Compendio de Normas sobre los Procedimientos Concursales y las Asesorías Económicas de Insolvencia de la Superir (Versión N° 2 del 01-10-2026, Res. Ex. 24374/2026), aprobado por la [Res. Ex. 19752](https://www.superir.gob.cl/wp-content/document/biblioteca_digital/compendio_de_normas/RES_NUM_19752_ANO_2026.pdf) (12-08-2026), que **derogó la NCG 28** desde el 13-08-2026 ([Compendio vigente](https://www.superir.gob.cl/compendio/)) | Requisitos, audiencias y efectos de la renegociación | Libro IV, Títulos I a V. No leídos: Título VI, protocolos de audiencias asincrónicas, Libros I-III, V y VI | `cobranza-y-renegociacion` |
 | [Res. Ex. 383 de la Superintendencia de Pensiones](https://www.bcn.cl/leychile/navegar?idNorma=1222403) (DO 17-03-2026) | Valores del Fondo de Cesantía Solidario hasta el 28-02-2027 | Completo (dos erratas marcadas en la skill) | `fondo-emergencia-y-metas` |
 | [Circular SII N° 51 de 2008](https://www.sii.cl/documentos/circulares/2008/circu51.pdf) y [Circular SII N° 08 de 2012](https://www.sii.cl/documentos/circulares/2012/circu08.htm) | Tratamiento tributario del APV | Completo | `apv-chile` |
-| Res. Ex. SII 24 y TGR 1 de 2026 | Prórroga de contribuciones solo para Ñuble y Biobío | Extracto (noticia del SII) | `plan-refinanciamiento` |
+| Res. Ex. SII 24 y TGR 1 de 2026 ([noticia del SII](https://www.sii.cl/noticias/2026/110226noti01smn.htm)) | Prórroga de contribuciones solo para Ñuble y Biobío | Extracto (noticia del SII) | `plan-refinanciamiento` |
 
 ### Normas leídas solo en parte
 
 - **Código Procesal Penal** ([Ley 19.696](https://www.bcn.cl/leychile/navegar?idLey=19696)), arts. 173 y 174.
-- **DFL 5 de 2003**, Ley General de Cooperativas, art. 87.
+- **DFL 5 de 2003**, Ley General de Cooperativas ([BCN](https://www.bcn.cl/leychile/navegar?idNorma=221322)), art. 87.
 - **Ley 19.628** ([versión del 09-05-2023](https://www.bcn.cl/leychile/navegar?idLey=19628)), arts. 17 a 19. Falta confirmar la versión vigente tras la Ley 21.719.
 - **Ley 18.840**, Ley Orgánica del Banco Central ([BCN](https://www.bcn.cl/leychile/navegar?idLey=18840)), y **Ley 20.255**, art. 88 ([BCN](https://www.bcn.cl/leychile/navegar?idLey=20255)), en lo que usan `ahorro-bajo-riesgo` e `independientes-honorarios`.
 - **Ley 21.521**, Ley Fintec ([BCN](https://www.bcn.cl/leychile/navegar?idLey=21521)), arts. 2, 3 y 5. Falta revisión legal, no lectura.
